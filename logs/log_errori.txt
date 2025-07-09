@@ -1,0 +1,518 @@
+2025-07-04 12:18:38,025 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 12:25:31,399 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 14:44:04,821 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 15:00:14,052 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 15:05:56,649 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 15:07:04,686 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:10:30,077 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:17:34,055 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:18:18,411 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:20:32,234 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:25:28,210 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:29:53,548 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 15:41:35,732 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 15:47:47,177 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 16:05:04,999 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 16:06:11,803 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 16:30:10,211 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 16:31:33,712 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+Help: https://docs.oracle.com/error-help/db/ora-03113/
+2025-07-04 16:37:53,105 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 16:39:37,117 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPI-1047: Cannot locate a 64-bit Oracle Client library: "The specified module could not be found". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help
+2025-07-04 16:48:18,706 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+2025-07-04 17:06:17,780 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+2025-07-04 17:07:50,263 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-03113: end-of-file on communication channel
+Process ID: 0
+Session ID: 0 Serial number: 0
+2025-07-04 17:09:37,838 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: connect() got an unexpected keyword argument 'encoding'
+2025-07-04 17:11:19,779 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: DPY-6005: cannot connect to database (CONNECTION_ID=kO9/aZY9/KZAo9twJ9I6Ag==).
+DPY-3010: connections to this database server version are not supported by python-oracledb in thin mode
+Help: https://python-oracledb.readthedocs.io/en/latest/user_guide/troubleshooting.html#dpy-3010
+2025-07-04 17:46:56,451 - ERROR - 
+❌ Errore nella lettura dei codici a barre da Oracle: connect() got an unexpected keyword argument 'encoding'
+2025-07-04 17:46:56,452 - ERROR - Il programma non può continuare senza i codici a barre.
+2025-07-04 17:51:46,881 - ERROR - 
+❌ Errore nella lettura dei codici a barre da Oracle: connect() got an unexpected keyword argument 'encoding'
+2025-07-04 17:51:46,882 - ERROR - Il programma non può continuare senza i codici a barre.
+2025-07-04 17:52:06,172 - ERROR - 
+❌ Errore nella lettura dei codici a barre da Oracle: connect() got an unexpected keyword argument 'encoding'
+2025-07-04 17:52:06,173 - ERROR - Il programma non può continuare senza i codici a barre.
+2025-07-04 17:53:59,828 - ERROR - 
+❌ Errore nell'elaborazione del file C:\Users\ansel\Work\projects\python\Email_Analyzer_v1\Mail Fittizie\test1.eml: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-07-04 17:53:59,835 - ERROR - Traceback (most recent call last):
+  File "C:\Users\ansel\Work\projects\python\Email_Analyzer_v1\components\processing.py", line 25, in elabora_file
+    risposta = chiedi_al_modello(prompt)
+  File "C:\Users\ansel\Work\projects\python\Email_Analyzer_v1\components\ai_utils.py", line 112, in chiedi_al_modello
+    response = model.generate_content(prompt)
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\ansel\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+
+2025-07-04 17:53:59,836 - ERROR - 
+❌ Errore nell'elaborazione del file: test1.eml
+2025-07-07 11:26:43,214 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1\Mail Fittizie\test1.eml: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+2025-07-07 11:26:43,316 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\processing.py", line 25, in elabora_file
+    risposta = chiedi_al_modello(prompt)
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\ai_utils.py", line 94, in chiedi_al_modello
+    response = model.generate_content(prompt)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 14
+}
+]
+
+2025-07-07 11:26:43,317 - ERROR - 
+❌ Errore nell'elaborazione del file: test1.eml
+2025-07-07 11:45:39,698 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1\Mail Fittizie\test1.eml: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-07 11:45:39,705 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\processing.py", line 25, in elabora_file
+    risposta = chiedi_al_modello(prompt)
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\ai_utils.py", line 94, in chiedi_al_modello
+    response = model.generate_content(prompt)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+
+2025-07-07 11:45:39,705 - ERROR - 
+❌ Errore nell'elaborazione del file: test1.eml
+2025-07-07 11:49:16,527 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1\Mail Fittizie\test1.eml: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-07-07 11:49:16,551 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\processing.py", line 25, in elabora_file
+    risposta = chiedi_al_modello(prompt)
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\ai_utils.py", line 94, in chiedi_al_modello
+    response = model.generate_content(prompt)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+
+2025-07-07 11:49:16,553 - ERROR - 
+❌ Errore nell'elaborazione del file: test1.eml
+2025-07-07 12:04:45,332 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1\Mail Fittizie\test1.eml: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2025-07-07 12:04:45,341 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\processing.py", line 25, in elabora_file
+    risposta = chiedi_al_modello(prompt)
+  File "C:\PYTHON\Email_Analyzer_v1.1\components\ai_utils.py", line 94, in chiedi_al_modello
+    response = model.generate_content(prompt)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\aless\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 12
+}
+]
+
+2025-07-07 12:04:45,341 - ERROR - 
+❌ Errore nell'elaborazione del file: test1.eml
+2025-07-09 10:41:41,484 - ERROR - 
+❌ Il file dei codici a barre non esiste! (C:\PYTHON\Email_Analyzer_v1.1.1\Email_Analyzer_v1.1.1\codici_barre.csv)
+2025-07-09 10:41:41,487 - ERROR - Il programma non può continuare senza il file dei codici a barre.

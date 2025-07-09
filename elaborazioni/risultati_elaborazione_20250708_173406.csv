@@ -1,0 +1,4 @@
+data_mail,numero_ordine,nome,cognome,codice_fiscale,telefono,articolo,prezzo,quantita,email,mittente,codice_barre,nome_file
+30/05/2025,SIDI059SJ529,GIOVANNI,BRESCA,NULL,3472578530,Un tavolo da Eataly | Box per 2 persone,0,1,giannibresca@virgilio.it,tantosvago.it,8052745980323,DEBUG - VOUCHER SISAL DIAMOND.msg
+29/05/2025,WBIT524ZU365,SIMONE,MAGHERI,NULL,3492892553,A tavola da Eataly - Un esclusivo menu di 3 portate,0,1,S.MAGHERI@OTLAS.IT,tantosvago.it,8052745980910,DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+19/06/2025,WBIT328KC218,MICHELA,MAGGIORE,NULL,NULL,A tavola da Eataly - Un esclusivo menu di 3 portate,0,1,michela.maggiore@ponti.com,tantosvago.it,8052745980910,DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
