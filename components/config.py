@@ -17,3 +17,5 @@ ORACLE_USER = 'seacng'
 ORACLE_PASSWORD = 'seacng'
 
 INSERISCI_IN_ORACLE = True
+
+CARTELLA_MAIL = os.getenv("CARTELLA_MAIL", "")

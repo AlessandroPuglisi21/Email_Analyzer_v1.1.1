@@ -3,6 +3,7 @@ from tkinter import filedialog, messagebox
 import threading
 import os
 from main import avvia_elaborazione_email_cartella
+from components.config import CARTELLA_MAIL
 
 # Dummy function, replace with your real one!
 def avvia_elaborazione_email(cartella):
@@ -22,6 +23,7 @@ class ModernEmailAnalyzer(tk.Tk):
         self.resizable(False, False)
         self.cartella = ""
         self.in_esecuzione = False
+        # Rimossi: self.llm, self.server_host, self.server_user, self.server_password
 
         # Font
         self.font_title = ("Segoe UI", 20, "bold")
@@ -31,6 +33,8 @@ class ModernEmailAnalyzer(tk.Tk):
 
         # Titolo
         tk.Label(self, text="Email Analyzer", font=self.font_title, bg="#222831", fg="#00adb5").pack(pady=(18, 2))
+
+        # Rimossa barra dei menu
 
         # Selettore cartella
         frame_cartella = tk.Frame(self, bg="#222831")
@@ -46,6 +50,11 @@ class ModernEmailAnalyzer(tk.Tk):
             bg="#222831", fg="#eeeeee", font=self.font_label, padx=10
         )
         self.lbl_cartella.pack(side="left", padx=12)
+
+        # Imposta cartella di default se esiste
+        if CARTELLA_MAIL and os.path.isdir(CARTELLA_MAIL):
+            self.cartella = CARTELLA_MAIL
+            self.lbl_cartella.config(text=CARTELLA_MAIL)
 
         # Stato
         self.lbl_stato = tk.Label(self, text="Stato: In attesa", bg="#222831", fg="#00adb5", font=self.font_status)
@@ -102,6 +111,8 @@ class ModernEmailAnalyzer(tk.Tk):
         finally:
             self.in_esecuzione = False
             self.btn_avvia.config(state="normal")
+
+    # Rimossi aggiorna_llm e configura_server
 
 if __name__ == "__main__":
     app = ModernEmailAnalyzer()
