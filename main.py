@@ -4,6 +4,7 @@ from components.logging_utils import log_info, log_error
 from components.oracle_utils import verifica_tabella_oracle
 from components.processing import elabora_cartella
 from components.email_utils import estrai_testo_da_file
+from components.notification_utils import send_summary_notification
 
 
 def main():
@@ -25,6 +26,11 @@ def main():
         log_info("\n📊 Riepilogo elaborazione:")
         log_info(f"✅ File elaborati con successo: {file_elaborati}")
         log_info(f"❌ File con errori: {file_errore}")
+        send_summary_notification(
+            total=file_elaborati + file_errore,
+            success=file_elaborati,
+            failed=file_errore
+        )
 
         continua = input("\nVuoi elaborare un'altra cartella? (s/n): ").strip().lower()
         if continua != 's':
@@ -36,6 +42,7 @@ if __name__ == "__main__":
 
 def avvia_elaborazione_email():
     from components.processing import elabora_cartella
+    from components.notification_utils import send_summary_notification
 
     cartella = r"C:\PYTHON\Email_Analyzer_v1.1\Mail Fittizie"
 
@@ -48,11 +55,17 @@ def avvia_elaborazione_email():
     log_info("\n📊 Riepilogo elaborazione (da GUI):")
     log_info(f"✅ File elaborati con successo: {file_ok}")
     log_info(f"❌ File con errori: {file_errore}")
+    send_summary_notification(
+        total=file_ok + file_errore,
+        success=file_ok,
+        failed=file_errore
+    )
 
     return file_ok
 
 def avvia_elaborazione_email_cartella(cartella):
     from components.processing import elabora_cartella
+    from components.notification_utils import send_summary_notification
 
     if not os.path.isdir(cartella):
         log_error(f"\n❌ La cartella {cartella} non esiste.")
@@ -63,6 +76,11 @@ def avvia_elaborazione_email_cartella(cartella):
     log_info("\n📊 Riepilogo elaborazione (da GUI):")
     log_info(f"✅ File elaborati con successo: {file_ok}")
     log_info(f"❌ File con errori: {file_errore}")
+    send_summary_notification(
+        total=file_ok + file_errore,
+        success=file_ok,
+        failed=file_errore
+    )
 
     return file_ok, file_errore
 

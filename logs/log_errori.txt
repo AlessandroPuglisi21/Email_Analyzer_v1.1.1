@@ -530,3 +530,19 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 ❌ Errore nell'inserimento dati in Oracle: ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
 2025-07-10 14:57:54,172 - ERROR - 
 ❌ Errore nell'inserimento dati in Oracle: ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:20:42,808 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:29:03,986 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:33:12,214 - ERROR - 
+❌ Errore generale nell'inserimento dati in Oracle: name 'os' is not defined
+2025-07-10 15:37:36,899 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:40:38,684 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:44:49,487 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:47:59,894 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:51:43,528 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)

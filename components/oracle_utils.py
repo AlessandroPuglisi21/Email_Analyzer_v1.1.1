@@ -67,37 +67,60 @@ def inserisci_dati_oracle(dati, dsn, user, password):
         """
         # Query per controllare se la mail è già presente
         check_email_sql = "SELECT COUNT(*) FROM ord_eatin WHERE email = :email"
+        import traceback
         for riga in dati:
-            max_ord_key += 1
-            riga['ord_key'] = max_ord_key
-            riga['proviene_da'] = 'M'
-            riga['utente'] = None  # UTENTE può rimanere NULL
-            for key, value in riga.items():
-                if isinstance(value, str):
-                    riga[key] = value.strip()
-            if 'body_mail' not in riga:
-                riga['body_mail'] = ''
-            # Controllo se la mail è già presente
-            cur.execute(check_email_sql, {'email': riga['email']})
-            email_gia_presente = cur.fetchone()[0] > 0
-            if email_gia_presente:
-                riga['stato'] = 'E'
-                riga['mess_errore'] = "email già presente nel db"
-            else:
-                riga['stato'] = 'N'
-                riga['mess_errore'] = None
-            cur.execute(sql, riga)
-
+            try:
+                max_ord_key += 1
+                riga['ord_key'] = max_ord_key
+                riga['proviene_da'] = 'M'
+                riga['utente'] = None  # UTENTE può rimanere NULL
+                for key, value in riga.items():
+                    if isinstance(value, str):
+                        riga[key] = value.strip()
+                if 'body_mail' not in riga:
+                    riga['body_mail'] = ''
+                # Controllo se la mail è già presente
+                cur.execute(check_email_sql, {'email': riga['email']})
+                email_gia_presente = cur.fetchone()[0] > 0
+                if email_gia_presente:
+                    riga['stato'] = 'E'
+                    riga['mess_errore'] = "email già presente nel db"
+                else:
+                    riga['stato'] = 'N'
+                    riga['mess_errore'] = None
+                cur.execute(sql, riga)
+            except Exception as e:
+                dettagli_mail = (
+                    f"Oggetto: {riga.get('subject', 'N/A')}\n"
+                    f"Mittente: {riga.get('mittente', 'N/A')}\n"
+                    f"Destinatario: {riga.get('email', 'N/A')}\n"
+                    f"Data mail: {riga.get('data_mail', 'N/A')}\n"
+                    f"Nome file: {riga.get('nome_file', 'N/A')}\n"
+                    f"Numero ordine: {riga.get('numero_ordine', 'N/A')}\n"
+                )
+                corpo = (
+                    "Si è verificato un errore durante l'inserimento di una mail nel Database.\n\n"
+                    "Dettagli mail:\n"
+                    "--------------------------------\n"
+                    f"{dettagli_mail}\n"
+                    f"Errore Oracle:\n{e}\n\n"
+                    f"Traceback:\n{traceback.format_exc()}"
+                )
+                oggetto_mail = f"Errore inserimento: {riga.get('nome_file', 'Mail senza nome')}"
+                send_error_notification(
+                    subject=oggetto_mail,
+                    body=corpo
+                )
+                log_error(f"\n❌ Errore nell'inserimento dati in Oracle per la mail '{riga.get('nome_file', 'Mail senza nome')}': {e}")
         conn.commit()
         cur.close()
         conn.close()
-        log_info(f"\n✅ Inseriti {len(dati)} record nel database Oracle.")
+        if dati is not None:
+            log_info(f"\n✅ Inseriti {len(dati)} record nel database Oracle.")
+        else:
+            log_info(f"\n✅ Inserimento completato (dati=None)")
     except Exception as e:
-        log_error(f"\n❌ Errore nell'inserimento dati in Oracle: {e}")
-        send_error_notification(
-            subject="Errore inserimento dati in Oracle",
-            body=f"Errore durante l'inserimento dati in Oracle:\n{e}"
-        )
+        log_error(f"\n❌ Errore generale nell'inserimento dati in Oracle: {e}")
 
 def leggi_codici_barre():
     print("[DEBUG] Inizio lettura codici a barre da Oracle...")
