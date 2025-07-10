@@ -65,7 +65,7 @@ def inserisci_dati_oracle(dati, dsn, user, password):
         for riga in dati:
             max_ord_key += 1
             riga['ord_key'] = max_ord_key
-            riga['proviene_da'] = 'N'
+            riga['proviene_da'] = 'M'
             riga['utente'] = None  # UTENTE può rimanere NULL
             for key, value in riga.items():
                 if isinstance(value, str):
