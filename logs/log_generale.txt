@@ -13695,3 +13695,423 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 📊 Riepilogo elaborazione (da GUI):
 2025-07-09 14:59:36,143 - INFO - ✅ File elaborati con successo: 3
 2025-07-09 14:59:36,143 - INFO - ❌ File con errori: 0
+2025-07-09 16:11:57,124 - INFO - 
+============================================================
+2025-07-09 16:11:57,125 - INFO - Inizio elaborazione file: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-09 16:11:57,279 - INFO - Lunghezza body originale: 1549
+2025-07-09 16:11:57,279 - INFO - Lunghezza body senza spazi: 1254
+2025-07-09 16:11:57,279 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:11:58,461 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg:
+```json
+[
+  {
+    "data_mail": "23/05/2025",
+    "numero_ordine": "WWIL025YH857",
+    "nome": "Matteo",
+    "cognome": "Mavilia",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "L'arte di degustare | Box per 1 persona",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "matteo.mavilia@accenture.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:11:58,462 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:11:58,463 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:11:58,465 - INFO - [
+  {
+    "data_mail": "23/05/2025",
+    "numero_ordine": "WWIL025YH857",
+    "nome": "Matteo",
+    "cognome": "Mavilia",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "L'arte di degustare | Box per 1 persona",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "matteo.mavilia@accenture.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:11:58,466 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:11:58,469 - INFO - [
+  {
+    "data_mail": "23/05/2025",
+    "numero_ordine": "WWIL025YH857",
+    "nome": "Matteo",
+    "cognome": "Mavilia",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "L'arte di degustare | Box per 1 persona",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "matteo.mavilia@accenture.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:11:58,594 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:11:58,595 - INFO - 
+✅ File elaborato con successo: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-09 16:11:58,595 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:11:59,597 - INFO - 
+============================================================
+2025-07-09 16:11:59,598 - INFO - Inizio elaborazione file: Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-09 16:11:59,654 - INFO - Lunghezza body originale: 1120
+2025-07-09 16:11:59,654 - INFO - Lunghezza body senza spazi: 936
+2025-07-09 16:11:59,655 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:12:00,991 - INFO - 
+[DEBUG] Risposta LLM per Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg:
+```json
+[
+  {
+    "data_mail": "26/02/2025",
+    "numero_ordine": "06093218",
+    "nome": "LAURA",
+    "cognome": "GUARINA",
+    "codice_fiscale": "GRNLRA89P59L219K",
+    "telefono": "3518599796",
+    "articolo": "APERITIVO EATALIANO: un aperitivo da Eataly per 2 persone",
+    "prezzo": "57,80",
+    "quantita": "2",
+    "email": "l.guarina@hotmail.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:12:00,992 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:12:00,994 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:12:00,995 - INFO - [
+  {
+    "data_mail": "26/02/2025",
+    "numero_ordine": "06093218",
+    "nome": "LAURA",
+    "cognome": "GUARINA",
+    "codice_fiscale": "GRNLRA89P59L219K",
+    "telefono": "3518599796",
+    "articolo": "APERITIVO EATALIANO: un aperitivo da Eataly per 2 persone",
+    "prezzo": "57,80",
+    "quantita": "2",
+    "email": "l.guarina@hotmail.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:00,997 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:12:00,999 - INFO - [
+  {
+    "data_mail": "26/02/2025",
+    "numero_ordine": "06093218",
+    "nome": "LAURA",
+    "cognome": "GUARINA",
+    "codice_fiscale": "GRNLRA89P59L219K",
+    "telefono": "3518599796",
+    "articolo": "APERITIVO EATALIANO: un aperitivo da Eataly per 2 persone",
+    "prezzo": "57,80",
+    "quantita": "2",
+    "email": "l.guarina@hotmail.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:01,124 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:12:01,124 - INFO - 
+✅ File elaborato con successo: Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-09 16:12:01,125 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:12:02,126 - INFO - 
+============================================================
+2025-07-09 16:12:02,127 - INFO - Inizio elaborazione file: Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-09 16:12:02,163 - INFO - Lunghezza body originale: 1117
+2025-07-09 16:12:02,163 - INFO - Lunghezza body senza spazi: 936
+2025-07-09 16:12:02,164 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:12:03,659 - INFO - 
+[DEBUG] Risposta LLM per Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg:
+```json
+[
+  {
+    "data_mail": "28/03/2025",
+    "numero_ordine": "06169838",
+    "nome": "CECILIA",
+    "cognome": "POCHINI",
+    "codice_fiscale": "PCHCCL95D42H501Y",
+    "telefono": "3278012997",
+    "articolo": "UNA LEZIONE IN CUCINA",
+    "prezzo": "140,00",
+    "quantita": "2",
+    "email": "cecilia.pochini@terna.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:12:03,660 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:12:03,661 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:12:03,662 - INFO - [
+  {
+    "data_mail": "28/03/2025",
+    "numero_ordine": "06169838",
+    "nome": "CECILIA",
+    "cognome": "POCHINI",
+    "codice_fiscale": "PCHCCL95D42H501Y",
+    "telefono": "3278012997",
+    "articolo": "UNA LEZIONE IN CUCINA",
+    "prezzo": "140,00",
+    "quantita": "2",
+    "email": "cecilia.pochini@terna.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:03,663 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:12:03,665 - INFO - [
+  {
+    "data_mail": "28/03/2025",
+    "numero_ordine": "06169838",
+    "nome": "CECILIA",
+    "cognome": "POCHINI",
+    "codice_fiscale": "PCHCCL95D42H501Y",
+    "telefono": "3278012997",
+    "articolo": "UNA LEZIONE IN CUCINA",
+    "prezzo": "140,00",
+    "quantita": "2",
+    "email": "cecilia.pochini@terna.it",
+    "mittente": "noreply@eudaimon.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:03,782 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:12:03,782 - INFO - 
+✅ File elaborato con successo: Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-09 16:12:03,783 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:12:04,785 - INFO - 
+============================================================
+2025-07-09 16:12:04,785 - INFO - Inizio elaborazione file: Notifica ordine 00167525.msg
+2025-07-09 16:12:04,841 - INFO - Lunghezza body originale: 1823
+2025-07-09 16:12:04,841 - INFO - Lunghezza body senza spazi: 1600
+2025-07-09 16:12:04,842 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:12:06,572 - INFO - 
+[DEBUG] Risposta LLM per Notifica ordine 00167525.msg:
+```json
+[
+  {
+    "data_mail": "30/12/2024",
+    "numero_ordine": "00167525",
+    "nome": "GIUSEPPE",
+    "cognome": "DE IANNI",
+    "codice_fiscale": "DNNGPP79A09H501C",
+    "telefono": "+39/3779923175",
+    "articolo": "CENA E NOTTE MEMORABILI",
+    "prezzo": "349,00",
+    "quantita": "1",
+    "email": "giuseppe.deianni@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:12:06,574 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:12:06,575 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:12:06,577 - INFO - [
+  {
+    "data_mail": "30/12/2024",
+    "numero_ordine": "00167525",
+    "nome": "GIUSEPPE",
+    "cognome": "DE IANNI",
+    "codice_fiscale": "DNNGPP79A09H501C",
+    "telefono": "+39/3779923175",
+    "articolo": "CENA E NOTTE MEMORABILI",
+    "prezzo": "349,00",
+    "quantita": "1",
+    "email": "giuseppe.deianni@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:06,578 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:12:06,580 - INFO - [
+  {
+    "data_mail": "30/12/2024",
+    "numero_ordine": "00167525",
+    "nome": "GIUSEPPE",
+    "cognome": "DE IANNI",
+    "codice_fiscale": "DNNGPP79A09H501C",
+    "telefono": "+39/3779923175",
+    "articolo": "CENA E NOTTE MEMORABILI",
+    "prezzo": "349,00",
+    "quantita": "1",
+    "email": "giuseppe.deianni@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:06,740 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:12:06,741 - INFO - 
+✅ File elaborato con successo: Notifica ordine 00167525.msg
+2025-07-09 16:12:06,742 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:12:07,744 - INFO - 
+============================================================
+2025-07-09 16:12:07,744 - INFO - Inizio elaborazione file: Notifica ordine 00168844.msg
+2025-07-09 16:12:07,780 - INFO - Lunghezza body originale: 1857
+2025-07-09 16:12:07,780 - INFO - Lunghezza body senza spazi: 1632
+2025-07-09 16:12:07,780 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:12:09,190 - INFO - 
+[DEBUG] Risposta LLM per Notifica ordine 00168844.msg:
+```json
+[
+  {
+    "data_mail": "06/01/2025",
+    "numero_ordine": "00168844",
+    "nome": "DAMIANO",
+    "cognome": "QUADRARO",
+    "codice_fiscale": "QDRDMN94A19E801S",
+    "telefono": "+39/3475110457",
+    "articolo": "CAPIRE LA BIRRA: Alla scoperta dei birrifici agricoli",
+    "prezzo": "39,00",
+    "quantita": "1",
+    "email": "damiano.quadraro@aizoongroup.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:12:09,191 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:12:09,191 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:12:09,192 - INFO - [
+  {
+    "data_mail": "06/01/2025",
+    "numero_ordine": "00168844",
+    "nome": "DAMIANO",
+    "cognome": "QUADRARO",
+    "codice_fiscale": "QDRDMN94A19E801S",
+    "telefono": "+39/3475110457",
+    "articolo": "CAPIRE LA BIRRA: Alla scoperta dei birrifici agricoli",
+    "prezzo": "39,00",
+    "quantita": "1",
+    "email": "damiano.quadraro@aizoongroup.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:09,192 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:12:09,192 - INFO - [
+  {
+    "data_mail": "06/01/2025",
+    "numero_ordine": "00168844",
+    "nome": "DAMIANO",
+    "cognome": "QUADRARO",
+    "codice_fiscale": "QDRDMN94A19E801S",
+    "telefono": "+39/3475110457",
+    "articolo": "CAPIRE LA BIRRA: Alla scoperta dei birrifici agricoli",
+    "prezzo": "39,00",
+    "quantita": "1",
+    "email": "damiano.quadraro@aizoongroup.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:09,334 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:12:09,335 - INFO - 
+✅ File elaborato con successo: Notifica ordine 00168844.msg
+2025-07-09 16:12:09,336 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:12:10,338 - INFO - 
+============================================================
+2025-07-09 16:12:10,339 - INFO - Inizio elaborazione file: Notifica ordine 00194151.msg
+2025-07-09 16:12:10,397 - INFO - Lunghezza body originale: 1850
+2025-07-09 16:12:10,398 - INFO - Lunghezza body senza spazi: 1622
+2025-07-09 16:12:10,398 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-09 16:12:11,884 - INFO - 
+[DEBUG] Risposta LLM per Notifica ordine 00194151.msg:
+```json
+[
+  {
+    "data_mail": "20/05/2025",
+    "numero_ordine": "00194151",
+    "nome": "GIACOMO",
+    "cognome": "VACCARI",
+    "codice_fiscale": "VCCGCM91M31F257L",
+    "telefono": "+39/3206714642",
+    "articolo": "A tavola da Eataly: un esclusivo menù di di 3 portate",
+    "prezzo": "98,90",
+    "quantita": "1",
+    "email": "giacomo.vaccari91@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+```
+2025-07-09 16:12:11,885 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-09 16:12:11,885 - INFO - 
+📝 Risposta pulita:
+2025-07-09 16:12:11,886 - INFO - [
+  {
+    "data_mail": "20/05/2025",
+    "numero_ordine": "00194151",
+    "nome": "GIACOMO",
+    "cognome": "VACCARI",
+    "codice_fiscale": "VCCGCM91M31F257L",
+    "telefono": "+39/3206714642",
+    "articolo": "A tavola da Eataly: un esclusivo menù di di 3 portate",
+    "prezzo": "98,90",
+    "quantita": "1",
+    "email": "giacomo.vaccari91@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:11,887 - INFO - 
+✅ JSON parsato con successo:
+2025-07-09 16:12:11,887 - INFO - [
+  {
+    "data_mail": "20/05/2025",
+    "numero_ordine": "00194151",
+    "nome": "GIACOMO",
+    "cognome": "VACCARI",
+    "codice_fiscale": "VCCGCM91M31F257L",
+    "telefono": "+39/3206714642",
+    "articolo": "A tavola da Eataly: un esclusivo menù di di 3 portate",
+    "prezzo": "98,90",
+    "quantita": "1",
+    "email": "giacomo.vaccari91@gmail.com",
+    "mittente": "noreply@beneficy.com",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-09 16:12:12,016 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-09 16:12:12,016 - INFO - 
+✅ File elaborato con successo: Notifica ordine 00194151.msg
+2025-07-09 16:12:12,017 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-09 16:12:13,019 - INFO - 
+============================================================
+2025-07-09 16:12:13,020 - INFO - Inizio elaborazione file: PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg
+2025-07-09 16:12:13,077 - INFO - Lunghezza body originale: 1639
+2025-07-09 16:12:13,078 - INFO - Lunghezza body senza spazi: 1344
+2025-07-09 16:12:13,078 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op

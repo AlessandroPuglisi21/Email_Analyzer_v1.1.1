@@ -102,7 +102,7 @@ def elabora_cartella(percorso_cartella):
                 file_errore += 1
                 log_error(f"\n❌ Errore nell'elaborazione del file: {file}")
             log_info("Pausa di 5 secondi prima del prossimo file...")
-            time.sleep(1)
+            time.sleep(5)
     if risultati:
         try:
             with open(nome_file_csv, 'w', newline='', encoding='utf-8') as f:
