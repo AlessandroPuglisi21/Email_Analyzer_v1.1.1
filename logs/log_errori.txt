@@ -516,3 +516,17 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 2025-07-09 10:41:41,484 - ERROR - 
 ❌ Il file dei codici a barre non esiste! (C:\PYTHON\Email_Analyzer_v1.1.1\Email_Analyzer_v1.1.1\codici_barre.csv)
 2025-07-09 10:41:41,487 - ERROR - Il programma non può continuare senza il file dei codici a barre.
+2025-07-10 12:35:22,370 - ERROR - 
+❌ Il percorso specificato non è una cartella valida!
+2025-07-10 12:35:52,203 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-01401: inserted value too large for column
+2025-07-10 13:02:21,552 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-01401: inserted value too large for column
+2025-07-10 13:08:07,250 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-01401: inserted value too large for column
+2025-07-10 14:28:23,362 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 14:52:39,628 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 14:57:54,172 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle: ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)

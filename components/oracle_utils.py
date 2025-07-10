@@ -1,6 +1,7 @@
 import cx_Oracle
 from components.logging_utils import log_info, log_error
 from components.config import ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
+from components.notification_utils import send_error_notification
 
 # Inizializza Oracle Client (obbligatorio per Windows)
 try:
@@ -11,8 +12,10 @@ except Exception as e:
     exit(1)
 
 def verifica_tabella_oracle(dsn, user, password, nome_tabella):
+    print(f"[DEBUG] Tentativo connessione Oracle: dsn={dsn}, user={user}, password={'*' * len(password)} tabella={nome_tabella}")
     try:
         conn = cx_Oracle.connect(user=user, password=password, dsn=dsn)
+        print("[DEBUG] Connessione Oracle riuscita.")
         cur = conn.cursor()
         cur.execute("""
             SELECT COUNT(*) FROM all_tables 
@@ -21,12 +24,14 @@ def verifica_tabella_oracle(dsn, user, password, nome_tabella):
         count = cur.fetchone()[0]
         cur.close()
         conn.close()
+        print(f"[DEBUG] Query tabella eseguita, count={count}")
         if count == 0:
             log_error(f"\n❌ La tabella '{nome_tabella}' non esiste nello schema Oracle '{user}'.")
             exit(1)
         else:
             log_info(f"\n✅ Tabella '{nome_tabella}' trovata nello schema Oracle '{user}'.")
     except Exception as e:
+        print(f"[DEBUG] Errore connessione Oracle: {e}")
         log_error(f"\n❌ Errore nella verifica della tabella Oracle: {e}")
         exit(1)
 
@@ -89,12 +94,19 @@ def inserisci_dati_oracle(dati, dsn, user, password):
         log_info(f"\n✅ Inseriti {len(dati)} record nel database Oracle.")
     except Exception as e:
         log_error(f"\n❌ Errore nell'inserimento dati in Oracle: {e}")
+        send_error_notification(
+            subject="Errore inserimento dati in Oracle",
+            body=f"Errore durante l'inserimento dati in Oracle:\n{e}"
+        )
 
 def leggi_codici_barre():
+    print("[DEBUG] Inizio lettura codici a barre da Oracle...")
     try:
         import cx_Oracle
         from components.config import ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
+        print(f"[DEBUG] Parametri Oracle: DSN={ORACLE_DSN}, USER={ORACLE_USER}, PASSWORD={'*' * len(ORACLE_PASSWORD)}")
         conn = cx_Oracle.connect(user=ORACLE_USER, password=ORACLE_PASSWORD, dsn=ORACLE_DSN)
+        print("[DEBUG] Connessione Oracle per codici a barre riuscita.")
         cur = conn.cursor()
         sql = """
             SELECT AE_BARRE, AE_DESC, STATO FROM art_eatin WHERE STATO = 'f'
@@ -107,8 +119,10 @@ def leggi_codici_barre():
             codici[descrizione] = codice
         cur.close()
         conn.close()
+        print(f"[DEBUG] Codici a barre letti: {len(codici)}")
         return codici
     except Exception as e:
+        print(f"[DEBUG] Errore lettura codici a barre: {e}")
         from components.logging_utils import log_error
         log_error(f"\n❌ Errore nella lettura dei codici a barre da Oracle: {e}")
         return {}
