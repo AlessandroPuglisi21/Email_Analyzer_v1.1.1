@@ -7,9 +7,9 @@ from components.logging_utils import log_info, log_error
 from components.email_utils import estrai_testo_da_file, filtra_body_mail
 from components.ai_utils import genera_prompt, chiedi_al_modello
 from components.config import INSERISCI_IN_ORACLE, ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
-from components.oracle_utils import inserisci_dati_oracle
+from components.oracle_utils import inserisci_dati_oracle, leggi_codici_barre
 
-def elabora_file(percorso):
+def elabora_file(percorso, codici_barre=None):
     try:
         log_info("\n" + "="*60)
         log_info(f"Inizio elaborazione file: {os.path.basename(percorso)}")
@@ -21,7 +21,7 @@ def elabora_file(percorso):
         if not body_clean:
             log_info(f"File {os.path.basename(percorso)} senza corpo: saltato.")
             return None
-        prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"])
+        prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"], codici_barre)
         risposta = chiedi_al_modello(prompt)
         log_info(f"\n[DEBUG] Risposta LLM per {os.path.basename(percorso)}:\n{risposta}")
         log_info("\n🔍 Tentativo di parsing JSON...")
@@ -72,6 +72,7 @@ def elabora_cartella(percorso_cartella):
     risultati = []
     file_elaborati = 0
     file_errore = 0
+    codici_barre = leggi_codici_barre()
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_dir = "elaborazioni"
     os.makedirs(output_dir, exist_ok=True)
@@ -85,7 +86,7 @@ def elabora_cartella(percorso_cartella):
     for file in os.listdir(percorso_cartella):
         if file.lower().endswith('.msg') or file.lower().endswith('.eml'):
             percorso_completo = os.path.join(percorso_cartella, file)
-            risultato = elabora_file(percorso_completo)
+            risultato = elabora_file(percorso_completo, codici_barre)
             if risultato:
                 if isinstance(risultato, list):
                     risultati.extend(risultato)

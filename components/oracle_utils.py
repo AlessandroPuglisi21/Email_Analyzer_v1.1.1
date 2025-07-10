@@ -89,3 +89,26 @@ def inserisci_dati_oracle(dati, dsn, user, password):
         log_info(f"\n✅ Inseriti {len(dati)} record nel database Oracle.")
     except Exception as e:
         log_error(f"\n❌ Errore nell'inserimento dati in Oracle: {e}")
+
+def leggi_codici_barre():
+    try:
+        import cx_Oracle
+        from components.config import ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
+        conn = cx_Oracle.connect(user=ORACLE_USER, password=ORACLE_PASSWORD, dsn=ORACLE_DSN)
+        cur = conn.cursor()
+        sql = """
+            SELECT AE_BARRE, AE_DESC, STATO FROM art_eatin WHERE STATO = 'f'
+        """
+        cur.execute(sql)
+        codici = {}
+        for row in cur:
+            codice = str(row[0]).strip()
+            descrizione = str(row[1]).strip()
+            codici[descrizione] = codice
+        cur.close()
+        conn.close()
+        return codici
+    except Exception as e:
+        from components.logging_utils import log_error
+        log_error(f"\n❌ Errore nella lettura dei codici a barre da Oracle: {e}")
+        return {}

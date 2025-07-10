@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-USA_LLM = "Gemini" # Scegli tra: "Gemini", "OpenAI", "Copilote" 
+USA_LLM = "Copilote" # Scegli tra: "Gemini", "OpenAI", "Copilote" 
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -17,5 +17,3 @@ ORACLE_USER = 'seacng'
 ORACLE_PASSWORD = 'seacng'
 
 INSERISCI_IN_ORACLE = True
-
-CARTELLA_MAIL = os.getenv("CARTELLA_MAIL", "")

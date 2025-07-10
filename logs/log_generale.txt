@@ -14115,3 +14115,216 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 2025-07-09 16:12:13,077 - INFO - Lunghezza body originale: 1639
 2025-07-09 16:12:13,078 - INFO - Lunghezza body senza spazi: 1344
 2025-07-09 16:12:13,078 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-10 11:27:35,514 - INFO - 
+============================================================
+2025-07-10 11:27:35,514 - INFO - Inizio elaborazione file: DEBUG - VOUCHER SISAL DIAMOND.msg
+2025-07-10 11:27:35,578 - INFO - Lunghezza body originale: 2229
+2025-07-10 11:27:35,578 - INFO - Lunghezza body senza spazi: 1835
+2025-07-10 11:27:35,578 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-10 11:27:37,270 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER SISAL DIAMOND.msg:
+```json
+[
+  {
+    "data_mail": "30/05/2025",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "GIOVANNI",
+    "cognome": "BRESCA",
+    "codice_fiscale": "NULL",
+    "telefono": "3472578530",
+    "articolo": "Un tavolo da Eataly | Box per 2 persone",
+    "prezzo": "0",
+    "quantita": "1",
+    "email": "giannibresca@virgilio.it",
+    "mittente": "mysisal@tantosvago.it",
+    "codice_barre": "8052745980323"
+  }
+]
+```
+2025-07-10 11:27:37,270 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-10 11:27:37,270 - INFO - 
+📝 Risposta pulita:
+2025-07-10 11:27:37,271 - INFO - [
+  {
+    "data_mail": "30/05/2025",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "GIOVANNI",
+    "cognome": "BRESCA",
+    "codice_fiscale": "NULL",
+    "telefono": "3472578530",
+    "articolo": "Un tavolo da Eataly | Box per 2 persone",
+    "prezzo": "0",
+    "quantita": "1",
+    "email": "giannibresca@virgilio.it",
+    "mittente": "mysisal@tantosvago.it",
+    "codice_barre": "8052745980323"
+  }
+]
+2025-07-10 11:27:37,276 - INFO - 
+✅ JSON parsato con successo:
+2025-07-10 11:27:37,276 - INFO - [
+  {
+    "data_mail": "30/05/2025",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "GIOVANNI",
+    "cognome": "BRESCA",
+    "codice_fiscale": "NULL",
+    "telefono": "3472578530",
+    "articolo": "Un tavolo da Eataly | Box per 2 persone",
+    "prezzo": "0",
+    "quantita": "1",
+    "email": "giannibresca@virgilio.it",
+    "mittente": "mysisal@tantosvago.it",
+    "codice_barre": "8052745980323"
+  }
+]
+2025-07-10 11:27:37,417 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-10 11:27:37,417 - INFO - 
+✅ File elaborato con successo: DEBUG - VOUCHER SISAL DIAMOND.msg
+2025-07-10 11:27:37,418 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-10 11:27:42,419 - INFO - 
+============================================================
+2025-07-10 11:27:42,419 - INFO - Inizio elaborazione file: DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+2025-07-10 11:27:42,424 - INFO - Lunghezza body originale: 1890
+2025-07-10 11:27:42,424 - INFO - Lunghezza body senza spazi: 1550
+2025-07-10 11:27:42,425 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-10 11:27:43,624 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg:
+```json
+[
+  {
+    "data_mail": "29/05/2025",
+    "numero_ordine": "WBIT524ZU365",
+    "nome": "SIMONE",
+    "cognome": "MAGHERI",
+    "codice_fiscale": "NULL",
+    "telefono": "3492892553",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "S.MAGHERI@OTLAS.IT",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+```
+2025-07-10 11:27:43,624 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-10 11:27:43,625 - INFO - 
+📝 Risposta pulita:
+2025-07-10 11:27:43,625 - INFO - [
+  {
+    "data_mail": "29/05/2025",
+    "numero_ordine": "WBIT524ZU365",
+    "nome": "SIMONE",
+    "cognome": "MAGHERI",
+    "codice_fiscale": "NULL",
+    "telefono": "3492892553",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "S.MAGHERI@OTLAS.IT",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+2025-07-10 11:27:43,625 - INFO - 
+✅ JSON parsato con successo:
+2025-07-10 11:27:43,626 - INFO - [
+  {
+    "data_mail": "29/05/2025",
+    "numero_ordine": "WBIT524ZU365",
+    "nome": "SIMONE",
+    "cognome": "MAGHERI",
+    "codice_fiscale": "NULL",
+    "telefono": "3492892553",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "S.MAGHERI@OTLAS.IT",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+2025-07-10 11:27:43,746 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-10 11:27:43,747 - INFO - 
+✅ File elaborato con successo: DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+2025-07-10 11:27:43,747 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-10 11:27:48,748 - INFO - 
+============================================================
+2025-07-10 11:27:48,748 - INFO - Inizio elaborazione file: DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-10 11:27:48,752 - INFO - Lunghezza body originale: 1892
+2025-07-10 11:27:48,753 - INFO - Lunghezza body senza spazi: 1552
+2025-07-10 11:27:48,753 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-10 11:27:50,503 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg:
+```json
+[
+  {
+    "data_mail": "19/06/2025",
+    "numero_ordine": "WBIT328KC218",
+    "nome": "MICHELA",
+    "cognome": "MAGGIORE",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "michela.maggiore@ponti.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+```
+2025-07-10 11:27:50,503 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-10 11:27:50,504 - INFO - 
+📝 Risposta pulita:
+2025-07-10 11:27:50,504 - INFO - [
+  {
+    "data_mail": "19/06/2025",
+    "numero_ordine": "WBIT328KC218",
+    "nome": "MICHELA",
+    "cognome": "MAGGIORE",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "michela.maggiore@ponti.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+2025-07-10 11:27:50,505 - INFO - 
+✅ JSON parsato con successo:
+2025-07-10 11:27:50,505 - INFO - [
+  {
+    "data_mail": "19/06/2025",
+    "numero_ordine": "WBIT328KC218",
+    "nome": "MICHELA",
+    "cognome": "MAGGIORE",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "A tavola da Eataly - Un esclusivo menu di 3 portate",
+    "prezzo": 0,
+    "quantita": "1",
+    "email": "michela.maggiore@ponti.com",
+    "mittente": "sys@tantosvago.it",
+    "codice_barre": "8052745980910"
+  }
+]
+2025-07-10 11:27:50,595 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-10 11:27:50,595 - INFO - 
+✅ File elaborato con successo: DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-10 11:27:50,595 - INFO - Pausa di 5 secondi prima del prossimo file...
+2025-07-10 11:27:55,597 - INFO - 
+✅ Risultati salvati nel file: elaborazioni\risultati_elaborazione_20250710_112735.csv
+2025-07-10 11:27:55,598 - INFO - 
+📊 Riepilogo elaborazione (da GUI):
+2025-07-10 11:27:55,598 - INFO - ✅ File elaborati con successo: 3
+2025-07-10 11:27:55,598 - INFO - ❌ File con errori: 0

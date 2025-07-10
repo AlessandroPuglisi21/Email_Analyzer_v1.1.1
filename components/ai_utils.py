@@ -18,7 +18,8 @@ else:
     log_error(f"❌ Configurazione API non valida per il modello selezionato: {USA_LLM}")
     exit(1)
 
-def genera_prompt(testo_email, data_mail, mittente):
+def genera_prompt(testo_email, data_mail, mittente, codici_barre=None):
+    codici_str = "\n".join([f"- {desc}: {codice}" for desc, codice in codici_barre.items()]) if codici_barre else "- Nessun codice a barre disponibile"
     prompt = f"""
 Analizza la seguente email e restituisci i dati richiesti in formato JSON.
 
@@ -48,7 +49,7 @@ IMPORTANTE SULL'ESTRAZIONE DI NOME E COGNOME:
 IMPORTANTE SULL'ESTRAZIONE DEL NOME ARTICOLO:
 - Se nell'email è presente una tabella con le colonne "Oggetto" e "SKU", il campo "articolo" deve essere valorizzato **sempre** con il valore della colonna "SKU" e **non** con quello della colonna "Oggetto".
 - Se la colonna "SKU" non è presente, allora estrai il nome articolo come normalmente faresti (ad esempio dal testo o da altre colonne).
-- Se il nome dell'articolo inizia con un codice tra parentesi tonde (ad esempio: (IDA 143009)), IGNORA questo codice e imposta il campo "articolo" solo con il testo che segue, senza parentesi e senza il codice. Esempio: per "(IDA 143009) A tavola da Eataly - Un esclusivo menu di 3 portate" il campo articolo deve essere "A tavola da Eataly - Un esclusivo menu di 3 portate".
+- Se il nome dell'articolo inizia con un codice tra parentesi tonde (ad esempio: (IDA 143009)), IGNORA questo codice e imposta il campo articolo solo con il testo che segue, senza parentesi e senza il codice. Esempio: per "(IDA 143009) A tavola da Eataly - Un esclusivo menu di 3 portate" il campo articolo deve essere "A tavola da Eataly - Un esclusivo menu di 3 portate".
 Regole:
 1. Se un campo non è presente, usa "NULL" come valore, tranne per il campo "prezzo": se non trovi il prezzo imposta 0 (zero).
 2. Estrai la quantità così come la trovi. Se non la trovi, imposta 1.
@@ -68,6 +69,11 @@ IMPORTANTE SUL CODICE A BARRE:
 - Se il campo "codice_barre" è gia stato trovato fermati qui altrimenti:
 - Il codice a barre è un numero di 13 cifre.
 - Se non lo trovi, usa "NULL".
+- Usa la seguente tabella di corrispondenza per trovare il codice a barre corretto per ogni articolo:
+{codici_str}
+- Se l'articolo nella mail è simile ma non identico a una descrizione nella tabella, usa il codice a barre della descrizione più simile.
+- Se non trovi una corrispondenza, usa "NULL".
+
 --- INIZIO EMAIL ---
 Data: {data_mail}
 Mittente: {mittente}
