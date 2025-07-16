@@ -52,7 +52,7 @@ def inserisci_dati_oracle(dati, dsn, user, password):
     max_ord_key = get_max_ord_key(dsn, user, password)
     if max_ord_key == -1:
         log_error("Impossibile procedere con l'inserimento in Oracle a causa di un errore nel recupero di ORD_KEY.")
-        return
+        return dati  # restituisco comunque la lista
     try:
         conn = cx_Oracle.connect(user=user, password=password, dsn=dsn)
         cur = conn.cursor()
@@ -65,8 +65,8 @@ def inserisci_dati_oracle(dati, dsn, user, password):
                 :articolo, :prezzo, :quantita, :email, :mittente, :codice_barre, :nome_file, :stato, :proviene_da, :body_mail, :mess_errore, :utente
             )
         """
-        # Query per controllare se la mail è già presente
-        check_email_sql = "SELECT COUNT(*) FROM ord_eatin WHERE email = :email"
+        # Query per controllare se la mail è già presente (stesso mittente, numero_ordine e articolo)
+        check_email_sql = "SELECT COUNT(*) FROM ord_eatin WHERE mittente = :mittente AND numero_ordine = :numero_ordine AND articolo = :articolo"
         import traceback
         for riga in dati:
             try:
@@ -79,12 +79,12 @@ def inserisci_dati_oracle(dati, dsn, user, password):
                         riga[key] = value.strip()
                 if 'body_mail' not in riga:
                     riga['body_mail'] = ''
-                # Controllo se la mail è già presente
-                cur.execute(check_email_sql, {'email': riga['email']})
+                # Controllo se la mail con stesso mittente, numero_ordine e articolo è già presente
+                cur.execute(check_email_sql, {'mittente': riga['mittente'], 'numero_ordine': riga['numero_ordine'], 'articolo': riga['articolo']})
                 email_gia_presente = cur.fetchone()[0] > 0
                 if email_gia_presente:
-                    riga['stato'] = 'E'
-                    riga['mess_errore'] = "email già presente nel db"
+                    riga['stato'] = 'X'
+                    riga['mess_errore'] = "mittente, numero ordine e articolo già presenti nel db"
                 else:
                     riga['stato'] = 'N'
                     riga['mess_errore'] = None
@@ -119,8 +119,10 @@ def inserisci_dati_oracle(dati, dsn, user, password):
             log_info(f"\n✅ Inseriti {len(dati)} record nel database Oracle.")
         else:
             log_info(f"\n✅ Inserimento completato (dati=None)")
+        return dati  # restituisco la lista aggiornata
     except Exception as e:
         log_error(f"\n❌ Errore generale nell'inserimento dati in Oracle: {e}")
+        return dati  # restituisco comunque la lista
 
 def leggi_codici_barre():
     print("[DEBUG] Inizio lettura codici a barre da Oracle...")

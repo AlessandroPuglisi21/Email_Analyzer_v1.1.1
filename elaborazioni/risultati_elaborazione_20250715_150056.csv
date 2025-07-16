@@ -1,0 +1,5 @@
+data_mail,numero_ordine,nome,cognome,codice_fiscale,telefono,articolo,prezzo,quantita,email,mittente,codice_barre,nome_file
+07/07/2025,06508431,Claudia,Marzani,MRZCLD83A66D286M,3403393972,UNA LEZIONE IN CUCINA,"140,00",2,claudia.marzani@bancobpm.it,NoReply,8052745980149,20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml
+30/05/2025,SIDI059SJ529,Giovanni,Bresca,NULL,3472578530,Un tavolo da Eataly,0,1,giannibresca@virgilio.it,Sisal,8052745980323,DEBUG - VOUCHER SISAL DIAMOND.msg
+29/05/2025,WBIT524ZU365,Simone,Magheri,NULL,3492892553,A tavola da Eataly - Un esclusivo menu di 3 portate,0,1,S.MAGHERI@OTLAS.IT,Tantosvago,8052745980910,DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+19/06/2025,WBIT328KC218,Michela,Maggiore,NULL,NULL,A tavola da Eataly - Un esclusivo menu di 3 portate,0,1,michela.maggiore@ponti.com,Tantosvago,8052745980910,DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg

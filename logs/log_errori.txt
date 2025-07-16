@@ -546,3 +546,49 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 ❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
 2025-07-10 15:51:43,528 - ERROR - 
 ❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 15:59:14,366 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-10 17:09:24,629 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-11 13:02:23,282 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-12899: valore troppo grande per la colonna "EATINERARI"."ORD_EATIN"."CODICE_FISCALE" (corrente: 181, massimo: 30)
+2025-07-15 15:01:01,276 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml': ORA-01401: inserted value too large for column
+2025-07-15 15:02:32,474 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-15 15:06:35,474 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 09:14:19,644 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 09:45:26,956 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 09:50:08,725 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 09:53:41,695 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-16 09:53:44,259 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-16 09:53:46,587 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00167525.msg
+2025-07-16 09:53:48,876 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00168844.msg
+2025-07-16 09:53:51,454 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00194151.msg
+2025-07-16 09:53:53,816 - ERROR - 
+❌ File con errore logico (doppio o altro): PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg
+2025-07-16 09:53:56,081 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIA MARIOTTI # SKY25043001590064.msg
+2025-07-16 09:53:58,398 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052401704582.msg
+2025-07-16 09:54:01,361 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052701720736.msg
+2025-07-16 09:54:03,909 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto DOROTHY MAFFIA # SKY25061901874877.msg
+2025-07-16 09:54:06,619 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto Giacomo Cavallo # SKY25050701621176.msg
+2025-07-16 09:54:09,225 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg
+2025-07-16 09:54:13,710 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 09:54:16,213 - ERROR - 
+❌ File con errore logico (doppio o altro): testdebub.eml

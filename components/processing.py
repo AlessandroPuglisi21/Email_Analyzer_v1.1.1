@@ -87,18 +87,41 @@ def elabora_cartella(percorso_cartella):
         if file.lower().endswith('.msg') or file.lower().endswith('.eml'):
             percorso_completo = os.path.join(percorso_cartella, file)
             risultato = elabora_file(percorso_completo, codici_barre)
+            stato_file = None
             if risultato:
+                # Inserimento in Oracle e raccolta stato
                 if isinstance(risultato, list):
                     risultati.extend(risultato)
                     if INSERISCI_IN_ORACLE:
+                        risultato_aggiornato = []
                         for item in risultato:
-                            inserisci_dati_oracle([item], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
+                            res = inserisci_dati_oracle([item], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
+                            if res and isinstance(res, list):
+                                risultato_aggiornato.append(res[0])
+                        # Prendo lo stato del primo item aggiornato
+                        stato_file = risultato_aggiornato[0].get('stato', None) if risultato_aggiornato else None
+                    else:
+                        stato_file = risultato[0].get('stato', None)
                 else:
                     risultati.append(risultato)
                     if INSERISCI_IN_ORACLE:
-                        inserisci_dati_oracle([risultato], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
-                file_elaborati += 1
-                log_info(f"\n✅ File elaborato con successo: {file}")
+                        res = inserisci_dati_oracle([risultato], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
+                        if res and isinstance(res, list):
+                            stato_file = res[0].get('stato', None)
+                        else:
+                            stato_file = None
+                    else:
+                        stato_file = risultato.get('stato', None)
+                # Conteggio in base allo stato (dopo inserimento)
+                if stato_file == 'N':
+                    file_elaborati += 1
+                    log_info(f"\n✅ File elaborato con successo: {file}")
+                elif stato_file in ('X', 'E'):
+                    file_errore += 1
+                    log_error(f"\n❌ File con errore logico (doppio o altro): {file}")
+                else:
+                    file_errore += 1
+                    log_error(f"\n❌ File con errore sconosciuto: {file}")
             else:
                 file_errore += 1
                 log_error(f"\n❌ Errore nell'elaborazione del file: {file}")
