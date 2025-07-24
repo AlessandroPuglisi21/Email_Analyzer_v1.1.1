@@ -53045,3 +53045,2087 @@ Codice fiscale: RSSMRA80A01
 📊 Riepilogo elaborazione:
 2025-07-24 12:18:41,956 - INFO - ✅ File elaborati con successo: 0
 2025-07-24 12:18:41,956 - INFO - ❌ File con errori: 3
+2025-07-24 12:46:34,311 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 12:46:37,143 - INFO - 
+============================================================
+2025-07-24 12:46:37,143 - INFO - Inizio elaborazione file: 20250722_165953_1_Fwd_ prova dopo.eml
+2025-07-24 12:46:37,155 - INFO - Lunghezza body originale: 1781
+2025-07-24 12:46:37,155 - INFO - Lunghezza body senza spazi: 1540
+2025-07-24 12:46:37,155 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-24 12:46:39,585 - INFO - 
+[DEBUG] Risposta LLM per 20250722_165953_1_Fwd_ prova dopo.eml:
+```json
+[
+    {
+        "data_mail": "22/07/2025",
+        "numero_ordine": "00167525",
+        "nome": "Giuseppe",
+        "cognome": "De Ianni",
+        "codice_fiscale": "DNNGPP79A09H501C",
+        "telefono": "+39/3779923175",
+        "articolo": "CENA E NOTTE MEMORABILI",
+        "prezzo": "349,00",
+        "quantita": "1",
+        "email": "giuseppe.deianni@gmail.com",
+        "mittente": "Rainer BATTISTI",
+        "codice_barre": "1234567890123"
+    }
+]
+```
+2025-07-24 12:46:39,585 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:46:39,585 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:46:39,585 - INFO - [
+    {
+        "data_mail": "22/07/2025",
+        "numero_ordine": "00167525",
+        "nome": "Giuseppe",
+        "cognome": "De Ianni",
+        "codice_fiscale": "DNNGPP79A09H501C",
+        "telefono": "+39/3779923175",
+        "articolo": "CENA E NOTTE MEMORABILI",
+        "prezzo": "349,00",
+        "quantita": "1",
+        "email": "giuseppe.deianni@gmail.com",
+        "mittente": "Rainer BATTISTI",
+        "codice_barre": "1234567890123"
+    }
+]
+2025-07-24 12:46:39,585 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:46:39,585 - INFO - [
+  {
+    "data_mail": "22/07/2025",
+    "numero_ordine": "00167525",
+    "nome": "Giuseppe",
+    "cognome": "De Ianni",
+    "codice_fiscale": "DNNGPP79A09H501C",
+    "telefono": "+39/3779923175",
+    "articolo": "CENA E NOTTE MEMORABILI",
+    "prezzo": "349,00",
+    "quantita": "1",
+    "email": "giuseppe.deianni@gmail.com",
+    "mittente": "Rainer BATTISTI",
+    "codice_barre": "1234567890123"
+  }
+]
+2025-07-24 12:46:39,672 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:46:39,672 - INFO - 
+✅ File elaborato con successo: 20250722_165953_1_Fwd_ prova dopo.eml
+2025-07-24 12:46:39,675 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:39,675 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:46:40,676 - INFO - 
+============================================================
+2025-07-24 12:46:40,676 - INFO - Inizio elaborazione file: 20250722_165954_5_Fwd_ Prova Prima.eml
+2025-07-24 12:46:40,692 - INFO - Lunghezza body originale: 2168
+2025-07-24 12:46:40,692 - INFO - Lunghezza body senza spazi: 1832
+2025-07-24 12:46:40,692 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-24 12:46:53,108 - INFO - 
+[DEBUG] Risposta LLM per 20250722_165954_5_Fwd_ Prova Prima.eml:
+```json
+[
+    {
+        "data_mail": "22/07/2025",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "3472578530",
+        "articolo": "Un tavolo da Eataly | Box per 2 persone",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "giannibresca@virgilio.it",
+        "mittente": "Rainer BATTISTI",
+        "codice_barre": "1234567890123"
+    }
+]
+```
+2025-07-24 12:46:53,108 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:46:53,108 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:46:53,108 - INFO - [
+    {
+        "data_mail": "22/07/2025",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "3472578530",
+        "articolo": "Un tavolo da Eataly | Box per 2 persone",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "giannibresca@virgilio.it",
+        "mittente": "Rainer BATTISTI",
+        "codice_barre": "1234567890123"
+    }
+]
+2025-07-24 12:46:53,108 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:46:53,108 - INFO - [
+  {
+    "data_mail": "22/07/2025",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "Giovanni",
+    "cognome": "Bresca",
+    "codice_fiscale": "NULL",
+    "telefono": "3472578530",
+    "articolo": "Un tavolo da Eataly | Box per 2 persone",
+    "prezzo": 0,
+    "quantita": 1,
+    "email": "giannibresca@virgilio.it",
+    "mittente": "Rainer BATTISTI",
+    "codice_barre": "1234567890123"
+  }
+]
+2025-07-24 12:46:53,174 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:46:53,174 - INFO - 
+✅ File elaborato con successo: 20250722_165954_5_Fwd_ Prova Prima.eml
+2025-07-24 12:46:53,182 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:53,182 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:46:54,183 - INFO - 
+============================================================
+2025-07-24 12:46:54,183 - INFO - Inizio elaborazione file: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-24 12:46:54,196 - INFO - Lunghezza body originale: 1549
+2025-07-24 12:46:54,196 - INFO - Lunghezza body senza spazi: 1254
+2025-07-24 12:46:54,196 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-24 12:46:56,094 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg:
+```json
+[
+    {
+        "data_mail": "23/05/2025",
+        "numero_ordine": "WWIL025YH857",
+        "nome": "Matteo",
+        "cognome": "Mavilia",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "L'arte di degustare",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "matteo.mavilia@accenture.com",
+        "mittente": "Tantosvago",
+        "codice_barre": "8052745980804"
+    }
+]
+```
+2025-07-24 12:46:56,094 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:46:56,094 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:46:56,094 - INFO - [
+    {
+        "data_mail": "23/05/2025",
+        "numero_ordine": "WWIL025YH857",
+        "nome": "Matteo",
+        "cognome": "Mavilia",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "L'arte di degustare",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "matteo.mavilia@accenture.com",
+        "mittente": "Tantosvago",
+        "codice_barre": "8052745980804"
+    }
+]
+2025-07-24 12:46:56,094 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:46:56,094 - INFO - [
+  {
+    "data_mail": "23/05/2025",
+    "numero_ordine": "WWIL025YH857",
+    "nome": "Matteo",
+    "cognome": "Mavilia",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "L'arte di degustare",
+    "prezzo": 0,
+    "quantita": 1,
+    "email": "matteo.mavilia@accenture.com",
+    "mittente": "Tantosvago",
+    "codice_barre": "8052745980804"
+  }
+]
+2025-07-24 12:46:56,155 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:46:56,155 - INFO - 
+✅ File elaborato con successo: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-24 12:46:56,155 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:56,155 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:46:57,158 - INFO - 
+============================================================
+2025-07-24 12:46:57,158 - INFO - Inizio elaborazione file: email_con_codice_barre.eml
+2025-07-24 12:46:57,158 - INFO - Lunghezza body originale: 283
+2025-07-24 12:46:57,161 - INFO - Lunghezza body senza spazi: 256
+2025-07-24 12:46:57,161 - INFO - Primi 100 caratteri del body: 
+<html>
+<body>
+<p>E' stato emesso un Voucher per il beneficiario: <strong>BRESCA GIOVANNI</strong></
+2025-07-24 12:46:59,662 - INFO - 
+[DEBUG] Risposta LLM per email_con_codice_barre.eml:
+```json
+[
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "NULL",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "NULL",
+        "mittente": "rainer.battisti@anseltechnology.it",
+        "codice_barre": "1234567890123"
+    }
+]
+```
+2025-07-24 12:46:59,662 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:46:59,662 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:46:59,662 - INFO - [
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "NULL",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "NULL",
+        "mittente": "rainer.battisti@anseltechnology.it",
+        "codice_barre": "1234567890123"
+    }
+]
+2025-07-24 12:46:59,662 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:46:59,662 - INFO - [
+  {
+    "data_mail": "NULL",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "Giovanni",
+    "cognome": "Bresca",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "NULL",
+    "prezzo": 0,
+    "quantita": 1,
+    "email": "NULL",
+    "mittente": "rainer.battisti@anseltechnology.it",
+    "codice_barre": "1234567890123"
+  }
+]
+2025-07-24 12:46:59,719 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:46:59,719 - INFO - 
+✅ File elaborato con successo: email_con_codice_barre.eml
+2025-07-24 12:46:59,719 - ERROR - Errore nello spostamento del file email_con_codice_barre.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:59,719 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:47:00,727 - INFO - 
+============================================================
+2025-07-24 12:47:00,727 - INFO - Inizio elaborazione file: email_senza_codice_barre.eml
+2025-07-24 12:47:00,735 - INFO - Lunghezza body originale: 229
+2025-07-24 12:47:00,735 - INFO - Lunghezza body senza spazi: 206
+2025-07-24 12:47:00,735 - INFO - Primi 100 caratteri del body: 
+<html>
+<body>
+<p>E' stato emesso un Voucher per il beneficiario: <strong>BRESCA GIOVANNI</strong></
+2025-07-24 12:47:02,124 - INFO - 
+[DEBUG] Risposta LLM per email_senza_codice_barre.eml:
+```json
+[
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "NULL",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "NULL",
+        "mittente": "rainer.battisti@anseltechnology.it",
+        "codice_barre": "NULL"
+    }
+]
+```
+2025-07-24 12:47:02,125 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:47:02,125 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:47:02,125 - INFO - [
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "SIDI059SJ529",
+        "nome": "Giovanni",
+        "cognome": "Bresca",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "NULL",
+        "prezzo": 0,
+        "quantita": 1,
+        "email": "NULL",
+        "mittente": "rainer.battisti@anseltechnology.it",
+        "codice_barre": "NULL"
+    }
+]
+2025-07-24 12:47:02,126 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:47:02,126 - INFO - [
+  {
+    "data_mail": "NULL",
+    "numero_ordine": "SIDI059SJ529",
+    "nome": "Giovanni",
+    "cognome": "Bresca",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "NULL",
+    "prezzo": 0,
+    "quantita": 1,
+    "email": "NULL",
+    "mittente": "rainer.battisti@anseltechnology.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-24 12:47:02,189 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:47:02,190 - INFO - 
+✅ File elaborato con successo: email_senza_codice_barre.eml
+2025-07-24 12:47:02,190 - ERROR - Errore nello spostamento del file email_senza_codice_barre.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:47:02,190 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:47:03,191 - INFO - 
+============================================================
+2025-07-24 12:47:03,191 - INFO - Inizio elaborazione file: Notifica ordine 00167525.msg
+2025-07-24 12:47:03,195 - INFO - Lunghezza body originale: 1823
+2025-07-24 12:47:03,195 - INFO - Lunghezza body senza spazi: 1600
+2025-07-24 12:47:03,197 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-24 12:47:04,991 - INFO - 
+[DEBUG] Risposta LLM per Notifica ordine 00167525.msg:
+```json
+[
+    {
+        "data_mail": "30/12/2024",
+        "numero_ordine": "00167525",
+        "nome": "GIUSEPPE",
+        "cognome": "DE IANNI",
+        "codice_fiscale": "DNNGPP79A09H501C",
+        "telefono": "+39/3779923175",
+        "articolo": "CENA E NOTTE MEMORABILI",
+        "prezzo": "349,00",
+        "quantita": "1",
+        "email": "giuseppe.deianni@gmail.com",
+        "mittente": "Beneficy",
+        "codice_barre": "8052745980286"
+    }
+]
+```
+2025-07-24 12:47:04,991 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 12:47:04,992 - INFO - 
+📝 Risposta pulita:
+2025-07-24 12:47:04,992 - INFO - [
+    {
+        "data_mail": "30/12/2024",
+        "numero_ordine": "00167525",
+        "nome": "GIUSEPPE",
+        "cognome": "DE IANNI",
+        "codice_fiscale": "DNNGPP79A09H501C",
+        "telefono": "+39/3779923175",
+        "articolo": "CENA E NOTTE MEMORABILI",
+        "prezzo": "349,00",
+        "quantita": "1",
+        "email": "giuseppe.deianni@gmail.com",
+        "mittente": "Beneficy",
+        "codice_barre": "8052745980286"
+    }
+]
+2025-07-24 12:47:04,992 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 12:47:04,993 - INFO - [
+  {
+    "data_mail": "30/12/2024",
+    "numero_ordine": "00167525",
+    "nome": "GIUSEPPE",
+    "cognome": "DE IANNI",
+    "codice_fiscale": "DNNGPP79A09H501C",
+    "telefono": "+39/3779923175",
+    "articolo": "CENA E NOTTE MEMORABILI",
+    "prezzo": "349,00",
+    "quantita": "1",
+    "email": "giuseppe.deianni@gmail.com",
+    "mittente": "Beneficy",
+    "codice_barre": "8052745980286"
+  }
+]
+2025-07-24 12:47:05,042 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 12:47:05,042 - INFO - 
+✅ File elaborato con successo: Notifica ordine 00167525.msg
+2025-07-24 12:47:05,042 - ERROR - Errore nello spostamento del file Notifica ordine 00167525.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:47:05,043 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 12:47:06,044 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 12:47:06,044 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 12:47:06,045 - INFO - ❌ File con errori: 6
+2025-07-24 14:12:07,327 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:13:17,028 - INFO - 
+============================================================
+2025-07-24 14:13:17,028 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:13:17,045 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:13:17,045 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:13:17,045 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:13:19,300 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:13:19,300 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:13:19,300 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:13:19,300 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:13:19,300 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:13:19,300 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:13:19,362 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:13:19,362 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:13:19,362 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:13:19,362 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:13:20,365 - INFO - 
+============================================================
+2025-07-24 14:13:20,365 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:13:20,377 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:13:20,378 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:13:20,378 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:13:21,969 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+```
+2025-07-24 14:13:21,969 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:13:21,969 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:13:21,969 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+2025-07-24 14:13:21,969 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:13:21,969 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981153"
+  }
+]
+2025-07-24 14:13:22,034 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:13:22,034 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:13:22,035 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:13:22,035 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:13:23,036 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:13:23,036 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:13:23,036 - INFO - ❌ File con errori: 2
+2025-07-24 14:19:25,649 - INFO - 
+============================================================
+2025-07-24 14:19:25,649 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:19:25,655 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:19:25,655 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:19:25,655 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:19:30,991 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:19:30,991 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:19:30,992 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:19:30,992 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:19:30,994 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:19:30,994 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:19:31,053 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:19:31,054 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:19:31,055 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:19:31,055 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:19:32,055 - INFO - 
+============================================================
+2025-07-24 14:19:32,055 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:19:32,055 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:19:32,055 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:19:32,055 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:19:39,198 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+```
+2025-07-24 14:19:39,198 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:19:39,198 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:19:39,198 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+2025-07-24 14:19:39,198 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:19:39,198 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981153"
+  }
+]
+2025-07-24 14:19:39,266 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:19:39,267 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:19:39,267 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:19:39,267 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:19:40,268 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:19:40,268 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:19:40,268 - INFO - ❌ File con errori: 2
+2025-07-24 14:21:46,915 - INFO - 
+============================================================
+2025-07-24 14:21:46,915 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:21:46,915 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:21:46,915 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:21:46,915 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:21:56,774 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:21:56,774 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:21:56,774 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:21:56,774 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:21:56,774 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:21:56,774 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:21:56,837 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:21:56,838 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:21:56,839 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:21:56,839 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:21:57,841 - INFO - 
+============================================================
+2025-07-24 14:21:57,841 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:21:57,843 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:21:57,843 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:21:57,843 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:22:15,231 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+```
+2025-07-24 14:22:15,231 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:22:15,231 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:22:15,231 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+2025-07-24 14:22:15,231 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:22:15,231 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981153"
+  }
+]
+2025-07-24 14:22:15,293 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:22:15,293 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:22:15,293 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:15,302 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:22:16,303 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:22:16,303 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:22:16,304 - INFO - ❌ File con errori: 2
+2025-07-24 14:22:45,373 - INFO - 
+============================================================
+2025-07-24 14:22:45,373 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:22:45,373 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:22:45,373 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:22:45,373 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:22:46,983 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:22:46,983 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:22:46,983 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:22:46,983 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:22:46,983 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:22:46,989 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:22:47,040 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:22:47,041 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:22:47,042 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:47,042 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:22:48,043 - INFO - 
+============================================================
+2025-07-24 14:22:48,043 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:22:48,044 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:22:48,044 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:22:48,044 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:22:49,681 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+```
+2025-07-24 14:22:49,681 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:22:49,681 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:22:49,681 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981153"
+    }
+]
+2025-07-24 14:22:49,681 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:22:49,681 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981153"
+  }
+]
+2025-07-24 14:22:49,755 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:22:49,755 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:22:49,755 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:49,755 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:22:50,759 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:22:50,759 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:22:50,759 - INFO - ❌ File con errori: 2
+2025-07-24 14:33:16,441 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:33:22,192 - INFO - 
+============================================================
+2025-07-24 14:33:22,192 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:33:22,201 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:33:22,201 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:33:22,201 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:33:24,589 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:33:24,589 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:33:24,590 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:33:24,590 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:33:24,590 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:33:24,590 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "Rainer Battisti",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:33:24,672 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:33:24,672 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:33:24,672 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:33:24,672 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:33:25,680 - INFO - 
+============================================================
+2025-07-24 14:33:25,680 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:33:25,689 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:33:25,689 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:33:25,689 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:33:27,293 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981177"
+    }
+]
+```
+2025-07-24 14:33:27,305 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:33:27,305 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:33:27,305 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981177"
+    }
+]
+2025-07-24 14:33:27,305 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:33:27,305 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981177"
+  }
+]
+2025-07-24 14:33:27,387 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:33:27,387 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:33:27,387 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:33:27,387 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:33:28,393 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:33:28,393 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:33:28,393 - INFO - ❌ File con errori: 2
+2025-07-24 14:34:43,703 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:34:55,463 - INFO - 
+============================================================
+2025-07-24 14:34:55,463 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:34:55,463 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:34:55,463 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:34:55,479 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:34:57,412 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:34:57,412 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:34:57,412 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:34:57,412 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:34:57,412 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:34:57,412 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "Rainer Battisti",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:34:57,492 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:34:57,492 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:34:57,492 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:34:57,492 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:34:58,504 - INFO - 
+============================================================
+2025-07-24 14:34:58,504 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:34:58,525 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:34:58,525 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:34:58,525 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:35:00,049 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981177"
+    }
+]
+```
+2025-07-24 14:35:00,049 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:35:00,049 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:35:00,049 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981177"
+    }
+]
+2025-07-24 14:35:00,049 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:35:00,057 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981177"
+  }
+]
+2025-07-24 14:35:00,122 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:35:00,122 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:35:00,122 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:35:00,122 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:35:01,132 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:35:01,132 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:35:01,132 - INFO - ❌ File con errori: 2
+2025-07-24 14:38:31,129 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:38:37,637 - INFO - 
+============================================================
+2025-07-24 14:38:37,637 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:38:37,653 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:38:37,653 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:38:37,653 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:38:39,737 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:38:39,737 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:38:39,737 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:38:39,737 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:38:39,737 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:38:39,737 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "Rainer Battisti",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:38:39,789 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:38:39,789 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:38:39,789 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:38:39,789 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:38:40,792 - INFO - 
+============================================================
+2025-07-24 14:38:40,792 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:38:40,817 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:38:40,817 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:38:40,817 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:38:42,146 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "NULL"
+    }
+]
+2025-07-24 14:38:42,146 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:38:42,151 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:38:42,151 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "NULL"
+    }
+]
+2025-07-24 14:38:42,151 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:38:42,151 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-24 14:38:42,194 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:38:42,203 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:38:42,203 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:38:42,203 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:38:43,204 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:38:43,204 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:38:43,204 - INFO - ❌ File con errori: 2
+2025-07-24 14:41:21,516 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:41:27,123 - INFO - 
+============================================================
+2025-07-24 14:41:27,123 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:41:27,132 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:41:27,132 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:41:27,132 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:41:29,717 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:41:29,717 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:41:29,717 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:41:29,717 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:41:29,717 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:41:29,717 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:41:29,776 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:41:29,776 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:41:29,779 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:41:29,779 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:41:30,780 - INFO - 
+============================================================
+2025-07-24 14:41:30,780 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:41:30,789 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:41:30,789 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:41:30,790 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:41:32,498 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:41:32,498 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:41:32,498 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:41:32,498 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:41:32,498 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:41:32,498 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "Rainer Battisti",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:41:32,561 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:41:32,561 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:41:32,561 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:41:32,561 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:41:33,568 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:41:33,568 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:41:33,568 - INFO - ❌ File con errori: 2
+2025-07-24 14:49:54,198 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:50:05,510 - INFO - 
+============================================================
+2025-07-24 14:50:05,510 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:50:05,530 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:50:05,531 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:50:05,531 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:50:05,536 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1.3\Mail Fittizie\20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+2025-07-24 14:50:05,538 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\processing.py", line 25, in elabora_file
+    prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"], codici_barre)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\ai_utils.py", line 29, in genera_prompt
+    {
+ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+
+2025-07-24 14:50:05,539 - ERROR - 
+❌ Errore nell'elaborazione del file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:50:05,539 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:50:06,540 - INFO - 
+============================================================
+2025-07-24 14:50:06,540 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:50:06,542 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:50:06,542 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:50:06,542 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:50:06,542 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1.3\Mail Fittizie\20250724_130300_2_I_ PORTALE PRIMA.eml: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+2025-07-24 14:50:06,542 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\processing.py", line 25, in elabora_file
+    prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"], codici_barre)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\ai_utils.py", line 29, in genera_prompt
+    {
+ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+
+2025-07-24 14:50:06,542 - ERROR - 
+❌ Errore nell'elaborazione del file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:50:06,542 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:50:07,551 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:50:07,551 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:50:07,551 - INFO - ❌ File con errori: 0
+2025-07-24 14:51:27,891 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-24 14:51:40,923 - INFO - 
+============================================================
+2025-07-24 14:51:40,923 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:51:40,939 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:51:40,939 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:51:40,939 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:51:42,930 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:51:42,930 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:51:42,930 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:51:42,930 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:51:42,930 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:51:42,930 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:51:42,999 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:51:42,999 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:51:42,999 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:51:42,999 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:51:44,003 - INFO - 
+============================================================
+2025-07-24 14:51:44,003 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:51:44,008 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:51:44,008 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:51:44,008 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:51:45,540 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "NULL"
+    }
+]
+```
+2025-07-24 14:51:45,540 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:51:45,540 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:51:45,540 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "NULL"
+    }
+]
+2025-07-24 14:51:45,540 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:51:45,540 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "NULL"
+  }
+]
+2025-07-24 14:51:45,587 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:51:45,587 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:51:45,587 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:51:45,587 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:51:46,604 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:51:46,604 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:51:46,604 - INFO - ❌ File con errori: 2
+2025-07-24 14:52:06,893 - INFO - 
+============================================================
+2025-07-24 14:52:06,893 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:52:06,897 - INFO - Lunghezza body originale: 1851
+2025-07-24 14:52:06,897 - INFO - Lunghezza body senza spazi: 1550
+2025-07-24 14:52:06,897 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:52:10,452 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:52:10,452 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:52:10,452 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:52:10,452 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:52:10,452 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:52:10,452 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:52:10,532 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:52:10,532 - INFO - 
+✅ File elaborato con successo: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:52:10,532 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:52:10,532 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:52:11,541 - INFO - 
+============================================================
+2025-07-24 14:52:11,541 - INFO - Inizio elaborazione file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:52:11,547 - INFO - Lunghezza body originale: 1852
+2025-07-24 14:52:11,547 - INFO - Lunghezza body senza spazi: 1551
+2025-07-24 14:52:11,548 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@grupp
+2025-07-24 14:52:12,729 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_2_I_ PORTALE PRIMA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+```
+2025-07-24 14:52:12,729 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-24 14:52:12,729 - INFO - 
+📝 Risposta pulita:
+2025-07-24 14:52:12,729 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3621584",
+        "nome": "Fabrizio",
+        "cognome": "Oliva",
+        "codice_fiscale": "NULL",
+        "telefono": "3451425997",
+        "articolo": "IL WHISKY EXTRA SCOZIA",
+        "prezzo": "168,00",
+        "quantita": "1",
+        "email": "fabrizio.oliva@aquafil.com",
+        "mittente": "Rainer Battisti",
+        "codice_barre": "8011223344123"
+    }
+]
+2025-07-24 14:52:12,729 - INFO - 
+✅ JSON parsato con successo:
+2025-07-24 14:52:12,729 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3621584",
+    "nome": "Fabrizio",
+    "cognome": "Oliva",
+    "codice_fiscale": "NULL",
+    "telefono": "3451425997",
+    "articolo": "IL WHISKY EXTRA SCOZIA",
+    "prezzo": "168,00",
+    "quantita": "1",
+    "email": "fabrizio.oliva@aquafil.com",
+    "mittente": "Rainer Battisti",
+    "codice_barre": "8011223344123"
+  }
+]
+2025-07-24 14:52:12,819 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-24 14:52:12,819 - INFO - 
+✅ File elaborato con successo: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:52:12,819 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:52:12,819 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-24 14:52:13,823 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-24 14:52:13,823 - INFO - ✅ File elaborati con successo: 0
+2025-07-24 14:52:13,823 - INFO - ❌ File con errori: 2

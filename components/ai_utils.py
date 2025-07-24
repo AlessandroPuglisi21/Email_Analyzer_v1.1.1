@@ -65,16 +65,28 @@ IMPORTANTE SULLA QUANTITA:
 - **CASO SPECIALE**: Se il nome dell'articolo contiene un pattern come "X 2" (es: "KIT PIZZA X 2"), questo fa parte del nome dell'articolo. Non usare questo valore come quantità e il nome articolo deve rimanere "KIT PIZZA X 2". Per la quantità comportati come sempre.
 - **NUOVA REGOLA**: Se nel nome dell'articolo o nel testo compaiono espressioni come "Box per 2 persone", "Box per X persone", "Partecipanti: 2", "Partecipanti: X" non usare questo valore X come valore della quantità. Per la quantità comportati come sempre. 
 
-ISTRUZIONI PER L'ESTRAZIONE DEL CODICE A BARRE
-- Il codice a barre è sempre un numero di 13 cifre.
-- IMPORTANTE: Se trovi un codice a barre di 13 cifre esplicitamente indicato nella mail (es. "Prodotto: NOME ARTICOLO - 1234567890123" oppure "Codice a barre: 1234567890123"), DEVI USARE ESCLUSIVAMENTE QUESTO CODICE. NON cercare altre corrispondenze nella tabella e NON fare confronti con altre descrizioni.
-- SOLO SE non trovi un codice a barre esplicito di 13 cifre nella mail, allora:
-  1. Cerca una corrispondenza tra la descrizione dell'articolo e questa tabella:
-  {codici_str}
-  2. Se la descrizione non corrisponde esattamente, usa il codice della descrizione più simile
-  3. Se non trovi corrispondenze attendibili, usa "NULL"
-- Ricorda: se hai trovato un codice a barre esplicito nella mail, IGNORA COMPLETAMENTE la tabella di corrispondenza.
+ISTRUZIONI FONDAMENTALI PER IL CAMPO "codice_barre":
+1. PRIMA DI TUTTO, cerca nella mail un codice a barre esplicito, cioè una sequenza di 13 cifre consecutive (es: 1234567890123). Il codice a barre può essere presentato in vari modi, ad esempio:
+   - Prodotto: NOME ARTICOLO - 1234567890123
+   - Codice a barre: 1234567890123
+   - Prodotto: 1234567890123 - NOME ARTICOLO
+   - Codice a barre: 1234567890123
+2. SE TROVI UN CODICE A BARRE DI 13 CIFRE NELLA MAIL, DEVI USARE SOLO QUELLO. NON DEVI MAI, IN NESSUN CASO, UTILIZZARE LA TABELLA DI CORRISPONDENZA O CERCARE ALTRI CODICI A BARRE IN BASE AL NOME O DESCRIZIONE.
+3. SOLO ED ESCLUSIVAMENTE SE NON TROVI NESSUN CODICE A BARRE DI 13 CIFRE NELLA MAIL, allora puoi cercare nella tabella di corrispondenza fornita qui sotto, confrontando la descrizione/nome articolo:
+{codici_str}
+   - Se trovi una corrispondenza esatta, usa il relativo codice a barre.
+   - Se non c’è una corrispondenza esatta, usa il codice della descrizione più simile.
+   - Se non trovi alcuna corrispondenza attendibile, inserisci "NULL".
+4. Ricorda: se hai trovato un codice a barre esplicito nella mail, IGNORA COMPLETAMENTE la tabella di corrispondenza e non cercare altri codici a barre.
+5. NON aggiungere mai più di un codice a barre per articolo. Ogni articolo deve avere al massimo un solo codice a barre.
+6. NON inventare codici a barre: se non trovi nulla, inserisci "NULL".
 
+ESEMPI:
+- Caso 1: La mail contiene "Codice a barre: 1234567890123" → Usa solo questo codice, ignora la tabella.
+- Caso 2: La mail NON contiene nessun codice a barre di 13 cifre → Cerca nella tabella in base al nome articolo.
+- Caso 3: La mail contiene sia un codice a barre di 13 cifre che una descrizione presente in tabella → Usa solo il codice trovato nella mail, ignora la tabella.
+
+IMPORTANTE: NON AGGIUNGERE TESTO, COMMENTI O SPIEGAZIONI PRIMA O DOPO IL JSON.
 
 --- INIZIO EMAIL ---
 Data: {data_mail}

@@ -839,3 +839,101 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 2025-07-24 12:18:35,592 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
 2025-07-24 12:18:38,087 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
 2025-07-24 12:18:40,947 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:39,675 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:53,182 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:56,155 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:46:59,719 - ERROR - Errore nello spostamento del file email_con_codice_barre.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:47:02,190 - ERROR - Errore nello spostamento del file email_senza_codice_barre.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:47:05,042 - ERROR - Errore nello spostamento del file Notifica ordine 00167525.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:13:19,362 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:13:22,035 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:19:31,055 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:19:39,267 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:21:56,839 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:15,293 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:47,042 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:22:49,755 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:33:24,672 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:33:27,387 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:34:57,492 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:35:00,122 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:38:39,789 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:38:42,203 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:41:29,779 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:41:32,561 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:50:05,536 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1.3\Mail Fittizie\20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+2025-07-24 14:50:05,538 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\processing.py", line 25, in elabora_file
+    prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"], codici_barre)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\ai_utils.py", line 29, in genera_prompt
+    {
+ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+
+2025-07-24 14:50:05,539 - ERROR - 
+❌ Errore nell'elaborazione del file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-24 14:50:06,542 - ERROR - 
+❌ Errore nell'elaborazione del file C:\PYTHON\Email_Analyzer_v1.1.3\Mail Fittizie\20250724_130300_2_I_ PORTALE PRIMA.eml: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+2025-07-24 14:50:06,542 - ERROR - Traceback (most recent call last):
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\processing.py", line 25, in elabora_file
+    prompt = genera_prompt(dati["body"] if isinstance(dati["body"], str) else '', dati["date"], dati["sender"], codici_barre)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PYTHON\Email_Analyzer_v1.1.4\components\ai_utils.py", line 29, in genera_prompt
+    {
+ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
+    "nome": "nome del cliente",
+    "cognome": "cognome del cliente",
+    "codice_fiscale": "codice fiscale",
+    "telefono": "numero di telefono",
+    "articolo": "nome dell'articolo o SKU",
+    "prezzo": "prezzo totale (virgola come separatore decimale)",
+    "quantita": "quantità",
+    "email": "email del cliente",
+    "mittente": "mittente della mail",
+    "codice_barre": "codice a barre dell'articolo"
+' for object of type 'str'
+
+2025-07-24 14:50:06,542 - ERROR - 
+❌ Errore nell'elaborazione del file: 20250724_130300_2_I_ PORTALE PRIMA.eml
+2025-07-24 14:51:42,999 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:51:45,587 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:52:10,532 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 14:52:12,819 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
