@@ -7,12 +7,16 @@ def estrai_testo_da_file(percorso_file):
     ext = os.path.splitext(percorso_file)[1].lower()
     if ext == '.msg':
         msg = extract_msg.Message(percorso_file)
-        return {
+        dati = {
             "body": msg.body,
             "date": msg.date,
             "sender": msg.sender,
             "subject": getattr(msg, "subject", "")
         }
+        # Chiudo esplicitamente il file se il metodo close è disponibile
+        if hasattr(msg, 'close'):
+            msg.close()
+        return dati
     elif ext == '.eml':
         with open(percorso_file, 'rb') as f:
             msg = BytesParser(policy=policy.default).parse(f)

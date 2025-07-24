@@ -44,4 +44,7 @@ ORACLE_DSN = cx_Oracle.makedsn(ORACLE_HOST, int(ORACLE_PORT), service_name=ORACL
 
 INSERISCI_IN_ORACLE = True
 
+# Directory dove salvare i file elaborati con successo (storico)
+STORICO_DIR = os.getenv("STORICO_DIR", "storico")
+
 

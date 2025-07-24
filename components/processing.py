@@ -6,8 +6,9 @@ from datetime import datetime
 from components.logging_utils import log_info, log_error
 from components.email_utils import estrai_testo_da_file, filtra_body_mail
 from components.ai_utils import genera_prompt, chiedi_al_modello
-from components.config import INSERISCI_IN_ORACLE, ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
+from components.config import INSERISCI_IN_ORACLE, ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD, STORICO_DIR
 from components.oracle_utils import inserisci_dati_oracle, leggi_codici_barre
+import re
 
 def elabora_file(percorso, codici_barre=None):
     try:
@@ -48,12 +49,22 @@ def elabora_file(percorso, codici_barre=None):
                     if isinstance(value, str):
                         item[key] = value.strip()
                 item['nome_file'] = os.path.basename(percorso)
-                if 'mittente' in item and isinstance(item['mittente'], str) and '@' in item['mittente']:
-                    item['mittente'] = item['mittente'].split('@', 1)[1].strip()
+                # Salvo il mittente originale
+                mittente_originale = dati.get('sender', '')
+                # Estrazione dominio dalla mail tra <> se presente
+                dominio_mittente = ''
+                match = re.search(r'<([^@<>]+@([^<>]+))>', mittente_originale)
+                if match:
+                    dominio_mittente = match.group(2).strip()
+                elif '@' in mittente_originale:
+                    dominio_mittente = mittente_originale.split('@', 1)[1].replace('>', '').strip()
+                else:
+                    dominio_mittente = mittente_originale
+                item['mittente'] = dominio_mittente
                 oggetto = dati.get('subject', '') if 'subject' in dati else ''
                 testo_filtrato = filtra_body_mail(dati['body']) if 'body' in dati and isinstance(dati['body'], str) else ''
                 separatore = '=' * 100
-                testo_finale = f"OGGETTO:\n{oggetto}\n{separatore}\n{testo_filtrato}"
+                testo_finale = f"MITTENTE: {mittente_originale}\nOGGETTO:\n{oggetto}\n{separatore}\n{testo_filtrato}"
                 item['body_mail'] = testo_finale[:4000]
 
             return items_to_process
@@ -67,6 +78,15 @@ def elabora_file(percorso, codici_barre=None):
         log_error(f"\n❌ Errore nell'elaborazione del file {percorso}: {e}")
         log_error(traceback.format_exc())
         return None
+
+def genera_nome_file_unico(percorso_cartella, nome_file):
+    base, ext = os.path.splitext(nome_file)
+    counter = 2
+    nuovo_nome = nome_file
+    while os.path.exists(os.path.join(percorso_cartella, nuovo_nome)):
+        nuovo_nome = f"{base} ({counter}){ext}"
+        counter += 1
+    return nuovo_nome
 
 def elabora_cartella(percorso_cartella):
     risultati = []
@@ -88,54 +108,74 @@ def elabora_cartella(percorso_cartella):
             percorso_completo = os.path.join(percorso_cartella, file)
             risultato = elabora_file(percorso_completo, codici_barre)
             stato_file = None
+            errore_oracle_globale = None
             if risultato:
                 # Inserimento in Oracle e raccolta stato
                 if isinstance(risultato, list):
                     risultati.extend(risultato)
                     if INSERISCI_IN_ORACLE:
                         risultato_aggiornato = []
+                        errore_oracle_globale = False
                         for item in risultato:
                             res = inserisci_dati_oracle([item], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
                             if res and isinstance(res, list):
                                 risultato_aggiornato.append(res[0])
-                        # Prendo lo stato del primo item aggiornato
+                                if res[0].get('errore_oracle'):
+                                    errore_oracle_globale = True
                         stato_file = risultato_aggiornato[0].get('stato', None) if risultato_aggiornato else None
                     else:
                         stato_file = risultato[0].get('stato', None)
+                        errore_oracle_globale = False
                 else:
                     risultati.append(risultato)
                     if INSERISCI_IN_ORACLE:
                         res = inserisci_dati_oracle([risultato], dsn=ORACLE_DSN, user=ORACLE_USER, password=ORACLE_PASSWORD)
                         if res and isinstance(res, list):
                             stato_file = res[0].get('stato', None)
+                            errore_oracle_globale = res[0].get('errore_oracle', True)
                         else:
                             stato_file = None
+                            errore_oracle_globale = True
                     else:
                         stato_file = risultato.get('stato', None)
-                # Conteggio in base allo stato (dopo inserimento)
-                if stato_file == 'N':
-                    file_elaborati += 1
+                        errore_oracle_globale = False
+                if stato_file in ('N','X') and errore_oracle_globale is False:
                     log_info(f"\n✅ File elaborato con successo: {file}")
-                elif stato_file in ('X', 'E'):
-                    file_errore += 1
-                    log_error(f"\n❌ File con errore logico (doppio o altro): {file}")
+                    # Sposto il file nella cartella di storico
+                    try:
+                        os.makedirs(STORICO_DIR, exist_ok=True)
+                        nome_file_unico = genera_nome_file_unico(STORICO_DIR, file)
+                        percorso_storico = os.path.join(STORICO_DIR, nome_file_unico)
+                        os.rename(percorso_completo, percorso_storico)
+                        log_info(f"File spostato nella cartella di storico: {percorso_storico}")
+                    except Exception as e:
+                        log_error(f"Errore nello spostamento del file {file} nella cartella storico: {e}")
+                ##elif stato_file in ('X', 'E'):
+                ##    log_error(f"\n❌ File con errore logico (doppio o altro): {file}")
                 else:
-                    file_errore += 1
-                    log_error(f"\n❌ File con errore sconosciuto: {file}")
+                    log_error(f"\n❌ File con errore sconosciuto: {file}, Stato = {stato_file}")
             else:
-                file_errore += 1
                 log_error(f"\n❌ Errore nell'elaborazione del file: {file}")
             log_info("Pausa di 1 secondi prima del prossimo file...")
             time.sleep(1)
-    if risultati:
-        try:
-            with open(nome_file_csv, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
-                for row in risultati:
-                    row_filtrato = {k: v for k, v in row.items() if k in fieldnames}
-                    writer.writerow(row_filtrato)
-            log_info(f"\n✅ Risultati salvati nel file: {nome_file_csv}")
-        except Exception as e:
-            log_error(f"\n❌ Errore nel salvataggio del file CSV: {e}")
-    return file_elaborati, file_errore
+## Rainer - tolto questa parte perchè ormai lavoriamo solo sul DB
+##    if risultati:
+##        try:
+##            with open(nome_file_csv, 'w', newline='', encoding='utf-8') as f:
+##                writer = csv.DictWriter(f, fieldnames=fieldnames)
+##                writer.writeheader()
+##                for row in risultati:
+##                    row_filtrato = {k: v for k, v in row.items() if k in fieldnames}
+##                    writer.writerow(row_filtrato)
+##            log_info(f"\n✅ Risultati salvati nel file: {nome_file_csv}")
+##        except Exception as e:
+##            log_error(f"\n❌ Errore nel salvataggio del file CSV: {e}")
+    # Nuovo conteggio basato su tutti i risultati
+    for r in risultati:
+        stato = r.get('stato')
+        if stato in ('N','X'):
+            file_elaborati += 1
+        else:
+            file_errore += 1
+
+    return file_errore, file_elaborati

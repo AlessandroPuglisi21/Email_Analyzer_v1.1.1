@@ -26,7 +26,7 @@ Analizza la seguente email e restituisci i dati richiesti in formato JSON.
 IMPORTANTE: La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto ha questa struttura:
 {{
     "data_mail": "data della mail in formato dd/MM/YYYY",
-    "numero_ordine": "numero dell'ordine",
+    "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
     "nome": "nome del cliente",
     "cognome": "cognome del cliente",
     "codice_fiscale": "codice fiscale",
@@ -65,14 +65,16 @@ IMPORTANTE SULLA QUANTITA:
 - **CASO SPECIALE**: Se il nome dell'articolo contiene un pattern come "X 2" (es: "KIT PIZZA X 2"), questo fa parte del nome dell'articolo. Non usare questo valore come quantità e il nome articolo deve rimanere "KIT PIZZA X 2". Per la quantità comportati come sempre.
 - **NUOVA REGOLA**: Se nel nome dell'articolo o nel testo compaiono espressioni come "Box per 2 persone", "Box per X persone", "Partecipanti: 2", "Partecipanti: X" non usare questo valore X come valore della quantità. Per la quantità comportati come sempre. 
 
-IMPORTANTE SUL CODICE A BARRE:
-- Se il campo "codice_barre" è gia stato trovato fermati qui altrimenti:
-- Il codice a barre è un numero di 13 cifre.
-- Se non lo trovi, usa "NULL".
-- Usa la seguente tabella di corrispondenza per trovare il codice a barre corretto per ogni articolo:
-{codici_str}
-- Se l'articolo nella mail è simile ma non identico a una descrizione nella tabella, usa il codice a barre della descrizione più simile.
-- Se non trovi una corrispondenza, usa "NULL".
+ISTRUZIONI PER L'ESTRAZIONE DEL CODICE A BARRE
+- Il codice a barre è sempre un numero di 13 cifre.
+- IMPORTANTE: Se trovi un codice a barre di 13 cifre esplicitamente indicato nella mail (es. "Prodotto: NOME ARTICOLO - 1234567890123" oppure "Codice a barre: 1234567890123"), DEVI USARE ESCLUSIVAMENTE QUESTO CODICE. NON cercare altre corrispondenze nella tabella e NON fare confronti con altre descrizioni.
+- SOLO SE non trovi un codice a barre esplicito di 13 cifre nella mail, allora:
+  1. Cerca una corrispondenza tra la descrizione dell'articolo e questa tabella:
+  {codici_str}
+  2. Se la descrizione non corrisponde esattamente, usa il codice della descrizione più simile
+  3. Se non trovi corrispondenze attendibili, usa "NULL"
+- Ricorda: se hai trovato un codice a barre esplicito nella mail, IGNORA COMPLETAMENTE la tabella di corrispondenza.
+
 
 --- INIZIO EMAIL ---
 Data: {data_mail}

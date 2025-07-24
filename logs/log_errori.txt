@@ -592,3 +592,250 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 ❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
 2025-07-16 09:54:16,213 - ERROR - 
 ❌ File con errore logico (doppio o altro): testdebub.eml
+2025-07-16 11:02:40,198 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 11:04:41,698 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-16 11:04:44,321 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-16 11:04:46,754 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-16 11:04:49,398 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00167525.msg
+2025-07-16 11:04:54,600 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00194151.msg
+2025-07-16 11:04:56,832 - ERROR - 
+❌ File con errore logico (doppio o altro): PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg
+2025-07-16 11:04:59,640 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIA MARIOTTI # SKY25043001590064.msg
+2025-07-16 11:05:01,913 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052401704582.msg
+2025-07-16 11:05:04,313 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052701720736.msg
+2025-07-16 11:05:06,595 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto DOROTHY MAFFIA # SKY25061901874877.msg
+2025-07-16 11:05:08,944 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto Giacomo Cavallo # SKY25050701621176.msg
+2025-07-16 11:05:11,450 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg
+2025-07-16 11:05:14,961 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 11:10:08,075 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-16 11:24:59,528 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-16 11:42:23,811 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-16 14:13:09,042 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:13:53,004 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:15:57,526 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:16:00,016 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER SISAL DIAMOND.msg
+2025-07-16 14:16:02,701 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+2025-07-16 14:16:04,937 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-16 14:16:07,226 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-16 14:16:09,820 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-16 14:16:12,502 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00167525.msg
+2025-07-16 14:16:14,889 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00168844.msg
+2025-07-16 14:16:19,380 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00194151.msg
+2025-07-16 14:16:21,912 - ERROR - 
+❌ File con errore logico (doppio o altro): PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg
+2025-07-16 14:16:25,020 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIA MARIOTTI # SKY25043001590064.msg
+2025-07-16 14:16:27,306 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052401704582.msg
+2025-07-16 14:16:29,849 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052701720736.msg
+2025-07-16 14:16:32,352 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto DOROTHY MAFFIA # SKY25061901874877.msg
+2025-07-16 14:16:35,041 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto Giacomo Cavallo # SKY25050701621176.msg
+2025-07-16 14:16:37,545 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg
+2025-07-16 14:16:41,110 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:33:18,998 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:33:19,001 - ERROR - 
+❌ File con errore logico (doppio o altro): 20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml
+2025-07-16 14:33:21,707 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER SISAL DIAMOND.msg
+2025-07-16 14:33:24,860 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg
+2025-07-16 14:33:27,372 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-16 14:33:29,869 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg
+2025-07-16 14:33:32,280 - ERROR - 
+❌ File con errore logico (doppio o altro): Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg
+2025-07-16 14:33:35,250 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00167525.msg
+2025-07-16 14:33:37,824 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00168844.msg
+2025-07-16 14:33:40,840 - ERROR - 
+❌ File con errore logico (doppio o altro): Notifica ordine 00194151.msg
+2025-07-16 14:33:43,454 - ERROR - 
+❌ File con errore logico (doppio o altro): PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg
+2025-07-16 14:33:46,350 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIA MARIOTTI # SKY25043001590064.msg
+2025-07-16 14:33:48,955 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052401704582.msg
+2025-07-16 14:33:51,963 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto ALESSIO ARRIGO # SKY25052701720736.msg
+2025-07-16 14:33:54,493 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto DOROTHY MAFFIA # SKY25061901874877.msg
+2025-07-16 14:33:57,555 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto Giacomo Cavallo # SKY25050701621176.msg
+2025-07-16 14:34:00,105 - ERROR - 
+❌ File con errore logico (doppio o altro): Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg
+2025-07-16 14:34:03,610 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-16 14:34:03,610 - ERROR - 
+❌ File con errore logico (doppio o altro): test1.eml
+2025-07-17 15:24:31,501 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:24:31,508 - ERROR - 
+❌ File con errore logico (doppio o altro): test1.eml
+2025-07-17 15:33:46,535 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-17 15:33:50,599 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:33:50,607 - ERROR - 
+❌ File con errore logico (doppio o altro): test1.eml
+2025-07-17 15:40:22,757 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-17 15:40:26,687 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:40:26,696 - ERROR - 
+❌ File con errore logico (doppio o altro): test1.eml
+2025-07-17 15:40:38,769 - ERROR - 
+❌ File con errore logico (doppio o altro): DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-17 15:40:42,742 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:40:42,750 - ERROR - 
+❌ File con errore logico (doppio o altro): test1.eml
+2025-07-17 15:41:22,488 - ERROR - 
+❌ File duplicato: DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg
+2025-07-17 15:41:26,489 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:41:26,497 - ERROR - 
+❌ File con errore sconosciuto: test1.eml
+2025-07-17 15:53:21,271 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 15:53:25,029 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:53:25,038 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 15:53:25,038 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = N
+2025-07-17 15:56:34,212 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 15:56:38,666 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 15:56:38,675 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 15:56:38,675 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = N
+2025-07-17 16:03:43,650 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 16:03:47,707 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 16:03:47,714 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 16:03:47,714 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-17 16:04:52,586 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 16:04:56,125 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 16:04:56,133 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 16:04:56,133 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-17 16:09:06,449 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 16:09:10,283 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 16:09:10,299 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 16:09:10,299 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-17 16:14:05,277 - ERROR - 
+❌ Il percorso specificato non è una cartella valida!
+2025-07-17 16:17:22,645 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-17 16:17:26,611 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-17 16:17:26,625 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-17 16:17:26,625 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-21 09:57:12,986 - ERROR - 
+❌ Errore nella verifica della tabella Oracle: ORA-12545: Connect failed because target host or object does not exist
+2025-07-24 09:38:00,917 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:38:03,416 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:38:06,039 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:38:09,988 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 09:38:09,993 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 09:38:09,993 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 09:42:37,943 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:42:41,923 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:42:44,823 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 09:42:48,584 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 09:42:48,603 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 09:42:48,603 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 10:00:12,958 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 10:00:12,978 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 10:00:12,978 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 11:48:16,995 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 11:48:32,963 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 11:48:37,806 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 11:48:37,813 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 11:48:37,815 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 12:10:17,146 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:10:20,066 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:10:22,573 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:10:26,443 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 12:10:26,451 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 12:10:26,451 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 12:11:53,905 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:11:56,722 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:12:00,530 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 12:12:00,530 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 12:12:00,530 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 12:14:39,900 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:14:42,745 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2317452.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:14:47,202 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 12:14:47,213 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 12:14:47,213 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 12:16:29,032 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:16:58,100 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:17:00,624 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:18:35,592 - ERROR - Errore nello spostamento del file 20250722_165953_1_Fwd_ prova dopo.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:18:38,087 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 12:18:40,947 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
