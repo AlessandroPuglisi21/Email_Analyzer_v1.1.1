@@ -142,14 +142,14 @@ def elabora_cartella(percorso_cartella):
                 if stato_file in ('N','X') and errore_oracle_globale is False:
                     log_info(f"\n✅ File elaborato con successo: {file}")
                     # Sposto il file nella cartella di storico
-                    try:
-                        os.makedirs(STORICO_DIR, exist_ok=True)
-                        nome_file_unico = genera_nome_file_unico(STORICO_DIR, file)
-                        percorso_storico = os.path.join(STORICO_DIR, nome_file_unico)
-                        os.rename(percorso_completo, percorso_storico)
-                        log_info(f"File spostato nella cartella di storico: {percorso_storico}")
-                    except Exception as e:
-                        log_error(f"Errore nello spostamento del file {file} nella cartella storico: {e}")
+                    # try:
+                    #     os.makedirs(STORICO_DIR, exist_ok=True)
+                    #     nome_file_unico = genera_nome_file_unico(STORICO_DIR, file)
+                    #     percorso_storico = os.path.join(STORICO_DIR, nome_file_unico)
+                    #     os.rename(percorso_completo, percorso_storico)
+                    #     log_info(f"File spostato nella cartella di storico: {percorso_storico}")
+                    # except Exception as e:
+                    #     log_error(f"Errore nello spostamento del file {file} nella cartella storico: {e}")
                 ##elif stato_file in ('X', 'E'):
                 ##    log_error(f"\n❌ File con errore logico (doppio o altro): {file}")
                 else:
@@ -178,4 +178,4 @@ def elabora_cartella(percorso_cartella):
         else:
             file_errore += 1
 
-    return file_errore, file_elaborati
+    return file_elaborati, file_errore

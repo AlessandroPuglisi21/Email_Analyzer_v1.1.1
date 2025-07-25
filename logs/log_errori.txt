@@ -1009,3 +1009,62 @@ ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
 2025-07-24 16:16:08,900 - ERROR - Errore nello spostamento del file 20250722_165954_5_Fwd_ Prova Prima.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
 2025-07-24 16:16:12,494 - ERROR - Errore nello spostamento del file 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
 2025-07-24 16:16:15,627 - ERROR - Errore nello spostamento del file 20250724_130300_2_I_ PORTALE PRIMA.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:12,491 - ERROR - Errore nello spostamento del file 20250710_103250_11_Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:15,946 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER SISAL DIAMOND.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:18,896 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WELFARE BIT - ORDINE N.2264602.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:22,383 - ERROR - Errore nello spostamento del file DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:32,650 - ERROR - Errore nello spostamento del file Inserimento nuova richiesta Eatinerari - A tavola con Eataly.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:35,709 - ERROR - Errore nello spostamento del file Inserimento nuova richiesta Eatinerari - Pacchetti di esperienze targati Eataly.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:38,384 - ERROR - Errore nello spostamento del file Notifica ordine 00167525.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:46,489 - ERROR - Errore nello spostamento del file Notifica ordine 00168844.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:49,265 - ERROR - Errore nello spostamento del file Notifica ordine 00194151.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:51,907 - ERROR - Errore nello spostamento del file PORTALE WELFARE PELLEGRINI CONFERMA INSERIMENTO RICHIESTA.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:54,609 - ERROR - Errore nello spostamento del file Richiesta di contatto ALESSIA MARIOTTI # SKY25043001590064.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:03:57,471 - ERROR - Errore nello spostamento del file Richiesta di contatto ALESSIO ARRIGO # SKY25052401704582.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:04:00,140 - ERROR - Errore nello spostamento del file Richiesta di contatto ALESSIO ARRIGO # SKY25052701720736.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:04:03,096 - ERROR - Errore nello spostamento del file Richiesta di contatto DOROTHY MAFFIA # SKY25061901874877.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:04:05,574 - ERROR - Errore nello spostamento del file Richiesta di contatto Giacomo Cavallo # SKY25050701621176.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:04:08,132 - ERROR - Errore nello spostamento del file Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:04:12,286 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 17:04:12,286 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 17:04:12,301 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 17:04:14,692 - ERROR - Errore nello spostamento del file testdebub.eml nella cartella storico: [WinError 5] Accesso negato: 'C:\\Users\\batti'
+2025-07-24 17:40:02,822 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 17:40:02,858 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 17:40:02,860 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-24 17:42:45,890 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-24 17:42:45,902 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-24 17:42:45,902 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-25 09:51:54,805 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-25 09:51:54,811 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-25 09:51:54,811 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-25 09:59:10,295 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-25 09:59:10,295 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-25 09:59:10,295 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-25 10:07:48,351 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-25 10:07:48,367 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-25 10:07:48,367 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-25 10:10:25,051 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': ORA-01401: inserted value too large for column
+2025-07-25 10:10:25,062 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-25 10:10:25,064 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O

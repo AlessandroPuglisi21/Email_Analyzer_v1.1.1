@@ -1,8 +1,10 @@
+import re
 from components.config import USA_LLM, GEMINI_API_KEY, OPENAI_API_KEY, COPILOTE_API_KEY, COPILOTE_ENDPOINT, COPILOTE_DEPLOYMENT_NAME
 from components.logging_utils import log_error
 import google.generativeai as genai
 from openai import AzureOpenAI
 
+# Configurazione del modello LLM
 if USA_LLM == "Gemini" and GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
 elif USA_LLM == "OpenAI" and OPENAI_API_KEY:
@@ -19,11 +21,24 @@ else:
     exit(1)
 
 def genera_prompt(testo_email, data_mail, mittente, codici_barre=None):
-    codici_str = "\n".join([f"- {desc}: {codice}" for desc, codice in codici_barre.items()]) if codici_barre else "- Nessun codice a barre disponibile"
+    # Estrai codici a barre di 13 cifre dal testo con regex
+    barcodes = re.findall(r'\b80\d{11}\b', testo_email)
+    if barcodes:
+        codice_a_barre = barcodes[0]  # Usa il primo codice trovato
+        instruzione_barcode = f"""
+**Trovato codice a barre nel testo:** Usa '{codice_a_barre}' come valore per il campo 'codice_barre'. NON consultare la tabella di corrispondenza."""
+    else:
+        codici_str = "\n".join([f"- {desc}: {codice}" for desc, codice in codici_barre.items()]) if codici_barre else "- Nessun codice a barre disponibile"
+        instruzione_barcode = f"""
+**Nessun codice a barre trovato nel testo:** Usa la seguente tabella di corrispondenza per trovare il codice a barre corretto per ogni articolo:
+{codici_str}
+- La corrispondenza può essere approssimativa (non deve essere identica).
+- Se non trovi una corrispondenza, imposta il campo 'codice_barre' a 'NULL'."""
+
     prompt = f"""
 Analizza la seguente email e restituisci i dati richiesti in formato JSON.
 
-IMPORTANTE: La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto ha questa struttura:
+**IMPORTANTE:** La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto ha questa struttura:
 {{
     "data_mail": "data della mail in formato dd/MM/YYYY",
     "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
@@ -31,7 +46,7 @@ IMPORTANTE: La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto 
     "cognome": "cognome del cliente",
     "codice_fiscale": "codice fiscale",
     "telefono": "numero di telefono",
-    "articolo": "nome dell'articolo o SKU",
+    "articolo": "nome dell'articolo o SK o prestazione",
     "prezzo": "prezzo unitario",
     "quantita": "quantità",
     "email": "email del cliente",
@@ -39,52 +54,39 @@ IMPORTANTE: La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto 
     "codice_barre": "codice a barre dell'articolo"
 }}
 
-IMPORTANTE SULL'ESTRAZIONE DI NOME E COGNOME:
+**IMPORTANTE SULL'ESTRAZIONE DI NOME E COGNOME:**
 - Il campo "nome" deve contenere solo il nome di battesimo (es: "Mario")
 - Il campo "cognome" deve contenere solo il cognome (es: "Rossi")
 - NON invertire mai nome e cognome.
 - Esempio corretto: "nome": "Mario", "cognome": "Rossi"
 - Esempio SBAGLIATO: "nome": "Rossi", "cognome": "Mario"
 
-IMPORTANTE SULL'ESTRAZIONE DEL NOME ARTICOLO:
+**IMPORTANTE SULL'ESTRAZIONE DEL NOME ARTICOLO:**
 - Se nell'email è presente una tabella con le colonne "Oggetto" e "SKU", il campo "articolo" deve essere valorizzato **sempre** con il valore della colonna "SKU" e **non** con quello della colonna "Oggetto".
-- Se la colonna "SKU" non è presente, allora estrai il nome articolo come normalmente faresti (ad esempio dal testo o da altre colonne).
+- Se la colonna "SKU" non è presente, estrai il nome articolo come normalmente faresti (ad esempio dal testo o da altre colonne).
 - Se il nome dell'articolo inizia con un codice tra parentesi tonde (ad esempio: (IDA 143009)), IGNORA questo codice e imposta il campo articolo solo con il testo che segue, senza parentesi e senza il codice. Esempio: per "(IDA 143009) A tavola da Eataly - Un esclusivo menu di 3 portate" il campo articolo deve essere "A tavola da Eataly - Un esclusivo menu di 3 portate".
-Regole:
-1. Se un campo non è presente, usa "NULL" come valore, tranne per il campo "prezzo": se non trovi il prezzo imposta 0 (zero).
-2. Estrai la quantità così come la trovi. Se non la trovi, imposta 1.
-3. Il prezzo è il prezzo totale. Usa la virgola (,) come separatore dei decimali. Se non lo trovi, metti 0.
-5. La risposta DEVE essere un array JSON, anche se c'è un solo articolo.
-6. Non aggiungere testo, commenti o spiegazioni prima o dopo il JSON.
 
-IMPORTANTE SULLA QUANTITA:
-- Se nel testo dell'email è presente la dicitura "Quantità: N" (dove N è un numero maggiore di 0), la quantità deve essere impostata a quel valore N.
-- Lascia la quantità così come la trovi nel testo. 
-- Il prezzo associato deve essere il prezzo totale. 
-- Se non trovi una quantità esplicita, imposta "1" come valore predefinito.
-- **CASO SPECIALE**: Se il nome dell'articolo contiene un pattern come "X 2" (es: "KIT PIZZA X 2"), questo fa parte del nome dell'articolo. Non usare questo valore come quantità e il nome articolo deve rimanere "KIT PIZZA X 2". Per la quantità comportati come sempre.
-- **NUOVA REGOLA**: Se nel nome dell'articolo o nel testo compaiono espressioni come "Box per 2 persone", "Box per X persone", "Partecipanti: 2", "Partecipanti: X" non usare questo valore X come valore della quantità. Per la quantità comportati come sempre. 
+**REGOLE GENERALI:**
+1. Se un campo non è presente, usa "NULL" come valore, tranne per il campo "prezzo": se non trovi il prezzo
 
-IMPORTANTE SUL CODICE A BARRE:
-- Il codice a barre è un numero di 13 cifre.
-- REGOLA PRIORITARIA: Se trovi QUALSIASI codice a barre di 13 cifre nel testo dell'email, usalo DIRETTAMENTE come valore del campo "codice_barre" e NON consultare MAI la tabella di corrispondenza.
+**IMPORTANTE SUL CODICE A BARRE:**
+- Il codice a barre è un numero di **13 cifre**.
+- **REGOLA PRIORITARIA:** PRIMA DI TUTTO, cerca nel testo dell'email un numero di 13 cifre
+ che rappresenti il codice a barre. Se lo trovi, usa **ESCLUSIVAMENTE** il **primo numero di 13 cifre**
+  che appare nel testo come valore del campo "codice_barre". **NON CONSULTARE MAI LA TABELLA** in questo caso.
+{instruzione_barcode}
 
-ATTENZIONE:
+ALTRIMENTI  
 
-- Se trovi anche solo un codice a barre di 13 cifre in QUALSIASI parte del testo della mail, prendi ESCLUSIVAMENTE quello come valore del campo "codice_barre".
-NON consultare tabelle di corrispondenza o altri riferimenti in questo caso.
-- Solo se NON ESISTE NESSUN codice a barre nel testo della mail, allora cerca nella tabella di corrispondenza.
+**ESEMPI DI COMPORTAMENTO ATTESO:**
+1. Email: "Prodotto: Widget A - 1234567890123"  
+   Risultato: "codice_barre": "1234567890123" (usa il codice trovato, NON consulta la tabella)
+2. Email: "Widget B" e nella tabella c’è "Widget B: 9876543210987"  
+   Risultato: "codice_barre": "9876543210987" (nessun codice nel testo, cerca nella tabella)
+3. Email: "Widget C" e non c’è corrispondenza nella tabella  
+   Risultato: "codice_barre": "NULL" (nessun codice nel testo, nessuna corrispondenza)
 
--Esempi: NOME ARTICOLO-8012345678901, 8012345678901-NOME ARTICOLO, NOME ARTICOLO 8012345678901, 8012345678901 NOME ARTICOLO, (8012345678901)-NOME ARTICOLO
-NOME ARTICOLO-(8012345678901), NOME ARTICOLO (8012345678901), (8012345678901) NOME ARTICOLO, Prodotto: NOME ARTICOLO - 1235569690123, Prodotto: NOME ARTICOLO  1235569690123 
-Prodotto:1235569690123 - NOME ARTICOLO , Prodotto:1235569690123 NOME ARTICOLO, Prodotto: NOME ARTICOLO - (1235569690123), Prodotto: (1235569690123) NOME ARTICOLO
-
-COSA FARE SE SOLO E UNICAMENTE SE NON CI FOSSE NESSUN CODICE_BARRE?
-- Prendi come riferimento il nome e la descrizione dell'articolo e prova a fare una ricerca nella tabella {codici_str}, se trovi una 
-corrispondenza inserisci quel codice a barre altrimenti imposta "NULL" come valore del campo "codice_barre".
-
-
-IMPORTANTE: NON AGGIUNGERE TESTO, COMMENTI O SPIEGAZIONI PRIMA O DOPO IL JSON.
+**IMPORTANTE: NON AGGIUNGERE TESTO, COMMENTI O SPIEGAZIONI PRIMA O DOPO IL JSON.**
 
 --- INIZIO EMAIL ---
 Data: {data_mail}
@@ -93,7 +95,6 @@ Mittente: {mittente}
 --- FINE EMAIL ---
 """
     return prompt.strip()
-
 
 def chiedi_al_modello(prompt):
     if USA_LLM == "Gemini":

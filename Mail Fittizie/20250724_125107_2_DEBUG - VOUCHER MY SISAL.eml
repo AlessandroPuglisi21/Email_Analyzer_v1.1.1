@@ -1,0 +1,527 @@
+X-MDAV-Result: clean
+X-MDAV-Processed: mail.eataly.it, Tue, 22 Jul 2025 18:57:25 +0200
+X-Spam-Processed: mail.eataly.it, Tue, 22 Jul 2025 18:57:25 +0200
+Return-path: <01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com>
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.2 required=7.0 tests=BAYES_00,HTML_MESSAGE,
+	SUBJ_ALL_CAPS shortcircuit=no autolearn=no autolearn_force=no
+	version=4.0.0
+X-Spam-Report: 
+	* -4.7 BAYES_00 BODY: Bayes spam probability is 0 to 1%
+	*      [score: 0.0000]
+	*  0.5 SUBJ_ALL_CAPS Subject is all capitals
+	*  0.0 HTML_MESSAGE BODY: HTML included in message
+X-Spam-Checker-Version: SpamAssassin 4.0.0 (2022-12-14)
+Received: from GV1PR07CU001.outbound.protection.outlook.com by eataly.it (MDaemon PRO v25.0.2) 
+	with ESMTPS id md5001049481045.msg; Tue, 22 Jul 2025 18:57:24 +0200
+X-MDRemoteIP: 40.93.214.101
+X-MDHelo: GV1PR07CU001.outbound.protection.outlook.com
+X-MDArrival-Date: Tue, 22 Jul 2025 18:57:24 +0200
+X-Rcpt-To: cofanetti.eatinerari@eataly.it
+X-MDRcpt-To: cofanetti.eatinerari@eataly.it
+X-Return-Path: 01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com
+X-Envelope-From: 01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com
+X-MDaemon-Deliver-To: cofanetti.eatinerari@eataly.it
+ARC-Seal: i=3; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=xAPo372+aSkuhTnu/e1dxC3+T1Opf6WK1vCkIzWrd2ThoWUej6c59N3DBYyy7zV37j/2wqPClRV3+4M9jC/BEoXTG657A0C8RaZxMIAx+cIStSrkFXQvTkUe1EJAojOnOi01vkIm2vMawttAfZVvMsGhK1Zxdz00Ql0msKX+FcVWTFZMenPKBGcgZALg3yVGwwMbObub4jgB4vfRtuozi1JUStvpXfZm8OuWAIKq/XqPrC+mtfI5t9A5wFlHUuDvIFUo+EeIQPacF3Es6Iv7N4JRYvtepg/7CwNN0eHXdxxA0Ft7zZG2THKUpuApf5JMvpIq4ih0IzHs56RdROvtjA==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=NQY1LMgzF8OrEQM4Nzhg3ewm+aQIumNzgoxxYy6F75w=;
+ b=kmLuCTb3PhUv0SLypMtdPDk1XEJXiROVdTgQMS+ZyqPLjPsFR8ow6LUzRVw18zFEhYME+o5caG/ik/RAXqR6cIUmaQFIy08OQKrgw30czxhq+8dTKLq5tCPeC+dQv1vThbEXF/PYo+pqbLmGNKU/AcqX/GCuFysXL2Dbigl0zUagsFrepS49K5OYa+H66hx8LinWlBp/9SibmxY1FgvSCtOP0k4sYKaNuBVqfmykAoUeq11piMQ+3y/PBtQgtRzzzXWXVRCy2p304l9WgSZlXWlqNCupJcLvMSzHcgnWW91+v7yBZH3TBXwBt8cqtCMQUuZHQLbcsxtaHNguWM7aBg==
+ARC-Authentication-Results: i=3; mx.microsoft.com 1; spf=fail (sender ip is
+ 99.80.189.20) smtp.rcpttodomain=eataly.it
+ smtp.mailfrom=eu-central-1.amazonses.com; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=tantosvago.it; dkim=pass (signature was verified)
+ header.d=tantosvago.it; dkim=pass (signature was verified)
+ header.d=amazonses.com; arc=pass (0 oda=1 ltdi=1
+ dkim=[1,1,header.d=tantosvago.it] dmarc=[1,1,header.from=tantosvago.it])
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=lrerJqyHJ1h/0oEewUziYZyniBbGch4hkf5g+A1XL+McAOyAhZZGD4PzN297B2zjvpo+Gfh30sfzIasDswqPLUgUqGu9YWQ3tJVRNuvv/SQxKFLtV/hm9b6XGLcxakr0XXjull84DFK/5Q2moRSH9MZsM2wQJt55Vh868Rp/k1MKrgUMZccecSo4ADWvdWnijn1L6IydKbHt7tG59GP9HWakOqxgKXdmpMJqF+1uA7IKFjNqENU8bi/lVjcJ7tbA/s+txd5flSFIjXJ+09f0qmaEfACAuw3SKdaDFE2iBhdJs6scaVzHSqGinzhKnye1QVdOJytkwPQKwqo/7e7weQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=IbMa3ZwDpfnyaAziqzVB386oVhxOy5WAz1+s2nMZFQI=;
+ b=sfR4TVGJqOHiL606ZBmxa+BFkCAhsY4hPf4Fqz/npC3l/J7WAx7psOS+buVLMZ/5syW0AAi0Pbgb2CInJrAoU/St0BsyRQK42OmTZFsu7PsF3DM3nB5pFiNdh4bzeMmghQSQPn/1GmINqYtsYqLn6wumRC2QfZpeDeFQ9RuOW3/6GBYGe/nJ8RmTpM5Jf8rNb3G8Q5UZGZ4hB0lLgJp4GfvwebjedHLO06KeDsN8Pd1uzglovc4ps89m8g+4J6g7Qev4z3NDr1iDj8XjKS/Ds557eByUejMziwauMLxsYJCwrVccIV7ns8z5CJcnWVwmO0Dma0hTdgKkhCnYaR/V0A==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=fail (sender ip is
+ 99.80.189.20) smtp.rcpttodomain=eataly.it
+ smtp.mailfrom=eu-central-1.amazonses.com; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=tantosvago.it; dkim=pass (signature was verified)
+ header.d=tantosvago.it; dkim=pass (signature was verified)
+ header.d=amazonses.com; arc=pass (0 oda=1 ltdi=1
+ dkim=[1,1,header.d=tantosvago.it] dmarc=[1,1,header.from=tantosvago.it])
+Received: from AM8P191CA0024.EURP191.PROD.OUTLOOK.COM (2603:10a6:20b:21a::29)
+ by VI1PR07MB6510.eurprd07.prod.outlook.com (2603:10a6:800:18a::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8943.30; Tue, 22 Jul
+ 2025 16:57:17 +0000
+Received: from AMS0EPF00000190.eurprd05.prod.outlook.com
+ (2603:10a6:20b:21a:cafe::be) by AM8P191CA0024.outlook.office365.com
+ (2603:10a6:20b:21a::29) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8943.29 via Frontend Transport; Tue,
+ 22 Jul 2025 16:57:17 +0000
+Authentication-Results: spf=fail (sender IP is 99.80.189.20)
+ smtp.mailfrom=eu-central-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=tantosvago.it;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=tantosvago.it;compauth=pass reason=100
+Received-SPF: Fail (protection.outlook.com: domain of
+ eu-central-1.amazonses.com does not designate 99.80.189.20 as permitted
+ sender) receiver=protection.outlook.com; client-ip=99.80.189.20;
+ helo=nat.eu.perception-point.io;
+Received: from nat.eu.perception-point.io (99.80.189.20) by
+ AMS0EPF00000190.mail.protection.outlook.com (10.167.16.213) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8964.20
+ via Frontend Transport; Tue, 22 Jul 2025 16:57:16 +0000
+X-PERCEPTION-POINT-VERDICT: CLN
+X-PERCEPTION-POINT-SUB-VERDICT: CLN
+X-PERCEPTION-POINT-SPF:
+X-PERCEPTION-POINT-SPAM: PASS
+X-PERCEPTION-POINT-BEC-VERDICT: PASS
+X-PERCEPTION-POINT-DKIM:
+X-PP-Forefront-Antispam-Report: CIP:69.169.224.5;CTRY:US;LANG:it;SCL:-1;SRV:;IPV:NLI;SFV:SKA;H:b224-5.smtp-out.eu-central-1.amazonses.com;PTR:b224-5.smtp-out.eu-central-1.amazonses.com;CAT:NONE;SFS:(13230040)(69100299015)(12012899012)(32142699015)(2092899012)(3072899012)(8096899003)(4076899003);DIR:INB;
+Received: from GV1PR07CU001.outbound.protection.outlook.com (mail-gv1pr07cu00103.outbound.protection.outlook.com [40.93.214.99])
+ by inbound-smtp.eu-west-1.amazonaws.com with SMTP id nceihll2fl12082rrgohi3n9e683922i37tmml81
+ for cofanetti.eatinerari@eataly.it;
+ Tue, 22 Jul 2025 16:57:12 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: fail (spfCheck: domain of eu-central-1.amazonses.com does not designate 40.93.214.99 as permitted sender) client-ip=40.93.214.99; envelope-from=01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com; helo=GV1PR07CU001.outbound.protection.outlook.com;
+Authentication-Results-Original: amazonses.com; spf=fail (spfCheck: domain of
+ eu-central-1.amazonses.com does not designate 40.93.214.99 as permitted
+ sender) client-ip=40.93.214.99;
+ envelope-from=01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com;
+ helo=GV1PR07CU001.outbound.protection.outlook.com; dkim=pass
+ header.i=@amazonses.com; dkim=pass header.i=@tantosvago.it; dmarc=pass
+ header.from=tantosvago.it;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFSHM2a01FMTU4VFpnYmpIT2kyeW9wTXp4VE5sSitOM2dwbDRSQVFHUFZaUFFwUElaTkNndGZJTG8rLzlRLzQwVXM3MHJhTm02bGZGSVBsQ2lVMnpVV3R4SXh3NUk4b2tGaE8xRi9nSmdoQklXb2o2cTNEWXg2eTNNTHdqTFA1WUNVS1lLcUN0OG5lc2hUTE1VaFJ6b3RqTTJCY21zeEl5OEFVbWpHRXdNeWxQUzFpUTBUTEw1dnZYakdQbXlYaWE0WDNJbUxPUFVuWitiWTRJNVRJdkNmdVNRRGNDbFNjZHZ0VC9jcXoxZjN3U2JmRnNINzBFdE95RkFnaFVSMzRxckxIdGdGVWxmb1BBSm5nRWZlMkhTTmMvczBXbzh1bnQrTm8zZzQ4NVpPZzhjM0ZhZjlWbGI1MlFwdVhMWmF0a2kwbzlMRXdvc05nMjQ5WnltalFmQUltN0tZMUxTT3p6YjBTUnRLUHVDdDMrd012Q2ZsTm5xTFBCaWRHdVplbjJNPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=PRbqlnrch1M0c6TPD+xzwJk3yh4L6CReiEDdnSiHDuFQ84YiLZnlf+v6IggrS0If+hgcwtTzowbb/VI0bP2bv3n2bKIrBIWw9istnq82XkG523og1avz/b3HvFjs8lTWfw46RIHFXYEFsnUds7QnrBL0qkTbadgHMLjkQEBaHH4=; c=relaxed/simple; s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn; d=amazonses.com; t=1753203433; v=1; bh=q9217Ljbl9Bs0b+DbfV+VUv/o73RduW28Dr6Tstc9dg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=LZAOVgyyday2m+G15XCa9y9T+vp+56kMO6wXKiuVelrbR6NQFYPgmwRU8PlqtdNEIBKb7QeZxnM9VVVJ5i8XsLecw+nrF/aS+VSy879zxsW05UvpkamTW+TyFW2eNK5qeODPkb+IDAefgnYcmw0HDfYhlbaur5BpeOt6j3kToUd/t7tz97BFzbMvC2Wd48EbZoIHGeQiME62eGdRqI6Z9RJepu0Q5uq5hDbMgzwgbPN93nLKmDAYNAcuwMx9RcAQTQgla1xHSoCbasEr/DGhpM4/PLHpexrX8AS9YbihG0d0rICLrdCkW8/q7BfYb8DhTgPxqtQO/nExQgoUnjQM7w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=IbMa3ZwDpfnyaAziqzVB386oVhxOy5WAz1+s2nMZFQI=;
+ b=ADfDo/dj5VM2cJ/FRqpfjjAPD9fW7DTkFBchlWy7hkP6jcSsFU/7BNLjRss4WWprf9XrPwxCH9oqIBUBtIxYeCKtJTh/KcC0vTUy/MqE+AABL7oK6QC+xrjAfcim6WZxFDXEK4sLGcfR6S/Pn/uqhMdfdjEwyrrgh7QUf8a7uGglyI/tcZq4BfXc1A5IJIZiT1wTdmX31nxVjLfwrWAXYqJS3h+hcewS29lsK8aYL5Sa7XCP58ABsLEGRHoC5DTA5GVWgt9rMMTKnG+i9tCTdsGWMhXOas5YRghL9ht0915HT82t1rnTSp9V1+gJ4/d68DoVLg4lCpDl6EDSEZktag==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 69.169.224.5) smtp.rcpttodomain=eataly.it
+ smtp.mailfrom=eu-central-1.amazonses.com; dmarc=pass (p=none sp=none pct=100)
+ action=none header.from=tantosvago.it; dkim=pass (signature was verified)
+ header.d=tantosvago.it; dkim=pass (signature was verified)
+ header.d=amazonses.com; arc=none (0)
+Received: from AS4P191CA0020.EURP191.PROD.OUTLOOK.COM (2603:10a6:20b:5d9::8)
+ by PA1PR07MB10246.eurprd07.prod.outlook.com (2603:10a6:102:4eb::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8943.25; Tue, 22 Jul
+ 2025 16:57:08 +0000
+Received: from AM4PEPF00027A62.eurprd04.prod.outlook.com
+ (2603:10a6:20b:5d9:cafe::69) by AS4P191CA0020.outlook.office365.com
+ (2603:10a6:20b:5d9::8) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8964.21 via Frontend Transport; Tue,
+ 22 Jul 2025 16:57:08 +0000
+Authentication-Results-Original: spf=pass (sender IP is 69.169.224.5)
+ smtp.mailfrom=eu-central-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=tantosvago.it;dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=pass action=none
+ header.from=tantosvago.it;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ eu-central-1.amazonses.com designates 69.169.224.5 as permitted sender)
+ receiver=protection.outlook.com; client-ip=69.169.224.5;
+ helo=b224-5.smtp-out.eu-central-1.amazonses.com; pr=C
+Received: from b224-5.smtp-out.eu-central-1.amazonses.com (69.169.224.5) by
+ AM4PEPF00027A62.mail.protection.outlook.com (10.167.16.71) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8964.20
+ via Frontend Transport; Tue, 22 Jul 2025 16:57:07 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=byodkimconfig;
+	d=tantosvago.it; t=1753203427;
+	h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type;
+	bh=q9217Ljbl9Bs0b+DbfV+VUv/o73RduW28Dr6Tstc9dg=;
+	b=khDuYqOFmB48bNx6lMTJAon7dj5C4JW26IRgQ0TCNOZ9cjviiM2Xz8LdJp8a0Au4
+	tM3zm/63VIePB1on1lLKYEika3uMorbbDvBJ3u5vmv4sNOoBc4d3ZR+3hOFxsBVz40d
+	u7KU1i/oFFSxIOn3uwo3V+hg8rBMedCfUM3YBqI9F0p1TvUmgct6xHeshTs8/xH1qqQ
+	ObruYJWMZ5D/g5i4eInEdNysDMoAZVjYZ4CdRfy06wiVjmBrChdxcTv4dm+YGKuSG+y
+	zhQ169AXFcwc5GCYfbWfHh/aL/T8WtdiUZTy2T0cehk0ckqdd45HNEKR2KelRdWdaP7
+	LtAltPaf2A==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1753203427;
+	h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:Feedback-ID;
+	bh=q9217Ljbl9Bs0b+DbfV+VUv/o73RduW28Dr6Tstc9dg=;
+	b=KJk57Gpp80VGJyMCPM97fmFU0yyq9MhGoQ/Eh2UbmG/f5CWibkocuXBw5lXkDo7F
+	J1ZoIvvtRh+SzPQ3ZiazcEWo6cQVwVjhADjas2/Kp2ixVOHtdFRlatUpTTXzLUOzhtO
+	cfwrkT7Zw12P3Hh8b10O18Q6FYPtjm5VTqLqKyGE=
+From: MySisal <sys@tantosvago.it>
+Date: Tue, 22 Jul 2025 16:57:07 +0000
+Subject: DEBUG - VOUCHER MY SISAL
+Message-ID: <01070198331147d5-00da5354-0770-4b1d-aef7-c9fd3a51f3c5-000000@eu-central-1.amazonses.com>
+Reply-To: "assistenza.clienti@tantosvago.it" <assistenza.clienti@tantosvago.it>
+To: "cofanetti@eataly.it" <cofanetti@eataly.it>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-+Q5NYGuGJkbcwhHEr9OgRg=="
+Feedback-ID: ::1.eu-central-1.cONfDAED2OcuEc2BGjquePSS270eu+CX6082SUU/FZI=:AmazonSES
+X-SES-Outgoing: 2025.07.22-69.169.224.5
+X-EOPAttributedMessage: 1
+X-EOPTenantAttributedMessage: 91e43616-34d9-41a4-8871-57dce8f9de55:1
+X-MS-TrafficTypeDiagnostic:
+	AM4PEPF00027A62:EE_|PA1PR07MB10246:EE_|AMS0EPF00000190:EE_|VI1PR07MB6510:EE_
+X-MS-Office365-Filtering-Correlation-Id: 10df284b-a15e-46af-628a-08ddc940d07b
+X-LD-Processed: 91e43616-34d9-41a4-8871-57dce8f9de55,ExtFwd
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-PERCEPTION-POINT-CUSTOM: EATALY
+X-Microsoft-Antispam-Untrusted:
+ BCL:3;ARA:13230040|69100299015|12012899012|32142699015|2092899012|3072899012|8096899003|4076899003;
+X-Microsoft-Antispam-Message-Info-Original:
+ =?us-ascii?Q?qOfierr0IWJQDy3DIQ0hGkLsZlfml3CQ7xsj8xFwsWpeaI1gFkIaKHrSdhtk?=
+ =?us-ascii?Q?RXzxuaerF3W8EeQp6HAyen9ul5RUojm3+wmM/P3bVpPO0kXXyM/2lZtWxA53?=
+ =?us-ascii?Q?/mn0KNbcYri79PGO/5sKgSE8mRCeN6ROMmxLHYMP/Ir8rE7M8wOyLmGrInuK?=
+ =?us-ascii?Q?HUJeCLALJiqvc8t0ZNNk87LPJyeYnb9HpYGNYi4yCb0KdpgdQgZUOv6Z8IdN?=
+ =?us-ascii?Q?SNBxOXklkle0HP9TtmLy1eTQbO4lULplZWIqyrdkrKnx1142YQGIuSVLuler?=
+ =?us-ascii?Q?7DS4dC1tSLTHkZIyekO9OMIN2y2Az2Mbxstd8D5WRF6/XbHwSMMF1xgcLeZ7?=
+ =?us-ascii?Q?a/V1VSzPiKk/nJmo4Vg4+PWObVX0LWTFKOAEVmqXY2s4x4ZF+Q9qTB+v0fbs?=
+ =?us-ascii?Q?sMZ2l1XyBetaN1DxhDXadPrhUdRJe0gD6vASpULpfs0+9BZkweVkBR/hwImB?=
+ =?us-ascii?Q?kXXrbyU4o8QQug15XmSe9sBp/F0e1qrcvJopIz742+bD1cPj4MeWCHT7r2P0?=
+ =?us-ascii?Q?6PYt991riEENgsWMM5b//+O4wyZSMmgQoC82vgCTAYIXlqEj9KkEg26guwBr?=
+ =?us-ascii?Q?dEhxg+v28hVmFYYF4oOxqlsCmxIYm9IQuPoQCkDzR9gceGLBekBwiFwURFkk?=
+ =?us-ascii?Q?G2f9TA9XKXY8sZBmLoa5Uj4yq45e4zUDDnsAfrmhLoO4Cip9wB+yE5BViClw?=
+ =?us-ascii?Q?6uelqpRsJ1F9V08s7fMBFfnDJbVixKA6Df/ASEhuzcEDWEOQ9MHBNC+ZL+MM?=
+ =?us-ascii?Q?HBetOgYAmizVA+QUB/TaERMoQXSkkE3aa2TVMh2a7vLptwC9jy1gHlDJpKDZ?=
+ =?us-ascii?Q?UY1wlhgZUdROq28dZhgHrR/gJm7CDIV0W4uVDT+XRphVQxcRup83DV8RLlUD?=
+ =?us-ascii?Q?UocHNyHRZtp3kTssyUEaMhxEe0K/jgGcsKKqFFlcGdz6ppOB4WcM1B8BvOGo?=
+ =?us-ascii?Q?mbl+aTqogwrM35FfO2P+5HXLvdk8qmX4SiAELPju5sbFevBD8WrLs4otL79l?=
+ =?us-ascii?Q?5DQyJmereH4CPbqoQ3p7YbTPPIT8YO2h0dYdfwe1++McwJMykaT4dH7/Pdjm?=
+ =?us-ascii?Q?3S1QzTLmvdK/9ltUGd8fl42fgskuaAJ6+1ksymcsitBb/CGdU+LXG+kg5npU?=
+ =?us-ascii?Q?ksyBRq4lsC3F4DMHr5fMIUb6v8B5aGrAJvS6TBf6lycaYe4V/EdU2tWuvSX/?=
+ =?us-ascii?Q?vqKY4HYcB0kv0d7cpGn0YAwu8djmsujes8PPnqaCEduov0Vjgf/4CwFx25le?=
+ =?us-ascii?Q?+wjL7eDxKiYX+g3cjE3tQHazZqy6KnYb+MFvl79FNEFVEMVLqxEStafOL2KM?=
+ =?us-ascii?Q?CLWJOOSkkQQXbNpVO2Q1ZYq3aFunLIKnDGLHll7ELRZ8dCAKX4y/FU5ECtpD?=
+ =?us-ascii?Q?+FtohbDl06Hxm5sdgUtjz9XPX+NTfffy38M6Ch8x3fNN3vIR5QdOI/5TTLDF?=
+ =?us-ascii?Q?XVgVKosN9FkQBzonYp1ORjmDVphsRspE7MJ59F/PVZ/z+LjIruo6JgoGqo0t?=
+ =?us-ascii?Q?4V980m7+LBZtbPEo9LtfABPWcEseNVjQWeRSMZKaudBJPsWYVPZoZufVGDIs?=
+ =?us-ascii?Q?whCdjy9lFaZ7oDu+kGmuFU9O6Lx1fmNXfXu+gNQYjVbJZMsUSeGFac2vlFqv?=
+ =?us-ascii?Q?CqbPFiywY0o0ZnnWRMqxZu88xhHCS9UZRlEnz4A5LI7HFxJ+WeKBEuGK6AWU?=
+ =?us-ascii?Q?tKpkFTNtzUs2NCVumJjSP+Y4RwifEgK8exLBiSrwP8aCNYObAwrFLx2ytKVO?=
+ =?us-ascii?Q?WFd/Q+/xbOu5unCd7WHPElurqehrhxXa1EimQ/UeDozJdT7FilbJtb3CHQ4P?=
+ =?us-ascii?Q?Zlmch/cQsi6PHtbQcATBNJ1DPE+tWsKtEopEN4q246TRsuOJAilrazEQtMJF?=
+ =?us-ascii?Q?qKUOCszmwcy/TPVD1I0vMV9N1u4D1b8WnNB/ZRTYSxYvPQcjAuM1Mc2R6Msq?=
+ =?us-ascii?Q?w6wKUZrG2I9c/gZbbYitxZeq970rCdSQRfHgVxe5TJtjDadF9Ugg8RIQq4dZ?=
+ =?us-ascii?Q?6TgNyKhoKobCjvfgSDdhLSQgUH/Pj9lqQQOAjSr/bG/avW9ra6CTuqFxcygh?=
+ =?us-ascii?Q?JPzl7nr/OAqZbIH6u7P5bq6PRUyeS6CtC5ATe6dgMtkmYFFFhQeGMzR+T50M?=
+ =?us-ascii?Q?6fWmAAoNfrTsd335bCM75zvhmuEI4dURqsYjoKgpdioKzVkilc2irenAhZuh?=
+ =?us-ascii?Q?4InnmdM61Q89tIz+NQ2hKWq/bgCgbgVaFeBnUYkgDWv8nvVNFNwafs4/aAxw?=
+ =?us-ascii?Q?wcqG1MuM27jOAV7pIETILDrdzn5qGTsANkHMlWdTxt9vmI0s6I1iDc3AyOrc?=
+ =?us-ascii?Q?ByFWNbrlsAYYHJNdV/4a0fUKQ2f2HbOe2+PH8yw0hOeeVt1rIOJSccKWlVvU?=
+ =?us-ascii?Q?yWVGdHi/FSu1p5f1HoS+BF8XZ7y7mQqoF5vYxYF2CULl1YZmYcMPCSv3i29p?=
+ =?us-ascii?Q?9V0ooK5gCzXt8isjLg/lGyuU59HXkaQpFmGQuJSGL0iTwpNikzrb97Fr1NZq?=
+ =?us-ascii?Q?kjrLzqQJquHttHPbG03CnFHIw8eNhxdEiysQ?=
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:69.169.224.5;CTRY:US;LANG:it;SCL:-1;SRV:;IPV:NLI;SFV:SKA;H:b224-5.smtp-out.eu-central-1.amazonses.com;PTR:b224-5.smtp-out.eu-central-1.amazonses.com;CAT:NONE;SFS:(13230040)(69100299015)(12012899012)(32142699015)(2092899012)(3072899012)(8096899003)(4076899003);DIR:INB;
+X-MS-Exchange-ForwardingLoop:
+ cofanetti@eataly.it;91e43616-34d9-41a4-8871-57dce8f9de55
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PA1PR07MB10246
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ AMS0EPF00000190.eurprd05.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+	85a46e5d-bab9-4df3-0691-08ddc940cb0a
+X-Microsoft-Antispam:
+	BCL:3;ARA:13230040|32142699015|82310400026|35042699022|12012899012|69100299015|3072899012|2092899012|39022699012|8096899003|4076899003;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MVFORVl1ZDdaNzAyRldPRUpWcGRVbUVZSXJvbW9KZnF1VzNTSTErL0hnNCtV?=
+ =?utf-8?B?Z0pkYlQ2NVBuZXBOZnVmeGZxL0g4RGc4M09mVjNtejc1ZkZZcURlN3c0QWtn?=
+ =?utf-8?B?TDY2OVV3VXFWSFFsOCtuVHd2MWp3d0JSZFhjcUFYZTlDLzhQUjdvTHZGcCtl?=
+ =?utf-8?B?MGV0R0c1eGtVME00M1ovWS9UeXRldjIvMlVRQmdobzgzK1VubGdUQXBLbS96?=
+ =?utf-8?B?OUhHemJVU21xd28ySGhLMXphRmNIMVVyTHpSRUNLNEVwZzlZWkdHdTk5WktJ?=
+ =?utf-8?B?eENXU1I4N3pMU3RuRnlzM2k0Q3lhS0FFY0xXaUl6MWlXcXR0K0NNTGpEZVBp?=
+ =?utf-8?B?UUlWYm9LN29LdUN3c1ZqMEpLNnZrVkg0V0VZSlFoU2lLNUE3Zkx0dlFtVzVJ?=
+ =?utf-8?B?bFdYWWhXSnRsMnhrM2dicDVFWGNsbTNnQnY4MkFNK2tqeEpzYlFGYUJJVWN6?=
+ =?utf-8?B?eldWaTN4dEFqOC8rY3FVYUkzRmpPd2JzNTN3UHFvbXFkcU1yenMvL3pzNVRh?=
+ =?utf-8?B?MXJMeGRRQ1dlSUxhWWtiRWZlTkJVMHd5QVFITDlaYmdscFluVndtTm0ySlZa?=
+ =?utf-8?B?TytEZC95MzNXUVZRUHpDc25RTHpkcThlYzJxYkMwY2ZIN2tkU2FwY1FSMFk1?=
+ =?utf-8?B?K2hDY0tVQ3dDRnQvM04xVkFnSWZuR2pEUGVRdFF2M0piZE5neE9YaGRmMGZr?=
+ =?utf-8?B?dXVyQVFKOWU3RjJwYUsrVENiOFVvVW0rWlRYZEt6dE9wS2t6TUlGNWZzSDZz?=
+ =?utf-8?B?aVlwcHRNVDZLSEJNVm5hWVB5S3NvLytsL1lFcGhxRGtuY3RLaG5Ja1pRanVS?=
+ =?utf-8?B?blFkdGQ3UG1PbU9FM2ZQaUpUd3dxaVNwYnRESG9CUENaVVNSSDg1ZXZsUHJH?=
+ =?utf-8?B?bm5BdE5WUGdURXUyclBBODgyc1haeGN2T2dTQ3hOTDlSM2ltM2JzaEh5OG4w?=
+ =?utf-8?B?VmNhc2lvSmdIWjc4eEdIWFpheml2ZmEzMUdUVHZWQmVDOEFRcXZmQUFud0ZH?=
+ =?utf-8?B?WnN3dUNxcTRnVTVEWHppSUIyeHRsL0YwcExvQTljcW1iL1lXOUo1RFdlcFBo?=
+ =?utf-8?B?S0Z3VGoyK2tCTjhuMHFHOTgvNk9IamVBVmtnazhEbWM3anRvNzNxMzd5allY?=
+ =?utf-8?B?RU9nV08rNVRrUE42dTZSQVdFUWQ0SEgvYzJndDVNbm9EeTRWajhQN0pkVGpi?=
+ =?utf-8?B?OHlUQXBuYk5oZkttcEt1Yk96UmdvK0d2L3U3RXc3RFNuVHJpQ3dDSE1nc21x?=
+ =?utf-8?B?Z1ArTUw1NUQ1dnZiaVhoWmVxUTVyV0p3TXZaQktDbVRzQ3gydUVTM090dHVF?=
+ =?utf-8?B?QUdyRVBCOXZWU09Lc2dGcWtwd2F0L0RhcktvTXNML2grUDBrVUMvSkpDUlk3?=
+ =?utf-8?B?UkE3U0NBbktISkZPUHV1anFtMXhoREo1ZVJoOFg5UFpVVTZYVkI5SWpqMlhv?=
+ =?utf-8?B?eTJmNWY3TUxzWlJDMEQwVG1oSUVmK1BKcVk5RWdsYVcxNjlENWFYampBRzdE?=
+ =?utf-8?B?bmFRN0JSN3dFQm55QnYyN3h3WmJKMlRjRjQxRmV6emNvc0lYbWFDWTJ3RVhF?=
+ =?utf-8?B?TnM2WkhnWGV2S1hMb1R0VTRvOGtrSTFvOTBRajJ4cFEzdXpYNDdXUEpjcXhP?=
+ =?utf-8?B?MlFqQ1FRZ0lxR3RzNFlFVEZlck5UUDNSaWQ5SDByZzdJdnhwZ2NWbkZ5Nkpp?=
+ =?utf-8?B?cFIrcHlrV09WM1Q5em9ZMXpXczM3YklZd0VWUStEbWZ4VmFPZXJQbEZ4Yi95?=
+ =?utf-8?B?ODczRDBtTHoxQmROSEhWcmlBZmxCVnlWWlRZSjlQZXBYc3NkS2lVSkxpaEJl?=
+ =?utf-8?B?c1U3Yks3K1plOW52RGpnY09QcW04MFN5R0JJMHRNdDhFbWpMbXdYOG1zMnZv?=
+ =?utf-8?B?Y1ZjS1ZhTzMxb3F0eU8yQ3huNkZCTXUreWZWck9BcmNKUC8rV2M1ODVxWko1?=
+ =?utf-8?B?QlFuQU1XQXRtUTVLQ1BraW1ibFcyb1VPU25EVzZXTk9lUWF6bHFNanc0TVdE?=
+ =?utf-8?B?OTRVZzlFYlVsYmx0YkViaG1oQ2dLWkptcUdVVWplajJJZ1NSMXZrR09MRVdP?=
+ =?utf-8?B?RnZtNXB2dlNadFd4YVdCdEN3dHM0S095cWZoZDc4VFJJb1gvMHN5UGszUzBX?=
+ =?utf-8?B?cG51WmNUU2JCZU9zT0FtSVU0aC96dW5BMGhIa2lDSjFZOWVYdXpwOWZsLzVq?=
+ =?utf-8?B?N2R3RG9FZUpITnVGSHhLeGtFNXFjbk14VzU0cXllQ3g4YzdvdEx5S3FTVk1p?=
+ =?utf-8?B?akQyVC9BNEplZVJHR2V2aGpZNkFxSFczdmkzYXNlTTY5RGZwMjM2M2M1NXAz?=
+ =?utf-8?B?dlpuWW40dEVKTFlObkJQa3VMMXU3dXM3YThOZzY4bWpRQ1ljV0FTVC85Nkds?=
+ =?utf-8?B?c2ZUWVpZMVc1WklUeVdMNyt3TVRza2taY21xTkJQZ2VzVG9vcVRwRFVoMlUz?=
+ =?utf-8?B?TXdDTlFGK3IzQXovUFBJT3A2ZWQ4VStYQ3Z4TUlHRnlEbWFqSjBSQm5nRXRG?=
+ =?utf-8?B?L1JwZnhPWmpvRHBIZWp1ZkwzNlhhQitUMGtnK080SG1pQVRiUlhXOVd5bWho?=
+ =?utf-8?B?bHd1SEdlcFh0a3ZpS3lseFBjTjRtL1M0cTNHay9sQi9FN2p5akJySGRmWE40?=
+ =?utf-8?B?c005Q1ZwTDZxSHFvNUYxUU00QUlLVFNHUXoxaWtLaEdrNkI2ZEJITmFaZzM1?=
+ =?utf-8?B?bloralc0WDArYzBFRnoydzdrR3NxdFRaVkRldEczK1pHSWw0UmwzUnlBTmVQ?=
+ =?utf-8?B?M3lwczBvbnI4NVVXQThLUXRReUFHdm9KeWY5OUdwN1RnNkhYbDAwVHl1Z2Ft?=
+ =?utf-8?B?aUZNamlZUW91c1NkeEMvVTh6dTArSkE4ZzlIV0xscUxoaVZzMDIyV0pid2VQ?=
+ =?utf-8?B?Zlpkblp0d0JWZE9nSEVNT1psUXhnTHhBM2plMGFVc3hrQk9yQ2xuRHZ2ZGhO?=
+ =?utf-8?B?TUtnZ2xvam96eXkxOXZHR0VENWltYjdJRmM0Sno3cU5DcTlwUjRibWFGVTNm?=
+ =?utf-8?B?OVdQQ016NW9MdnVZSFZTWlA1dlBhTHFxMXI3azlTZzlJNk5ZeHNxQUE4d3ky?=
+ =?utf-8?B?ZzFrS281SDVSckFSSE9hNTQ0YUo3OHNXamRQajA5cThYeWVNNmRMVTFJUWl3?=
+ =?utf-8?B?c2orWXZndDBKKzFUZTNSWFVLV0g4ZTRPQ2ZVbm9GV0JZc2ViSTU1NE5wMjhw?=
+ =?utf-8?B?TDBlUm9LM2Q3dWJiTmVWSUFYSXBKUzJ5MEFpaloyZmt3S3NSaGRVYjVRdW5U?=
+ =?utf-8?B?Wk9XYUE9PQ==?=
+X-Forefront-Antispam-Report:
+	CIP:99.80.189.20;CTRY:IE;LANG:it;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:nat.eu.perception-point.io;PTR:nat.eu.perception-point.io;CAT:NONE;SFS:(13230040)(32142699015)(82310400026)(35042699022)(12012899012)(69100299015)(3072899012)(2092899012)(39022699012)(8096899003)(4076899003);DIR:INB;
+X-OriginatorOrg: eataly.it
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Jul 2025 16:57:16.8634
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 10df284b-a15e-46af-628a-08ddc940d07b
+X-MS-Exchange-CrossTenant-Id: 91e43616-34d9-41a4-8871-57dce8f9de55
+X-MS-Exchange-CrossTenant-AuthSource:
+	AMS0EPF00000190.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR07MB6510
+X-MS-Exchange-CrossPremises-OriginalClientIPAddress: 99.80.189.20
+X-MS-Exchange-CrossPremises-TransportTrafficType: Email
+X-MS-Exchange-CrossPremises-TransportTrafficSubType:
+X-MS-Exchange-CrossPremises-AuthSource:
+	AMS0EPF00000190.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossPremises-AuthAs: Anonymous
+X-MS-Exchange-CrossPremises-Disclaimer-Hash:
+	0a37d0fc526deb55094b2e618f318d7242fc1ffcd82323606c2c77ab0baba058
+X-MS-Exchange-CrossPremises-Antispam-ScanContext:
+	DIR:Incoming;SFV:NSPM;SKIP:0;
+X-MS-Exchange-CrossPremises-SCL: -1
+X-MS-Exchange-CrossPremises-Processed-By-Journaling: Journal Agent
+X-OrganizationHeadersPreserved: VI1PR07MB6510.eurprd07.prod.outlook.com
+
+--=-+Q5NYGuGJkbcwhHEr9OgRg==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Caution: This is an external email and may be malicious. Please take care w=
+hen clicking links or opening attachments.
+
+[https://intranet.tantosvago.it/Public/FileDownloader.ashx?FileId=3DUG43R1d=
+2YTA1alBqcUNUTjZVdnp0MWRWOUhtTWNPWVJyWDBrM0FnV1Nsdz0=3D]
+
+E' stato emesso un Voucher per il beneficiario: ,
+
+
+
+CODICE DI PRENOTAZIONE: SISL838ON503
+CODICE DI RIMBORSO: SV372DV
+
+DATA DI CREAZIONE: 10/04/2025
+DATA DI EMISSIONE: 22/07/2025
+SCADENZA VOUCHER: 31/12/2025
+
+
+VOUCHER VALIDO PER:
+
+[https://images.tantosvago.it/Progetto%20senza%20titolo%20-%202023-06-28T10=
+5618.968.png]        Eatinerari
+
+(IDA 143010) Una pizza da Eataly | Box per 2 persone
+VIA NIZZA, 224, Torino 10131 (TO) - PIEMONTE ITA
+
+Partecipanti: 2   Durata: varia
+
+DATI BENEFICIARIO
+Nome Cognome:
+Email: cri.calavita@tiscali.it
+Telefono:
+
+
+Con l'Eatinerario Una Pizza x2 da Eataly  potrai riscoprire il sapore pi=C3=
+=B9 autentico e genuino di una pizza buonissima, croccante e gustosa al pun=
+to giusto, realizzata con le migliori materie prime.
+
+Il cofanetto =C3=A8 valido per 2 persone, a pranzo o a cena, e comprende:
+- 1 Pizza a scelta tra Margherita, Bufala, Diavola o Ortolana
+- 1 Bevanda a scelta tra Acqua, Birra Piccola alla Spina o un Soft Drink
+Potrai scegliere se consumare la tua pizza all'interno di uno dei nostri ri=
+storantini o se prenderla da asporto e gustarla dove pi=C3=B9 preferisci.
+E se sceglierai di consumare nei ristorantini di Eataly, il coperto e il ca=
+ff=C3=A8 sono inclusi!
+
+Ecco i ristorantini Eataly tra cui potrai scegliere:
+- Torino Lingotto
+- Trieste
+- Torino Pinerolo
+- Roma
+- Milano
+- Firenze
+- Genova
+- Piacenza (solo venerd=C3=AC a cena e nel weekend a pranzo e cena)
+- Verona
+
+
+[https://intranet.tantosvago.it/Public/FileDownloader.ashx?FileId=3DUG43R1d=
+2YTA1alBqcUNUTjZVdnp0d0hIMGJ1cnFyS3NTbHdiYVBZYjZoRT0=3D]
+
+--=-+Q5NYGuGJkbcwhHEr9OgRg==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body>
+<!-- Red Banner -->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td style=3D"background:#ff0000;padding:5pt 2pt 5pt 2pt"></td>
+<td width=3D"100%" cellpadding=3D"7px 6px 7px 15px" style=3D"background:#ff=
+000;padding:5pt 4pt 5pt 12pt;word-wrap:break-word">
+<div style=3D"color:#000000;"><span style=3D"color:#000000; font-weight:bol=
+d;">Caution:</span> This is an external email and may be malicious. Please =
+take care when clicking links or opening attachments.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div>
+<div>
+<div class=3D"adM"></div>
+<table width=3D"670" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=
+=3D"center">
+<tbody>
+<tr>
+<td></td>
+<td width=3D"670">
+<table width=3D"670" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td><img src=3D"https://intranet.tantosvago.it/Public/FileDownloader.ashx?F=
+ileId=3DUG43R1d2YTA1alBqcUNUTjZVdnp0MWRWOUhtTWNPWVJyWDBrM0FnV1Nsdz0=3D" cla=
+ss=3D"CToWUd"></td>
+</tr>
+<tr>
+<td height=3D"50">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table width=3D"670" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td width=3D"75"></td>
+<td width=3D"520">E' stato emesso un Voucher per il beneficiario: <strong><=
+/strong>,<br>
+<br>
+<br>
+<br>
+CODICE DI PRENOTAZIONE: SISL838ON503 <br>
+CODICE DI RIMBORSO: SV372DV<br>
+<br>
+DATA DI CREAZIONE: 10/04/2025<br>
+DATA DI EMISSIONE: 22/07/2025<br>
+SCADENZA VOUCHER: 31/12/2025<br>
+<br>
+<br>
+VOUCHER VALIDO PER:<br>
+<br>
+<table>
+<tbody>
+<tr>
+<td style=3D"vertical-align:top; padding-right:50px;"><img src=3D"https://i=
+mages.tantosvago.it/Progetto%20senza%20titolo%20-%202023-06-28T105618.968.p=
+ng" width=3D"200px">
+</td>
+<td style=3D"vertical-align:top;">Eatinerari<br>
+<br>
+(IDA 143010)&nbsp;Una pizza da Eataly | Box per 2 persone<br>
+VIA NIZZA, 224, Torino 10131 (TO) - PIEMONTE ITA<br>
+<br>
+Partecipanti: 2&nbsp;&nbsp;&nbsp;Durata: varia<br>
+<br>
+DATI BENEFICIARIO<br>
+Nome Cognome: <br>
+Email: cri.calavita@tiscali.it<br>
+Telefono: <br>
+</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><br>
+<br>
+Con l'Eatinerario Una Pizza x2 da Eataly&nbsp; potrai riscoprire il sapore =
+pi=C3=B9 autentico e genuino di una pizza buonissima, croccante e gustosa a=
+l punto giusto, realizzata con le migliori materie prime.<br>
+<br>
+Il cofanetto =C3=A8 valido per 2 persone, a pranzo o a cena, e comprende:<b=
+r>
+- 1 Pizza a scelta tra Margherita, Bufala, Diavola o Ortolana<br>
+- 1 Bevanda a scelta tra Acqua, Birra Piccola alla Spina o un Soft Drink<br=
+>
+Potrai scegliere se consumare la tua pizza all'interno di uno dei nostri ri=
+storantini o se prenderla da asporto e gustarla dove pi=C3=B9 preferisci.<b=
+r>
+E se sceglierai di consumare nei ristorantini di Eataly, il coperto e il ca=
+ff=C3=A8 sono inclusi!<br>
+<br>
+Ecco i ristorantini Eataly tra cui potrai scegliere:<br>
+- Torino Lingotto<br>
+- Trieste<br>
+- Torino Pinerolo<br>
+- Roma<br>
+- Milano<br>
+- Firenze<br>
+- Genova<br>
+- Piacenza (solo venerd=C3=AC a cena e nel weekend a pranzo e cena)<br>
+- Verona<br>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width=3D"75"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"50">&nbsp;</td>
+</tr>
+<tr>
+<td><img src=3D"https://intranet.tantosvago.it/Public/FileDownloader.ashx?F=
+ileId=3DUG43R1d2YTA1alBqcUNUTjZVdnp0d0hIMGJ1cnFyS3NTbHdiYVBZYjZoRT0=3D" cla=
+ss=3D"CToWUd"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"auto-style1"></td>
+</tr>
+</tbody>
+</table>
+<div class=3D"yj6qo"></div>
+<div class=3D"adL"></div>
+</div>
+</div>
+</body>
+</html>
+
+--=-+Q5NYGuGJkbcwhHEr9OgRg==--
