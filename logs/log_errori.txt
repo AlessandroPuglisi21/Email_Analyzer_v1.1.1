@@ -1068,3 +1068,77 @@ ValueError: Invalid format specifier ' "data della mail in formato dd/MM/YYYY",
 ❌ Nessun record inserito nel database Oracle.
 2025-07-25 10:10:25,064 - ERROR - 
 ❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-28 12:54:56,744 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:54:56,761 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:54:56,761 - ERROR - 
+❌ File con errore sconosciuto: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:54:57,769 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 12:56:33,389 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250722_165953_1_Fwd_ prova dopo.eml': 'numero_ordine'
+2025-07-28 12:56:33,389 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:33,389 - ERROR - 
+❌ File con errore sconosciuto: 20250722_165953_1_Fwd_ prova dopo.eml, Stato = O
+2025-07-28 12:56:37,313 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250722_165954_5_Fwd_ Prova Prima.eml': 'numero_ordine'
+2025-07-28 12:56:37,318 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:37,318 - ERROR - 
+❌ File con errore sconosciuto: 20250722_165954_5_Fwd_ Prova Prima.eml, Stato = O
+2025-07-28 12:56:40,831 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml': 'numero_ordine'
+2025-07-28 12:56:40,847 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:40,847 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml, Stato = O
+2025-07-28 12:56:44,429 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml': 'numero_ordine'
+2025-07-28 12:56:44,429 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:44,429 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml, Stato = O
+2025-07-28 12:56:48,202 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:56:48,210 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:48,210 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:56:51,785 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:56:51,793 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:51,793 - ERROR - 
+❌ File con errore sconosciuto: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:56:55,196 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg': 'numero_ordine'
+2025-07-28 12:56:55,212 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:55,212 - ERROR - 
+❌ File con errore sconosciuto: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg, Stato = O
+2025-07-28 12:56:58,778 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'Notifica ordine 00194151.msg': 'numero_ordine'
+2025-07-28 12:56:58,794 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:58,794 - ERROR - 
+❌ File con errore sconosciuto: Notifica ordine 00194151.msg, Stato = O
+2025-07-28 12:57:02,370 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg': 'numero_ordine'
+2025-07-28 12:57:02,370 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:57:02,370 - ERROR - 
+❌ File con errore sconosciuto: Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg, Stato = O
+2025-07-28 12:57:06,395 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': 'numero_ordine'
+2025-07-28 12:57:06,410 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:57:06,410 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-28 12:59:46,158 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 13:02:17,263 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 14:15:53,921 - ERROR - 
+❌ Il percorso specificato non è una cartella valida!

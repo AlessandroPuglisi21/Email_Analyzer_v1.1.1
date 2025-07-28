@@ -2,7 +2,8 @@ import os
 import json
 import csv
 import time
-from datetime import datetime
+from collections import defaultdict
+from datetime import datetime, timedelta
 from components.logging_utils import log_info, log_error
 from components.email_utils import estrai_testo_da_file, filtra_body_mail
 from components.ai_utils import genera_prompt, chiedi_al_modello
@@ -88,7 +89,43 @@ def genera_nome_file_unico(percorso_cartella, nome_file):
         counter += 1
     return nuovo_nome
 
+# Rate limiting globale
+class RateLimiter:
+    def __init__(self, max_requests=100, time_window=3600):  # 100 req/ora
+        self.max_requests = max_requests
+        self.time_window = time_window
+        self.requests = defaultdict(list)
+    
+    def is_allowed(self, identifier="global"):
+        now = datetime.now()
+        # Pulisci richieste vecchie
+        cutoff = now - timedelta(seconds=self.time_window)
+        self.requests[identifier] = [
+            req_time for req_time in self.requests[identifier] 
+            if req_time > cutoff
+        ]
+        
+        # Verifica limite
+        if len(self.requests[identifier]) >= self.max_requests:
+            return False
+        
+        self.requests[identifier].append(now)
+        return True
+
+rate_limiter = RateLimiter()
+
 def elabora_cartella(percorso_cartella):
+    """Versione sicura dell'elaborazione"""
+    # Verifica rate limiting
+    if not rate_limiter.is_allowed():
+        log_error("❌ Rate limit superato. Riprova più tardi.")
+        return 0, 0
+    
+    # Validazione percorso
+    if not os.path.isdir(percorso_cartella):
+        log_security_event("INVALID_PATH", f"Tentativo accesso: {percorso_cartella}", "WARNING")
+        raise ValueError("Percorso non valido")
+    
     risultati = []
     file_elaborati = 0
     file_errore = 0
@@ -170,6 +207,19 @@ def elabora_cartella(percorso_cartella):
 ##            log_info(f"\n✅ Risultati salvati nel file: {nome_file_csv}")
 ##        except Exception as e:
 ##            log_error(f"\n❌ Errore nel salvataggio del file CSV: {e}")
+    # Nuovo conteggio basato su tutti i risultati
+    for r in risultati:
+        stato = r.get('stato')
+        if stato in ('N','X'):
+            file_elaborati += 1
+        else:
+            file_errore += 1
+
+    return file_elaborati, file_errore
+    
+    # Log operazione
+    log_security_event("FOLDER_PROCESSING", f"Cartella: {percorso_cartella}, Files: {len(os.listdir(percorso_cartella))}")
+    
     # Nuovo conteggio basato su tutti i risultati
     for r in risultati:
         stato = r.get('stato')

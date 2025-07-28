@@ -1,6 +1,7 @@
 import re
+import html
 from components.config import USA_LLM, GEMINI_API_KEY, OPENAI_API_KEY, COPILOTE_API_KEY, COPILOTE_ENDPOINT, COPILOTE_DEPLOYMENT_NAME
-from components.logging_utils import log_error
+from components.logging_utils import log_error, log_security_event  # Ora funziona!
 import google.generativeai as genai
 from openai import AzureOpenAI
 
@@ -20,7 +21,72 @@ else:
     log_error(f"❌ Configurazione API non valida per il modello selezionato: {USA_LLM}")
     exit(1)
 
+def sanitize_email_content_basic(content):
+    """Sanitizzazione base per prevenire prompt injection"""
+    if not content or not isinstance(content, str):
+        return ""
+    
+    # Pattern pericolosi di base
+    dangerous_patterns = [
+        r'(?i)ignora.*(?:tutto|precedente|sopra|istruzioni)',
+        r'(?i)nuove?\s+istruzioni?',
+        r'(?i)system\s*:',
+        r'(?i)assistant\s*:',
+        r'(?i)ignore.*(?:all|previous|above|instructions)',
+        r'(?i)new\s+instructions?',
+        r'(?i)admin.*password',
+        r'(?i)delete.*table',
+        r'(?i)drop.*database'
+    ]
+    
+    suspicious_patterns_found = []
+    
+    # Rimuovi pattern pericolosi
+    for pattern in dangerous_patterns:
+        if re.search(pattern, content):
+            suspicious_patterns_found.append(pattern)
+            # CAMBIATO: Ora usa severità HIGH per inviare notifiche email
+            log_security_event(
+                "PROMPT_INJECTION_ATTEMPT", 
+                f"Pattern rilevato: {pattern[:30]}... nel contenuto email", 
+                "HIGH"  # Cambiato da WARNING a HIGH
+            )
+            content = re.sub(pattern, '[RIMOSSO_PER_SICUREZZA]', content, flags=re.IGNORECASE)
+    
+    # Se sono stati trovati pattern sospetti, invia notifica specifica
+    if suspicious_patterns_found:
+        from components.notification_utils import send_suspicious_email_alert
+        try:
+            # Determina il livello di rischio
+            risk_level = "HIGH" if len(suspicious_patterns_found) > 2 else "MEDIUM"
+            
+            # Invia notifica email specifica
+            send_suspicious_email_alert(
+                "Email in elaborazione",
+                suspicious_patterns_found,
+                risk_level
+            )
+        except Exception as e:
+            log_security_event("NOTIFICATION_ERROR", f"Errore invio notifica: {e}", "ERROR")
+    
+    # Limita lunghezza
+    if len(content) > 10000:
+        content = content[:10000] + "[TRONCATO]"
+        log_security_event("CONTENT_TRUNCATED", "Contenuto troncato per sicurezza", "INFO")
+    
+    return content
+
+# Modifica la funzione esistente
 def genera_prompt(testo_email, data_mail, mittente, codici_barre=None):
+    # Sanitizza il contenuto email
+    testo_email_sicuro = sanitize_email_content_basic(testo_email)
+    
+    # Log dell'operazione
+    log_security_event(
+        "PROMPT_GENERATION", 
+        f"Mittente: {str(mittente)[:30]}, Lunghezza: {len(testo_email_sicuro)}"
+    )
+    
     # Estrai codici a barre di 13 cifre dal testo con regex
     barcodes = re.findall(r'\b80\d{11}\b', testo_email)
     if barcodes:
@@ -110,28 +176,157 @@ Mittente: {mittente}
 """
     return prompt.strip()
 
+def validate_ai_response(response, original_email_content):
+    """Valida la risposta dell'AI per rilevare possibili compromissioni"""
+    if not response:
+        return False
+    
+    # Verifica che sia JSON valido
+    try:
+        import json
+        data = json.loads(response)
+        
+        # Se è un array, prendi il primo elemento
+        if isinstance(data, list):
+            if len(data) == 0:
+                log_security_event("EMPTY_AI_RESPONSE", "Array vuoto nella risposta AI", "ERROR")
+                return False
+            data = data[0]  # Prendi il primo elemento dell'array
+        
+        # Se non è un dizionario, è invalido
+        if not isinstance(data, dict):
+            log_security_event("INVALID_AI_RESPONSE", "Risposta non è un oggetto JSON valido", "ERROR")
+            return False
+            
+    except json.JSONDecodeError as e:
+        log_security_event("INVALID_AI_RESPONSE", f"Risposta non è JSON valido: {e}", "ERROR")
+        return False
+    
+    # Verifica solo campi critici per sicurezza (non tutti i campi)
+    # Almeno uno di questi deve essere presente per considerare la risposta valida
+    critical_fields = ['numero_ordine', 'nome', 'cognome', 'email']
+    has_critical_field = any(field in data and data[field] not in [None, '', 'NULL'] for field in critical_fields)
+    
+    if not has_critical_field:
+        log_security_event("NO_CRITICAL_FIELDS", "Nessun campo critico trovato nella risposta", "WARNING")
+        # Non bloccare, ma logga come warning
+    
+    # Verifica valori sospetti (solo per sicurezza)
+    suspicious_values = [
+        'admin', 'root', 'delete', 'drop', 'truncate', 
+        'hacker', 'malicious', 'bypass', 'override',
+        'ignore previous', 'new instructions', 'system:'
+    ]
+    
+    suspicious_found = []
+    for field, value in data.items():
+        if isinstance(value, str) and value:
+            for suspicious in suspicious_values:
+                if suspicious.lower() in value.lower():
+                    suspicious_found.append(f"{field}: {suspicious}")
+                    # CAMBIATO: Ora usa severità CRITICAL per inviare notifiche immediate
+                    log_security_event(
+                        "SUSPICIOUS_AI_OUTPUT", 
+                        f"Valore sospetto in {field}: {value[:50]}...", 
+                        "CRITICAL"  # Mantiene CRITICAL per valori sospetti nell'output
+                    )
+    
+    # Se trovati valori sospetti, invia notifica e blocca
+    if suspicious_found:
+        try:
+            from components.notification_utils import send_suspicious_email_alert
+            send_suspicious_email_alert(
+                "Risposta AI compromessa",
+                suspicious_found,
+                "HIGH"
+            )
+        except Exception as e:
+            log_security_event("NOTIFICATION_ERROR", f"Errore invio notifica: {e}", "ERROR")
+        return False
+    
+    # Verifica che non ci siano istruzioni di sistema nella risposta
+    response_lower = response.lower()
+    system_patterns = [
+        'ignore all previous',
+        'new instructions',
+        'system:',
+        'assistant:',
+        'user:'
+    ]
+    
+    system_patterns_found = []
+    for pattern in system_patterns:
+        if pattern in response_lower:
+            system_patterns_found.append(pattern)
+            # CAMBIATO: Ora usa severità CRITICAL per inviare notifiche immediate
+            log_security_event(
+                "SYSTEM_INSTRUCTION_DETECTED", 
+                f"Pattern di sistema rilevato: {pattern}", 
+                "CRITICAL"  # Mantiene CRITICAL per istruzioni di sistema
+            )
+    
+    # Se trovati pattern di sistema, invia notifica e blocca
+    if system_patterns_found:
+        try:
+            from components.notification_utils import send_suspicious_email_alert
+            send_suspicious_email_alert(
+                "Risposta AI con istruzioni di sistema",
+                system_patterns_found,
+                "CRITICAL"
+            )
+        except Exception as e:
+            log_security_event("NOTIFICATION_ERROR", f"Errore invio notifica: {e}", "ERROR")
+        return False
+    
+    return True
+
 def chiedi_al_modello(prompt):
-    if USA_LLM == "Gemini":
-        model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
-            generation_config={"temperature": 0.1}
+    """Versione sicura della chiamata AI"""
+    try:
+        # Chiamata AI esistente
+        if USA_LLM == "Gemini":
+            model = genai.GenerativeModel(
+                model_name="gemini-2.0-flash",
+                generation_config={"temperature": 0.1}
+            )
+            response = model.generate_content(prompt)
+            raw_response = response.text
+        elif USA_LLM == "OpenAI":
+            response = client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.1,
+                max_tokens=1000  # Limita output
+            )
+            raw_response = response.choices[0].message.content
+        elif USA_LLM == "Copilote":
+            response = copilote_client.chat.completions.create(
+                model=COPILOTE_DEPLOYMENT_NAME,
+                messages=[
+                    {"role": "system", "content": "Sei un estrattore di dati. Rispondi SOLO con JSON valido."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.1,
+                max_tokens=1000  # Limita output
+            )
+            raw_response = response.choices[0].message.content
+        
+        # Log della risposta per debug
+        log_security_event(
+            "AI_RESPONSE_RECEIVED", 
+            f"Lunghezza risposta: {len(raw_response) if raw_response else 0}", 
+            "INFO"
         )
-        response = model.generate_content(prompt)
-        return response.text
-    elif USA_LLM == "OpenAI":
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.1
-        )
-        return response.choices[0].message.content
-    elif USA_LLM == "Copilote":
-        response = copilote_client.chat.completions.create(
-            model=COPILOTE_DEPLOYMENT_NAME,
-            messages=[{"role": "system", "content": "Sei un assistente utile."}, {"role": "user", "content": prompt}],
-            temperature=0.1
-        )
-        return response.choices[0].message.content
-    else:
-        log_error(f"❌ Valore USA_LLM non valido: {USA_LLM}. Scegli tra 'Gemini', 'OpenAI', 'Copilote'.")
-        return ""
+        
+        # Validazione della risposta (più permissiva)
+        if raw_response and validate_ai_response(raw_response, prompt):
+            return raw_response
+        else:
+            log_security_event("AI_RESPONSE_REJECTED", "Risposta AI non valida o sospetta", "ERROR")
+            return "{\"errore\": \"Risposta AI non valida\"}"
+        
+    except Exception as e:
+        log_error(f"❌ Errore nella chiamata AI: {e}")
+        log_security_event("AI_CALL_ERROR", str(e), "ERROR")
+        return "{\"errore\": \"Errore nella chiamata AI\"}"
+

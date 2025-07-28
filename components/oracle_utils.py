@@ -1,4 +1,5 @@
 import cx_Oracle
+from contextlib import contextmanager
 from components.logging_utils import log_info, log_error
 from components.config import ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
 from components.notification_utils import send_error_notification
@@ -144,6 +145,79 @@ def inserisci_dati_oracle(dati, dsn, user, password):
             riga['errore_oracle'] = True
             riga['stato'] = 'O'
         return dati  # restituisco comunque la lista
+
+def leggi_codici_barre():
+    ## print("[DEBUG] Inizio lettura codici a barre da Oracle...")
+    try:
+        import cx_Oracle
+        from components.config import ORACLE_DSN, ORACLE_USER, ORACLE_PASSWORD
+        ## print(f"[DEBUG] Parametri Oracle: DSN={ORACLE_DSN}, USER={ORACLE_USER}, PASSWORD={'*' * len(ORACLE_PASSWORD)}")
+        conn = cx_Oracle.connect(user=ORACLE_USER, password=ORACLE_PASSWORD, dsn=ORACLE_DSN)
+        ## print("[DEBUG] Connessione Oracle per codici a barre riuscita.")
+        cur = conn.cursor()
+        sql = """
+            -- SELECT AE_BARRE, AE_DESC, STATO FROM art_eatin WHERE STATO = 'f'
+            SELECT BARCODE, NAME, DELETED FROM BOXES WHERE DELETED = 0       
+        """
+        cur.execute(sql)
+        codici = {}
+        for row in cur:
+            codice = str(row[0]).strip()
+            descrizione = str(row[1]).strip()
+            codici[descrizione] = codice
+        cur.close()
+        conn.close()
+        print(f"[DEBUG] Codici a barre letti: {len(codici)}")
+        return codici
+    except Exception as e:
+        print(f"[DEBUG] Errore lettura codici a barre: {e}")
+        log_error(f"\n❌ Errore nella lettura dei codici a barre da Oracle: {e}")
+        send_error_notification(
+            subject="Errore lettura codici a barre da Oracle",
+            body=f"Si è verificato un errore nella lettura dei codici a barre dal database Oracle.\n\nErrore: {e}"
+        )
+        return {}
+
+## SICUREZZA CONNESSIONI
+# Pool di connessioni sicuro
+pool = None
+
+def init_connection_pool():
+    """Inizializza un pool di connessioni sicuro"""
+    global pool
+    try:
+        pool = cx_Oracle.create_pool(
+            user=ORACLE_USER,
+            password=ORACLE_PASSWORD,
+            dsn=ORACLE_DSN,
+            min=1,            # Numero minimo di connessioni aperte all’avvio
+            max=5,            # Numero massimo di connessioni nel pool
+            increment=1,      # Quante connessioni aggiungere quando serve crescere
+            timeout=60,       # Inattività >60 s => connessione chiusa se sopra min
+            getmode=cx_Oracle.SPOOL_ATTRVAL_WAIT  # Attende se pool pieno
+        )
+        log_info("✅ Pool di connessioni Oracle inizializzato")
+    except Exception as e:
+        log_error(f"❌ Errore inizializzazione pool: {e}")
+        raise
+
+@contextmanager
+def get_oracle_connection():
+    """Context manager per connessioni sicure"""
+    if not pool:
+        init_connection_pool()
+    
+    conn = None
+    try:
+        conn = pool.acquire()
+    except Exception as e:
+        log_error(f"❌ Errore connessione Oracle: {e}")
+        if conn:
+            conn.rollback()
+        raise
+    finally:
+        if conn:
+            pool.release(conn)
 
 def leggi_codici_barre():
     ## print("[DEBUG] Inizio lettura codici a barre da Oracle...")

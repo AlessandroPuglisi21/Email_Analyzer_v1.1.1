@@ -71336,3 +71336,1256 @@ Di s
 2025-07-25 15:50:59,481 - INFO - ❌ File con errori: 0
 2025-07-25 15:51:07,753 - INFO - 
 👋 Arrivederci!
+2025-07-28 11:46:28,647 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 11:46:59,665 - INFO - 
+============================================================
+2025-07-28 11:46:59,673 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:46:59,719 - INFO - Lunghezza body originale: 1545
+2025-07-28 11:46:59,721 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 11:46:59,721 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 11:47:03,020 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 11:47:03,020 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 11:47:03,020 - INFO - 
+📝 Risposta pulita:
+2025-07-28 11:47:03,020 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 11:47:03,020 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 11:47:03,020 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 11:47:03,117 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 11:47:03,117 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:47:03,117 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 11:47:04,118 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 11:47:04,118 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 11:47:04,118 - INFO - ❌ File con errori: 0
+2025-07-28 11:54:36,433 - INFO - 
+👋 Arrivederci!
+2025-07-28 11:54:46,625 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 11:54:49,215 - INFO - 
+============================================================
+2025-07-28 11:54:49,215 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:54:49,236 - INFO - Lunghezza body originale: 1545
+2025-07-28 11:54:49,237 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 11:54:49,237 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 11:54:51,854 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 11:54:51,854 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 11:54:51,854 - INFO - 
+📝 Risposta pulita:
+2025-07-28 11:54:51,854 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 11:54:51,854 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 11:54:51,856 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 11:54:51,916 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 11:54:51,917 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:54:51,917 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 11:54:52,918 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 11:54:52,918 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 11:54:52,918 - INFO - ❌ File con errori: 0
+2025-07-28 11:55:56,280 - INFO - 
+👋 Arrivederci!
+2025-07-28 11:56:07,570 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 11:56:10,133 - INFO - 
+============================================================
+2025-07-28 11:56:10,134 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:56:10,148 - INFO - Lunghezza body originale: 1545
+2025-07-28 11:56:10,148 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 11:56:10,148 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 11:56:12,168 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-28 11:56:12,168 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 11:56:12,168 - INFO - 
+📝 Risposta pulita:
+2025-07-28 11:56:12,168 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 11:56:12,168 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 11:56:12,168 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 11:56:12,227 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 11:56:12,227 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 11:56:12,227 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 11:56:13,228 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 11:56:13,228 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 11:56:13,228 - INFO - ❌ File con errori: 0
+2025-07-28 12:25:05,975 - INFO - 
+👋 Arrivederci!
+2025-07-28 12:25:15,978 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 12:25:23,338 - INFO - 
+============================================================
+2025-07-28 12:25:23,338 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:25:23,384 - INFO - Lunghezza body originale: 1545
+2025-07-28 12:25:23,384 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 12:25:23,384 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 12:25:25,250 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 12:25:25,250 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:25:25,250 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:25:25,250 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 12:25:25,250 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:25:25,250 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 12:25:25,319 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 12:25:25,319 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:25:25,319 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:25:26,325 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 12:25:26,325 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 12:25:26,325 - INFO - ❌ File con errori: 0
+2025-07-28 12:43:17,088 - INFO - 
+👋 Arrivederci!
+2025-07-28 12:49:22,106 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 12:54:41,187 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 12:54:53,045 - INFO - 
+============================================================
+2025-07-28 12:54:53,046 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:54:53,093 - INFO - Lunghezza body originale: 1545
+2025-07-28 12:54:53,093 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 12:54:53,093 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 12:54:55,345 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:54:55,345 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:54:55,345 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:54:55,345 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:54:55,345 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:54:55,347 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:54:56,744 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:54:56,761 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:54:56,761 - ERROR - 
+❌ File con errore sconosciuto: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:54:56,761 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:54:57,769 - INFO - 
+============================================================
+2025-07-28 12:54:57,769 - INFO - Inizio elaborazione file: MailMalevola.eml
+2025-07-28 12:54:57,769 - INFO - Lunghezza body originale: 0
+2025-07-28 12:54:57,769 - INFO - Lunghezza body senza spazi: 0
+2025-07-28 12:54:57,769 - INFO - Primi 100 caratteri del body: 
+2025-07-28 12:54:57,769 - INFO - File MailMalevola.eml senza corpo: saltato.
+2025-07-28 12:54:57,769 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 12:54:57,769 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:54:58,775 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 12:54:58,775 - INFO - ✅ File elaborati con successo: 0
+2025-07-28 12:54:58,775 - INFO - ❌ File con errori: 1
+2025-07-28 12:56:30,699 - INFO - 
+============================================================
+2025-07-28 12:56:30,699 - INFO - Inizio elaborazione file: 20250722_165953_1_Fwd_ prova dopo.eml
+2025-07-28 12:56:30,715 - INFO - Lunghezza body originale: 1586
+2025-07-28 12:56:30,715 - INFO - Lunghezza body senza spazi: 1345
+2025-07-28 12:56:30,715 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-28 12:56:32,180 - INFO - 
+[DEBUG] Risposta LLM per 20250722_165953_1_Fwd_ prova dopo.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:32,180 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:32,180 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:32,180 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:32,180 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:32,180 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:33,389 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250722_165953_1_Fwd_ prova dopo.eml': 'numero_ordine'
+2025-07-28 12:56:33,389 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:33,389 - ERROR - 
+❌ File con errore sconosciuto: 20250722_165953_1_Fwd_ prova dopo.eml, Stato = O
+2025-07-28 12:56:33,389 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:34,397 - INFO - 
+============================================================
+2025-07-28 12:56:34,397 - INFO - Inizio elaborazione file: 20250722_165954_5_Fwd_ Prova Prima.eml
+2025-07-28 12:56:34,432 - INFO - Lunghezza body originale: 2001
+2025-07-28 12:56:34,432 - INFO - Lunghezza body senza spazi: 1665
+2025-07-28 12:56:34,432 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-28 12:56:35,888 - INFO - 
+[DEBUG] Risposta LLM per 20250722_165954_5_Fwd_ Prova Prima.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:35,889 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:35,899 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:35,899 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:35,899 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:35,899 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:37,313 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250722_165954_5_Fwd_ Prova Prima.eml': 'numero_ordine'
+2025-07-28 12:56:37,318 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:37,318 - ERROR - 
+❌ File con errore sconosciuto: 20250722_165954_5_Fwd_ Prova Prima.eml, Stato = O
+2025-07-28 12:56:37,318 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:38,325 - INFO - 
+============================================================
+2025-07-28 12:56:38,325 - INFO - Inizio elaborazione file: 20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml
+2025-07-28 12:56:38,325 - INFO - Lunghezza body originale: 1775
+2025-07-28 12:56:38,325 - INFO - Lunghezza body senza spazi: 1513
+2025-07-28 12:56:38,325 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-28 12:56:39,563 - INFO - 
+[DEBUG] Risposta LLM per 20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:39,563 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:39,563 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:39,563 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:39,563 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:39,563 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:40,831 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml': 'numero_ordine'
+2025-07-28 12:56:40,847 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:40,847 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_2_DEBUG - VOUCHER MY SISAL.eml, Stato = O
+2025-07-28 12:56:40,847 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:41,850 - INFO - 
+============================================================
+2025-07-28 12:56:41,850 - INFO - Inizio elaborazione file: 20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml
+2025-07-28 12:56:41,867 - INFO - Lunghezza body originale: 1044
+2025-07-28 12:56:41,867 - INFO - Lunghezza body senza spazi: 900
+2025-07-28 12:56:41,867 - INFO - Primi 100 caratteri del body: Caution: This is an external email and may be malicious. Please take care when clicking links or ope
+2025-07-28 12:56:43,197 - INFO - 
+[DEBUG] Risposta LLM per 20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:43,213 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:43,213 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:43,213 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:43,213 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:43,213 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:44,429 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml': 'numero_ordine'
+2025-07-28 12:56:44,429 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:44,429 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_3_[ESTERNO] Inserimento nuova richiesta Eatinerari - A tavola con Eataly.eml, Stato = O
+2025-07-28 12:56:44,429 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:45,442 - INFO - 
+============================================================
+2025-07-28 12:56:45,442 - INFO - Inizio elaborazione file: 20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:56:45,447 - INFO - Lunghezza body originale: 1513
+2025-07-28 12:56:45,447 - INFO - Lunghezza body senza spazi: 1259
+2025-07-28 12:56:45,447 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 12:56:46,960 - INFO - 
+[DEBUG] Risposta LLM per 20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:46,960 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:46,962 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:46,962 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:46,963 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:46,965 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:48,202 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:56:48,210 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:48,210 - ERROR - 
+❌ File con errore sconosciuto: 20250724_125107_6_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:56:48,210 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:49,215 - INFO - 
+============================================================
+2025-07-28 12:56:49,215 - INFO - Inizio elaborazione file: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:56:49,242 - INFO - Lunghezza body originale: 1741
+2025-07-28 12:56:49,242 - INFO - Lunghezza body senza spazi: 1486
+2025-07-28 12:56:49,242 - INFO - Primi 100 caratteri del body: 
+
+
+
+[cid:logocongiunto_eataly_color_14718bef-f978-459f-870b-54ad30ced513.png]
+Da: noreply@gruppopell
+2025-07-28 12:56:50,504 - INFO - 
+[DEBUG] Risposta LLM per 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:50,504 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:50,520 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:50,520 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:50,520 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:50,520 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:51,785 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail '20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml': 'numero_ordine'
+2025-07-28 12:56:51,793 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:51,793 - ERROR - 
+❌ File con errore sconosciuto: 20250724_130300_1_I_ PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml, Stato = O
+2025-07-28 12:56:51,793 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:52,795 - INFO - 
+============================================================
+2025-07-28 12:56:52,795 - INFO - Inizio elaborazione file: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg
+2025-07-28 12:56:52,880 - INFO - Lunghezza body originale: 1181
+2025-07-28 12:56:52,880 - INFO - Lunghezza body senza spazi: 946
+2025-07-28 12:56:52,882 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-28 12:56:54,004 - INFO - 
+[DEBUG] Risposta LLM per DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:54,004 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:54,020 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:54,020 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:54,020 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:54,020 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:55,196 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg': 'numero_ordine'
+2025-07-28 12:56:55,212 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:55,212 - ERROR - 
+❌ File con errore sconosciuto: DEBUG - VOUCHER WILLIS WELFARE - ORDINE N.2250481.msg, Stato = O
+2025-07-28 12:56:55,212 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:56,220 - INFO - 
+============================================================
+2025-07-28 12:56:56,220 - INFO - Inizio elaborazione file: Notifica ordine 00194151.msg
+2025-07-28 12:56:56,226 - INFO - Lunghezza body originale: 1175
+2025-07-28 12:56:56,226 - INFO - Lunghezza body senza spazi: 987
+2025-07-28 12:56:56,226 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-28 12:56:57,609 - INFO - 
+[DEBUG] Risposta LLM per Notifica ordine 00194151.msg:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:56:57,609 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:56:57,609 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:56:57,609 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:56:57,609 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:56:57,609 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:56:58,778 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'Notifica ordine 00194151.msg': 'numero_ordine'
+2025-07-28 12:56:58,794 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:56:58,794 - ERROR - 
+❌ File con errore sconosciuto: Notifica ordine 00194151.msg, Stato = O
+2025-07-28 12:56:58,794 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:56:59,800 - INFO - 
+============================================================
+2025-07-28 12:56:59,800 - INFO - Inizio elaborazione file: Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg
+2025-07-28 12:56:59,850 - INFO - Lunghezza body originale: 1166
+2025-07-28 12:56:59,850 - INFO - Lunghezza body senza spazi: 960
+2025-07-28 12:56:59,850 - INFO - Primi 100 caratteri del body: 	Caution: This is an external email and may be malicious. Please take care when clicking links or op
+2025-07-28 12:57:01,273 - INFO - 
+[DEBUG] Risposta LLM per Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:57:01,273 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:57:01,273 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:57:01,273 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:57:01,273 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:57:01,273 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:57:02,370 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg': 'numero_ordine'
+2025-07-28 12:57:02,370 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:57:02,370 - ERROR - 
+❌ File con errore sconosciuto: Richiesta di contatto GIOVANNI GIORDANI # SKY25061101818808.msg, Stato = O
+2025-07-28 12:57:02,370 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:57:03,384 - INFO - 
+============================================================
+2025-07-28 12:57:03,384 - INFO - Inizio elaborazione file: test1.eml
+2025-07-28 12:57:03,388 - INFO - Lunghezza body originale: 394
+2025-07-28 12:57:03,388 - INFO - Lunghezza body senza spazi: 355
+2025-07-28 12:57:03,388 - INFO - Primi 100 caratteri del body: Gentile Mario Rossi,
+
+Grazie per il tuo ordine!
+
+Numero ordine: ORD789  
+Codice fiscale: RSSMRA80A01
+2025-07-28 12:57:05,194 - INFO - 
+[DEBUG] Risposta LLM per test1.eml:
+{"errore": "Risposta AI non valida"}
+2025-07-28 12:57:05,196 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:57:05,197 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:57:05,197 - INFO - {"errore": "Risposta AI non valida"}
+2025-07-28 12:57:05,197 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:57:05,199 - INFO - {
+  "errore": "Risposta AI non valida"
+}
+2025-07-28 12:57:06,395 - ERROR - 
+❌ Errore nell'inserimento dati in Oracle per la mail 'test1.eml': 'numero_ordine'
+2025-07-28 12:57:06,410 - ERROR - 
+❌ Nessun record inserito nel database Oracle.
+2025-07-28 12:57:06,410 - ERROR - 
+❌ File con errore sconosciuto: test1.eml, Stato = O
+2025-07-28 12:57:06,410 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:57:07,415 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 12:57:07,416 - INFO - ✅ File elaborati con successo: 0
+2025-07-28 12:57:07,416 - INFO - ❌ File con errori: 10
+2025-07-28 12:59:25,033 - INFO - 
+👋 Arrivederci!
+2025-07-28 12:59:33,042 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 12:59:42,581 - INFO - 
+============================================================
+2025-07-28 12:59:42,581 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:59:42,624 - INFO - Lunghezza body originale: 1545
+2025-07-28 12:59:42,624 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 12:59:42,624 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 12:59:45,064 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 12:59:45,064 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 12:59:45,066 - INFO - 
+📝 Risposta pulita:
+2025-07-28 12:59:45,066 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 12:59:45,068 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 12:59:45,068 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 12:59:45,150 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 12:59:45,150 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 12:59:45,150 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:59:46,158 - INFO - 
+============================================================
+2025-07-28 12:59:46,158 - INFO - Inizio elaborazione file: MailMalevola.eml
+2025-07-28 12:59:46,158 - INFO - Lunghezza body originale: 0
+2025-07-28 12:59:46,158 - INFO - Lunghezza body senza spazi: 0
+2025-07-28 12:59:46,158 - INFO - Primi 100 caratteri del body: 
+2025-07-28 12:59:46,158 - INFO - File MailMalevola.eml senza corpo: saltato.
+2025-07-28 12:59:46,158 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 12:59:46,158 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 12:59:47,162 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 12:59:47,162 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 12:59:47,162 - INFO - ❌ File con errori: 0
+2025-07-28 13:02:02,015 - INFO - 
+👋 Arrivederci!
+2025-07-28 13:02:10,086 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 13:02:13,984 - INFO - 
+============================================================
+2025-07-28 13:02:13,984 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:02:14,047 - INFO - Lunghezza body originale: 1545
+2025-07-28 13:02:14,047 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 13:02:14,047 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 13:02:16,187 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:02:16,187 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 13:02:16,187 - INFO - 
+📝 Risposta pulita:
+2025-07-28 13:02:16,187 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:02:16,187 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 13:02:16,187 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 13:02:16,251 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 13:02:16,251 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:02:16,251 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:02:17,258 - INFO - 
+============================================================
+2025-07-28 13:02:17,258 - INFO - Inizio elaborazione file: MailMalevola.eml
+2025-07-28 13:02:17,263 - INFO - Lunghezza body originale: 0
+2025-07-28 13:02:17,263 - INFO - Lunghezza body senza spazi: 0
+2025-07-28 13:02:17,263 - INFO - Primi 100 caratteri del body: 
+2025-07-28 13:02:17,263 - INFO - File MailMalevola.eml senza corpo: saltato.
+2025-07-28 13:02:17,263 - ERROR - 
+❌ Errore nell'elaborazione del file: MailMalevola.eml
+2025-07-28 13:02:17,263 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:02:18,269 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 13:02:18,269 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 13:02:18,269 - INFO - ❌ File con errori: 0
+2025-07-28 13:04:53,388 - INFO - 
+👋 Arrivederci!
+2025-07-28 13:05:00,631 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 13:05:06,666 - INFO - 
+============================================================
+2025-07-28 13:05:06,666 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:05:06,714 - INFO - Lunghezza body originale: 1545
+2025-07-28 13:05:06,714 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 13:05:06,714 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 13:05:08,454 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:05:08,454 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 13:05:08,454 - INFO - 
+📝 Risposta pulita:
+2025-07-28 13:05:08,454 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:05:08,454 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 13:05:08,454 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 13:05:08,543 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 13:05:08,543 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:05:08,543 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:05:09,544 - INFO - 
+============================================================
+2025-07-28 13:05:09,544 - INFO - Inizio elaborazione file: email_prompt_injection_test.eml
+2025-07-28 13:05:09,548 - INFO - Lunghezza body originale: 454
+2025-07-28 13:05:09,548 - INFO - Lunghezza body senza spazi: 386
+2025-07-28 13:05:09,548 - INFO - Primi 100 caratteri del body: Ciao,
+
+Ecco i dettagli dell'ordine:
+
+Nome: Mario
+Cognome: Rossi
+Email: mario.rossi@example.com
+Numer
+2025-07-28 13:05:14,200 - INFO - 
+[DEBUG] Risposta LLM per email_prompt_injection_test.eml:
+[
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "987654",
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "Prodotto Y",
+        "prezzo": "39,99",
+        "quantita": "2",
+        "email": "mario.rossi@example.com",
+        "mittente": "attacker@example.com",
+        "codice_barre": "8099999999999"
+    }
+]
+2025-07-28 13:05:14,200 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 13:05:14,200 - INFO - 
+📝 Risposta pulita:
+2025-07-28 13:05:14,200 - INFO - [
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "987654",
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "Prodotto Y",
+        "prezzo": "39,99",
+        "quantita": "2",
+        "email": "mario.rossi@example.com",
+        "mittente": "attacker@example.com",
+        "codice_barre": "8099999999999"
+    }
+]
+2025-07-28 13:05:14,200 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 13:05:14,200 - INFO - [
+  {
+    "data_mail": "NULL",
+    "numero_ordine": "987654",
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "Prodotto Y",
+    "prezzo": "39,99",
+    "quantita": "2",
+    "email": "mario.rossi@example.com",
+    "mittente": "attacker@example.com",
+    "codice_barre": "8099999999999"
+  }
+]
+2025-07-28 13:05:14,266 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 13:05:14,266 - INFO - 
+✅ File elaborato con successo: email_prompt_injection_test.eml
+2025-07-28 13:05:14,266 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:05:15,267 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 13:05:15,267 - INFO - ✅ File elaborati con successo: 2
+2025-07-28 13:05:15,267 - INFO - ❌ File con errori: 0
+2025-07-28 13:06:45,302 - INFO - 
+👋 Arrivederci!
+2025-07-28 13:07:17,167 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 13:07:18,618 - INFO - 
+============================================================
+2025-07-28 13:07:18,618 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:07:18,675 - INFO - Lunghezza body originale: 1545
+2025-07-28 13:07:18,675 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 13:07:18,675 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 13:07:20,542 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:07:20,542 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 13:07:20,542 - INFO - 
+📝 Risposta pulita:
+2025-07-28 13:07:20,553 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 13:07:20,553 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 13:07:20,553 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 13:07:20,622 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 13:07:20,622 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 13:07:20,622 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:07:21,629 - INFO - 
+============================================================
+2025-07-28 13:07:21,629 - INFO - Inizio elaborazione file: email_prompt_injection_test.eml
+2025-07-28 13:07:21,634 - INFO - Lunghezza body originale: 454
+2025-07-28 13:07:21,634 - INFO - Lunghezza body senza spazi: 386
+2025-07-28 13:07:21,634 - INFO - Primi 100 caratteri del body: Ciao,
+
+Ecco i dettagli dell'ordine:
+
+Nome: Mario
+Cognome: Rossi
+Email: mario.rossi@example.com
+Numer
+2025-07-28 13:07:26,135 - INFO - 
+[DEBUG] Risposta LLM per email_prompt_injection_test.eml:
+[
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "987654",
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "Prodotto Y",
+        "prezzo": "39,99",
+        "quantita": "2",
+        "email": "mario.rossi@example.com",
+        "mittente": "attacker@example.com",
+        "codice_barre": "8099999999999"
+    }
+]
+2025-07-28 13:07:26,135 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 13:07:26,135 - INFO - 
+📝 Risposta pulita:
+2025-07-28 13:07:26,135 - INFO - [
+    {
+        "data_mail": "NULL",
+        "numero_ordine": "987654",
+        "nome": "Mario",
+        "cognome": "Rossi",
+        "codice_fiscale": "NULL",
+        "telefono": "NULL",
+        "articolo": "Prodotto Y",
+        "prezzo": "39,99",
+        "quantita": "2",
+        "email": "mario.rossi@example.com",
+        "mittente": "attacker@example.com",
+        "codice_barre": "8099999999999"
+    }
+]
+2025-07-28 13:07:26,135 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 13:07:26,137 - INFO - [
+  {
+    "data_mail": "NULL",
+    "numero_ordine": "987654",
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "codice_fiscale": "NULL",
+    "telefono": "NULL",
+    "articolo": "Prodotto Y",
+    "prezzo": "39,99",
+    "quantita": "2",
+    "email": "mario.rossi@example.com",
+    "mittente": "attacker@example.com",
+    "codice_barre": "8099999999999"
+  }
+]
+2025-07-28 13:07:26,194 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 13:07:26,194 - INFO - 
+✅ File elaborato con successo: email_prompt_injection_test.eml
+2025-07-28 13:07:26,194 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 13:07:27,203 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 13:07:27,203 - INFO - ✅ File elaborati con successo: 2
+2025-07-28 13:07:27,205 - INFO - ❌ File con errori: 0
+2025-07-28 14:15:53,921 - ERROR - 
+❌ Il percorso specificato non è una cartella valida!
+2025-07-28 14:16:38,138 - INFO - 
+👋 Arrivederci!
+2025-07-28 14:16:47,518 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-28 14:17:15,808 - INFO - 
+============================================================
+2025-07-28 14:17:15,808 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 14:17:15,848 - INFO - Lunghezza body originale: 1545
+2025-07-28 14:17:15,848 - INFO - Lunghezza body senza spazi: 1287
+2025-07-28 14:17:15,848 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-28 14:17:18,124 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 14:17:18,124 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-28 14:17:18,124 - INFO - 
+📝 Risposta pulita:
+2025-07-28 14:17:18,124 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-28 14:17:18,124 - INFO - 
+✅ JSON parsato con successo:
+2025-07-28 14:17:18,124 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-28 14:17:18,204 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-28 14:17:18,205 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-28 14:17:18,206 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-28 14:17:19,207 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-28 14:17:19,207 - INFO - ✅ File elaborati con successo: 1
+2025-07-28 14:17:19,207 - INFO - ❌ File con errori: 0
