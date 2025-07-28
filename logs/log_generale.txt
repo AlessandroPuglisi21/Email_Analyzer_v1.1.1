@@ -70858,3 +70858,481 @@ Codice fiscale: RSSMRA80A01
 📊 Riepilogo elaborazione:
 2025-07-25 10:10:26,066 - INFO - ✅ File elaborati con successo: 9
 2025-07-25 10:10:26,066 - INFO - ❌ File con errori: 1
+2025-07-25 14:26:10,389 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-25 14:26:13,688 - INFO - 
+============================================================
+2025-07-25 14:26:13,689 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 14:26:13,709 - INFO - Lunghezza body originale: 2094
+2025-07-25 14:26:13,710 - INFO - Lunghezza body senza spazi: 1774
+2025-07-25 14:26:13,710 - INFO - Primi 100 caratteri del body: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+2025-07-25 14:26:16,033 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 14:26:16,034 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 14:26:16,034 - INFO - 
+📝 Risposta pulita:
+2025-07-25 14:26:16,034 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 14:26:16,034 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 14:26:16,035 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Elena",
+    "cognome": "Lampugnani",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 14:26:16,098 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 14:26:16,098 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 14:26:16,098 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 14:26:17,099 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 14:26:17,101 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 14:26:17,102 - INFO - ❌ File con errori: 0
+2025-07-25 14:26:58,585 - INFO - 
+============================================================
+2025-07-25 14:26:58,586 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 14:26:58,601 - INFO - Lunghezza body originale: 2094
+2025-07-25 14:26:58,602 - INFO - Lunghezza body senza spazi: 1774
+2025-07-25 14:26:58,603 - INFO - Primi 100 caratteri del body: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+2025-07-25 14:27:00,532 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 14:27:00,533 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 14:27:00,533 - INFO - 
+📝 Risposta pulita:
+2025-07-25 14:27:00,533 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 14:27:00,534 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 14:27:00,535 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Elena",
+    "cognome": "Lampugnani",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 14:27:00,610 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 14:27:00,611 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 14:27:00,612 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 14:27:01,614 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 14:27:01,614 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 14:27:01,616 - INFO - ❌ File con errori: 0
+2025-07-25 15:29:26,483 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-25 15:29:34,996 - INFO - 
+============================================================
+2025-07-25 15:29:34,996 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:29:35,005 - INFO - Lunghezza body originale: 2094
+2025-07-25 15:29:35,005 - INFO - Lunghezza body senza spazi: 1774
+2025-07-25 15:29:35,005 - INFO - Primi 100 caratteri del body: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+2025-07-25 15:29:37,011 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 15:29:37,012 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 15:29:37,013 - INFO - 
+📝 Risposta pulita:
+2025-07-25 15:29:37,014 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 15:29:37,016 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 15:29:37,017 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Elena",
+    "cognome": "Lampugnani",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 15:29:37,070 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 15:29:37,070 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:29:37,071 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 15:29:38,071 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 15:29:38,072 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 15:29:38,073 - INFO - ❌ File con errori: 0
+2025-07-25 15:33:06,132 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-25 15:33:13,315 - INFO - 
+============================================================
+2025-07-25 15:33:13,315 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:33:13,329 - INFO - Lunghezza body originale: 2094
+2025-07-25 15:33:13,330 - INFO - Lunghezza body senza spazi: 1774
+2025-07-25 15:33:13,330 - INFO - Primi 100 caratteri del body: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+2025-07-25 15:33:15,380 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 15:33:15,382 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 15:33:15,383 - INFO - 
+📝 Risposta pulita:
+2025-07-25 15:33:15,384 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 15:33:15,385 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 15:33:15,387 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Elena",
+    "cognome": "Lampugnani",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 15:33:15,467 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 15:33:15,467 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:33:15,467 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 15:33:16,469 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 15:33:16,470 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 15:33:16,471 - INFO - ❌ File con errori: 0
+2025-07-25 15:38:47,350 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-25 15:38:51,831 - INFO - 
+============================================================
+2025-07-25 15:38:51,832 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:38:51,837 - INFO - Lunghezza body originale: 2094
+2025-07-25 15:38:51,837 - INFO - Lunghezza body senza spazi: 1774
+2025-07-25 15:38:51,838 - INFO - Primi 100 caratteri del body: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+2025-07-25 15:38:53,862 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 15:38:53,864 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 15:38:53,864 - INFO - 
+📝 Risposta pulita:
+2025-07-25 15:38:53,865 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Elena",
+        "cognome": "Lampugnani",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 15:38:53,867 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 15:38:53,867 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Elena",
+    "cognome": "Lampugnani",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 15:38:53,930 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 15:38:53,930 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:38:53,930 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 15:38:54,933 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 15:38:54,933 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 15:38:54,934 - INFO - ❌ File con errori: 0
+2025-07-25 15:50:52,423 - INFO - 
+✅ Tabella 'ord_eatin' trovata nello schema Oracle 'seacng'.
+2025-07-25 15:50:56,452 - INFO - 
+============================================================
+2025-07-25 15:50:56,453 - INFO - Inizio elaborazione file: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:50:56,530 - INFO - Lunghezza body originale: 1545
+2025-07-25 15:50:56,531 - INFO - Lunghezza body senza spazi: 1287
+2025-07-25 15:50:56,531 - INFO - Primi 100 caratteri del body: 
+
+
+
+
+Gentili Signori,
+
+vi confermiamo che la seguente richiesta è stata inserita con successo. 
+Di s
+2025-07-25 15:50:58,420 - INFO - 
+[DEBUG] Risposta LLM per 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml:
+```json
+[
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+```
+2025-07-25 15:50:58,420 - INFO - 
+🔍 Tentativo di parsing JSON...
+2025-07-25 15:50:58,421 - INFO - 
+📝 Risposta pulita:
+2025-07-25 15:50:58,421 - INFO - [
+    {
+        "data_mail": "24/07/2025",
+        "numero_ordine": "3624576",
+        "nome": "Antonio",
+        "cognome": "Conte",
+        "codice_fiscale": "NULL",
+        "telefono": "3405290512",
+        "articolo": "LEZIONE DI CUCINA PER COPPIE",
+        "prezzo": "160,00",
+        "quantita": "1",
+        "email": "Elena.Lampugnani@mediobanca.com",
+        "mittente": "noreply@gruppopellegrini.it",
+        "codice_barre": "8052745981283"
+    }
+]
+2025-07-25 15:50:58,422 - INFO - 
+✅ JSON parsato con successo:
+2025-07-25 15:50:58,422 - INFO - [
+  {
+    "data_mail": "24/07/2025",
+    "numero_ordine": "3624576",
+    "nome": "Antonio",
+    "cognome": "Conte",
+    "codice_fiscale": "NULL",
+    "telefono": "3405290512",
+    "articolo": "LEZIONE DI CUCINA PER COPPIE",
+    "prezzo": "160,00",
+    "quantita": "1",
+    "email": "Elena.Lampugnani@mediobanca.com",
+    "mittente": "noreply@gruppopellegrini.it",
+    "codice_barre": "8052745981283"
+  }
+]
+2025-07-25 15:50:58,477 - INFO - 
+✅ Inseriti 1 record nel database Oracle.
+2025-07-25 15:50:58,477 - INFO - 
+✅ File elaborato con successo: 20250725_124008_2_PORTALE WELFARE PELLEGRINI_ CONFERMA INSERIMENTO RICHIESTA.eml
+2025-07-25 15:50:58,478 - INFO - Pausa di 1 secondi prima del prossimo file...
+2025-07-25 15:50:59,479 - INFO - 
+📊 Riepilogo elaborazione:
+2025-07-25 15:50:59,480 - INFO - ✅ File elaborati con successo: 1
+2025-07-25 15:50:59,481 - INFO - ❌ File con errori: 0
+2025-07-25 15:51:07,753 - INFO - 
+👋 Arrivederci!

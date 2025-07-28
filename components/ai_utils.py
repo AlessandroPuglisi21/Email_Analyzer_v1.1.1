@@ -38,7 +38,7 @@ def genera_prompt(testo_email, data_mail, mittente, codici_barre=None):
     prompt = f"""
 Analizza la seguente email e restituisci i dati richiesti in formato JSON.
 
-**IMPORTANTE:** La risposta DEVE essere un array JSON di oggetti, dove ogni oggetto ha questa struttura:
+IMPORTANTE: La risposta DEVE essere un array di UN SOLO oggetto JSON con questa struttura:
 {{
     "data_mail": "data della mail in formato dd/MM/YYYY",
     "numero_ordine": "numero dell'ordine o numero prenotazione o numero richiesta", 
@@ -46,7 +46,7 @@ Analizza la seguente email e restituisci i dati richiesti in formato JSON.
     "cognome": "cognome del cliente",
     "codice_fiscale": "codice fiscale",
     "telefono": "numero di telefono",
-    "articolo": "nome dell'articolo o SK o prestazione",
+    "articolo": "nome dell'articolo o SKU",
     "prezzo": "prezzo unitario",
     "quantita": "quantità",
     "email": "email del cliente",
@@ -54,17 +54,31 @@ Analizza la seguente email e restituisci i dati richiesti in formato JSON.
     "codice_barre": "codice a barre dell'articolo"
 }}
 
-**IMPORTANTE SULL'ESTRAZIONE DI NOME E COGNOME:**
+IMPORTANTE SULL'ESTRAZIONE DI NOME E COGNOME:
 - Il campo "nome" deve contenere solo il nome di battesimo (es: "Mario")
 - Il campo "cognome" deve contenere solo il cognome (es: "Rossi")
 - NON invertire mai nome e cognome.
 - Esempio corretto: "nome": "Mario", "cognome": "Rossi"
 - Esempio SBAGLIATO: "nome": "Rossi", "cognome": "Mario"
 
-**IMPORTANTE SULL'ESTRAZIONE DEL NOME ARTICOLO:**
+IMPORTANTE SULL'ESTRAZIONE DEL NOME ARTICOLO:
 - Se nell'email è presente una tabella con le colonne "Oggetto" e "SKU", il campo "articolo" deve essere valorizzato **sempre** con il valore della colonna "SKU" e **non** con quello della colonna "Oggetto".
-- Se la colonna "SKU" non è presente, estrai il nome articolo come normalmente faresti (ad esempio dal testo o da altre colonne).
+- Se la colonna "SKU" non è presente, allora estrai il nome articolo come normalmente faresti (ad esempio dal testo o da altre colonne).
 - Se il nome dell'articolo inizia con un codice tra parentesi tonde (ad esempio: (IDA 143009)), IGNORA questo codice e imposta il campo articolo solo con il testo che segue, senza parentesi e senza il codice. Esempio: per "(IDA 143009) A tavola da Eataly - Un esclusivo menu di 3 portate" il campo articolo deve essere "A tavola da Eataly - Un esclusivo menu di 3 portate".
+Regole:
+1. Se un campo non è presente, usa "NULL" come valore, tranne per il campo "prezzo": se non trovi il prezzo imposta 0 (zero).
+2. Estrai la quantità così come la trovi. Se non la trovi, imposta 1.
+3. Il prezzo è il prezzo totale. Usa la virgola (,) come separatore dei decimali. Se non lo trovi, metti 0.
+5. La risposta DEVE essere un array JSON, anche se c'è un solo articolo.
+6. Non aggiungere testo, commenti o spiegazioni prima o dopo il JSON.
+
+IMPORTANTE SULLA QUANTITA:
+- Se nel testo dell'email è presente la dicitura "Quantità: N" (dove N è un numero maggiore di 0), la quantità deve essere impostata a quel valore N.
+- Lascia la quantità così come la trovi nel testo. 
+- Il prezzo associato deve essere il prezzo totale. 
+- Se non trovi una quantità esplicita, imposta "1" come valore predefinito.
+- **CASO SPECIALE**: Se il nome dell'articolo contiene un pattern come "X 2" (es: "KIT PIZZA X 2"), questo fa parte del nome dell'articolo. Non usare questo valore come quantità e il nome articolo deve rimanere "KIT PIZZA X 2". Per la quantità comportati come sempre.
+- **NUOVA REGOLA**: Se nel nome dell'articolo o nel testo compaiono espressioni come "Box per 2 persone", "Box per X persone", "Partecipanti: 2", "Partecipanti: X" non usare questo valore X come valore della quantità. Per la quantità comportati come sempre. 
 
 **REGOLE GENERALI:**
 1. Se un campo non è presente, usa "NULL" come valore, tranne per il campo "prezzo": se non trovi il prezzo
